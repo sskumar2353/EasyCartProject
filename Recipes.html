@@ -244,7 +244,7 @@
       loadInitialRecipes();
 
       function loadInitialRecipes() {
-        fetch('http://localhost:5000/api/recipes')
+        fetch('https://ec-backend-0lvq.onrender.com/api/recipes')
           .then(response => response.json())
           .then(data => {
             console.log(data);
@@ -359,7 +359,7 @@
           return;
         }
         
-        fetch('http://localhost:5000/api/recipes/filter', {
+        fetch('https://ec-backend-0lvq.onrender.com/api/recipes/filter', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -416,7 +416,7 @@
           return;
         }
 
-        fetch(`http://localhost:5000/api/recipe_search/${encodeURIComponent(recipeName)}`)
+        fetch(`https://ec-backend-0lvq.onrender.com/api/recipe_search/${encodeURIComponent(recipeName)}`)
           .then(response => response.json())
           .then(data => {
             // Hide the regular recipes container when showing search results
