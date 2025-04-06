@@ -323,7 +323,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Store the currently selected date
     selectedDate = date;
     
-    fetch(`http://localhost:5000/api/meals?date=${date}`)
+    fetch(`https://ec-backend-0lvq.onrender.com/api/meals?date=${date}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
