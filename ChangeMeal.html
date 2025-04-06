@@ -115,7 +115,7 @@
                     // Show loading indicator
                     mealGrid.innerHTML = '<p class="text-center text-gray-500">Loading meals...</p>';
 
-                    const response = await fetch('http://localhost:5000/api/meals-update');
+                    const response = await fetch('https://ec-backend-0lvq.onrender.com/api/meals-update');
                     if (!response.ok) throw new Error('Failed to fetch meals');
 
                     const meals = await response.json();
@@ -182,7 +182,7 @@
 
                     console.log("Submitting meal with data:", requestData);
 
-                    const endpoint = mealId ? 'http://localhost:5000/api/update-meal' : 'http://localhost:5000/api/add-meal';
+                    const endpoint = mealId ? 'https://ec-backend-0lvq.onrender.com/api/update-meal' : 'https://ec-backend-0lvq.onrender.com/api/add-meal';
 
                     const response = await fetch(endpoint, {
                         method: 'POST',
