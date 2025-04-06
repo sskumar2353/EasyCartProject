@@ -1,0 +1,268 @@
+category,name,quantity,unit,price,image_url
+Dairy,Cheddar cheese,250,g,180,https://thumbs.dreamstime.com/b/sketch-milk-products-set-cow-cheese-isolated-vector-illustration-60137422.jpg
+Dairy,Greek yogurt,500,g,120,https://thumbs.dreamstime.com/b/sketch-milk-products-set-cow-cheese-isolated-vector-illustration-60137422.jpg
+Dairy,Heavy cream,200,ml,95,https://thumbs.dreamstime.com/b/sketch-milk-products-set-cow-cheese-isolated-vector-illustration-60137422.jpg
+Dairy,Mozzarella cheese,200,g,160,https://thumbs.dreamstime.com/b/sketch-milk-products-set-cow-cheese-isolated-vector-illustration-60137422.jpg
+Dairy,Butter,100,g,75,https://thumbs.dreamstime.com/b/sketch-milk-products-set-cow-cheese-isolated-vector-illustration-60137422.jpg
+Dairy,Cottage cheese,200,g,90,https://thumbs.dreamstime.com/b/sketch-milk-products-set-cow-cheese-isolated-vector-illustration-60137422.jpg
+Dairy,Ricotta cheese,250,g,130,https://thumbs.dreamstime.com/b/sketch-milk-products-set-cow-cheese-isolated-vector-illustration-60137422.jpg
+Dairy,Parmesan cheese,100,g,210,https://thumbs.dreamstime.com/b/sketch-milk-products-set-cow-cheese-isolated-vector-illustration-60137422.jpg
+Dairy,Goat cheese,150,g,180,https://thumbs.dreamstime.com/b/sketch-milk-products-set-cow-cheese-isolated-vector-illustration-60137422.jpg
+Dairy,Milk,1,l,60,https://thumbs.dreamstime.com/b/sketch-milk-products-set-cow-cheese-isolated-vector-illustration-60137422.jpg
+Dairy,Cream cheese,200,g,120,https://thumbs.dreamstime.com/b/sketch-milk-products-set-cow-cheese-isolated-vector-illustration-60137422.jpg
+Dairy,Buttermilk,500,ml,40,https://thumbs.dreamstime.com/b/sketch-milk-products-set-cow-cheese-isolated-vector-illustration-60137422.jpg
+Dairy,Blue cheese,100,g,250,https://thumbs.dreamstime.com/b/sketch-milk-products-set-cow-cheese-isolated-vector-illustration-60137422.jpg
+Dairy,Mascarpone,200,g,190,https://thumbs.dreamstime.com/b/sketch-milk-products-set-cow-cheese-isolated-vector-illustration-60137422.jpg
+Dairy,Sour cream,200,g,85,https://thumbs.dreamstime.com/b/sketch-milk-products-set-cow-cheese-isolated-vector-illustration-60137422.jpg
+Vegetable,Spinach,200,g,30,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrQ22tWWhHhNRcpJZYmZykSI2TtsRLdB3yQw&s
+Vegetable,Bell pepper,3,piece,60,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrQ22tWWhHhNRcpJZYmZykSI2TtsRLdB3yQw&s
+Vegetable,Broccoli,250,g,45,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrQ22tWWhHhNRcpJZYmZykSI2TtsRLdB3yQw&s
+Vegetable,Zucchini,500,g,40,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrQ22tWWhHhNRcpJZYmZykSI2TtsRLdB3yQw&s
+Vegetable,Cabbage,1,kg,35,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrQ22tWWhHhNRcpJZYmZykSI2TtsRLdB3yQw&s
+Vegetable,Kale,200,g,50,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrQ22tWWhHhNRcpJZYmZykSI2TtsRLdB3yQw&s
+Vegetable,Eggplant,1,piece,35,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrQ22tWWhHhNRcpJZYmZykSI2TtsRLdB3yQw&s
+Vegetable,Cauliflower,1,piece,50,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrQ22tWWhHhNRcpJZYmZykSI2TtsRLdB3yQw&s
+Vegetable,Asparagus,200,g,120,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrQ22tWWhHhNRcpJZYmZykSI2TtsRLdB3yQw&s
+Vegetable,Artichoke,2,piece,180,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrQ22tWWhHhNRcpJZYmZykSI2TtsRLdB3yQw&s
+Vegetable,Brussels sprouts,250,g,80,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrQ22tWWhHhNRcpJZYmZykSI2TtsRLdB3yQw&s
+Vegetable,Celery,1,bunch,40,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrQ22tWWhHhNRcpJZYmZykSI2TtsRLdB3yQw&s
+Vegetable,Cucumber,3,piece,30,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrQ22tWWhHhNRcpJZYmZykSI2TtsRLdB3yQw&s
+Vegetable,Lettuce,1,head,45,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrQ22tWWhHhNRcpJZYmZykSI2TtsRLdB3yQw&s
+Vegetable,Radish,1,bunch,25,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrQ22tWWhHhNRcpJZYmZykSI2TtsRLdB3yQw&s
+Spice,Black pepper,100,g,90,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMhGIMhnA9bYiVrT3xHGZVihU_xrwdjZ64Ng&s
+Spice,Cinnamon,50,g,65,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMhGIMhnA9bYiVrT3xHGZVihU_xrwdjZ64Ng&s
+Spice,Cumin,50,g,45,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMhGIMhnA9bYiVrT3xHGZVihU_xrwdjZ64Ng&s
+Spice,Paprika,50,g,60,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMhGIMhnA9bYiVrT3xHGZVihU_xrwdjZ64Ng&s
+Spice,Turmeric,50,g,55,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMhGIMhnA9bYiVrT3xHGZVihU_xrwdjZ64Ng&s
+Spice,Cayenne pepper,50,g,70,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMhGIMhnA9bYiVrT3xHGZVihU_xrwdjZ64Ng&s
+Spice,Cardamom,25,g,120,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMhGIMhnA9bYiVrT3xHGZVihU_xrwdjZ64Ng&s
+Spice,Coriander,50,g,45,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMhGIMhnA9bYiVrT3xHGZVihU_xrwdjZ64Ng&s
+Spice,Cloves,25,g,80,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMhGIMhnA9bYiVrT3xHGZVihU_xrwdjZ64Ng&s
+Spice,Nutmeg,25,g,90,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMhGIMhnA9bYiVrT3xHGZVihU_xrwdjZ64Ng&s
+Spice,Saffron,1,g,450,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMhGIMhnA9bYiVrT3xHGZVihU_xrwdjZ64Ng&s
+Spice,Star anise,25,g,70,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMhGIMhnA9bYiVrT3xHGZVihU_xrwdjZ64Ng&s
+Spice,Allspice,50,g,65,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMhGIMhnA9bYiVrT3xHGZVihU_xrwdjZ64Ng&s
+Spice,Ginger powder,50,g,60,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMhGIMhnA9bYiVrT3xHGZVihU_xrwdjZ64Ng&s
+Spice,Sumac,50,g,95,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMhGIMhnA9bYiVrT3xHGZVihU_xrwdjZ64Ng&s
+Grain,Rice,1,kg,80,https://example.com/images/grains.jpg
+Grain,Quinoa,500,g,180,https://example.com/images/grains.jpg
+Grain,Barley,500,g,60,https://example.com/images/grains.jpg
+Grain,Oats,500,g,75,https://example.com/images/grains.jpg
+Grain,Corn,500,g,50,https://example.com/images/grains.jpg
+Grain,Wheat berries,500,g,70,https://example.com/images/grains.jpg
+Grain,Bulgur,500,g,65,https://example.com/images/grains.jpg
+Grain,Millet,500,g,90,https://example.com/images/grains.jpg
+Grain,Rye,500,g,85,https://example.com/images/grains.jpg
+Grain,Spelt,500,g,110,https://example.com/images/grains.jpg
+Grain,Sorghum,500,g,95,https://example.com/images/grains.jpg
+Grain,Teff,250,g,150,https://example.com/images/grains.jpg
+Grain,Amaranth,250,g,140,https://example.com/images/grains.jpg
+Grain,Farro,500,g,130,https://example.com/images/grains.jpg
+Grain,Buckwheat,500,g,95,https://example.com/images/grains.jpg
+Condiment,Ketchup,400,ml,85,https://example.com/images/condiments.jpg
+Condiment,Mustard,200,ml,70,https://example.com/images/condiments.jpg
+Condiment,Mayonnaise,400,ml,120,https://example.com/images/condiments.jpg
+Condiment,Soy sauce,250,ml,95,https://example.com/images/condiments.jpg
+Condiment,Hot sauce,150,ml,110,https://example.com/images/condiments.jpg
+Condiment,Worcestershire sauce,150,ml,130,https://example.com/images/condiments.jpg
+Condiment,Fish sauce,200,ml,160,https://example.com/images/condiments.jpg
+Condiment,Sriracha,250,ml,120,https://example.com/images/condiments.jpg
+Condiment,BBQ sauce,350,ml,140,https://example.com/images/condiments.jpg
+Condiment,Ranch dressing,350,ml,180,https://example.com/images/condiments.jpg
+Condiment,Tahini,200,ml,210,https://example.com/images/condiments.jpg
+Condiment,Pesto,150,ml,190,https://example.com/images/condiments.jpg
+Condiment,Hummus,200,g,130,https://example.com/images/condiments.jpg
+Condiment,Aioli,150,ml,180,https://example.com/images/condiments.jpg
+Condiment,Chimichurri,150,ml,170,https://example.com/images/condiments.jpg
+Legume,Black beans,500,g,120,https://example.com/images/legumes.jpg
+Legume,Chickpeas,500,g,110,https://example.com/images/legumes.jpg
+Legume,Lentils,500,g,90,https://example.com/images/legumes.jpg
+Legume,Kidney beans,500,g,100,https://example.com/images/legumes.jpg
+Legume,Pinto beans,500,g,95,https://example.com/images/legumes.jpg
+Legume,Navy beans,500,g,105,https://example.com/images/legumes.jpg
+Legume,Edamame,300,g,160,https://example.com/images/legumes.jpg
+Legume,Lima beans,500,g,115,https://example.com/images/legumes.jpg
+Legume,Split peas,500,g,85,https://example.com/images/legumes.jpg
+Legume,Great Northern beans,500,g,115,https://example.com/images/legumes.jpg
+Legume,Black-eyed peas,500,g,110,https://example.com/images/legumes.jpg
+Legume,Fava beans,400,g,140,https://example.com/images/legumes.jpg
+Legume,Adzuki beans,400,g,150,https://example.com/images/legumes.jpg
+Legume,Mung beans,400,g,120,https://example.com/images/legumes.jpg
+Legume,Cannellini beans,500,g,130,https://example.com/images/legumes.jpg
+Meat,Chicken breast,500,g,250,https://example.com/images/meat.jpg
+Meat,Ground beef,500,g,280,https://example.com/images/meat.jpg
+Meat,Pork chop,400,g,230,https://example.com/images/meat.jpg
+Meat,Lamb shank,500,g,350,https://example.com/images/meat.jpg
+Meat,Bacon,200,g,180,https://example.com/images/meat.jpg
+Meat,Turkey,500,g,260,https://example.com/images/meat.jpg
+Meat,Brisket,750,g,380,https://example.com/images/meat.jpg
+Meat,Sirloin steak,500,g,450,https://example.com/images/meat.jpg
+Meat,Duck breast,400,g,380,https://example.com/images/meat.jpg
+Meat,Veal,400,g,420,https://example.com/images/meat.jpg
+Meat,Venison,500,g,550,https://example.com/images/meat.jpg
+Meat,Rabbit,600,g,480,https://example.com/images/meat.jpg
+Meat,Ham,300,g,210,https://example.com/images/meat.jpg
+Meat,Sausage,300,g,190,https://example.com/images/meat.jpg
+Meat,Ground pork,500,g,240,https://example.com/images/meat.jpg
+Ingredient,Flour,1,kg,60,https://example.com/images/ingredients.jpg
+Ingredient,Baking powder,100,g,35,https://example.com/images/ingredients.jpg
+Ingredient,Baking soda,100,g,30,https://example.com/images/ingredients.jpg
+Ingredient,Cornstarch,200,g,45,https://example.com/images/ingredients.jpg
+Ingredient,Vanilla extract,50,ml,120,https://example.com/images/ingredients.jpg
+Ingredient,Gelatin,50,g,75,https://example.com/images/ingredients.jpg
+Ingredient,Food coloring,30,ml,60,https://example.com/images/ingredients.jpg
+Ingredient,Cocoa powder,200,g,110,https://example.com/images/ingredients.jpg
+Ingredient,Yeast,50,g,40,https://example.com/images/ingredients.jpg
+Ingredient,Xanthan gum,50,g,180,https://example.com/images/ingredients.jpg
+Ingredient,Cream of tartar,50,g,70,https://example.com/images/ingredients.jpg
+Ingredient,Almond extract,50,ml,140,https://example.com/images/ingredients.jpg
+Ingredient,Rosewater,100,ml,160,https://example.com/images/ingredients.jpg
+Ingredient,Agar-agar,50,g,190,https://example.com/images/ingredients.jpg
+Ingredient,Arrowroot,100,g,120,https://example.com/images/ingredients.jpg
+Bread,Baguette,1,piece,70,https://example.com/images/bread.jpg
+Bread,Sourdough,1,loaf,120,https://example.com/images/bread.jpg
+Bread,Pita,6,piece,60,https://example.com/images/bread.jpg
+Bread,Ciabatta,1,loaf,90,https://example.com/images/bread.jpg
+Bread,Focaccia,1,piece,110,https://example.com/images/bread.jpg
+Bread,Rye bread,1,loaf,95,https://example.com/images/bread.jpg
+Bread,Brioche,1,loaf,130,https://example.com/images/bread.jpg
+Bread,Naan,4,piece,85,https://example.com/images/bread.jpg
+Bread,Challah,1,loaf,140,https://example.com/images/bread.jpg
+Bread,Pumpernickel,1,loaf,105,https://example.com/images/bread.jpg
+Bread,Bagel,6,piece,120,https://example.com/images/bread.jpg
+Bread,English muffin,6,piece,90,https://example.com/images/bread.jpg
+Bread,Cornbread,1,loaf,80,https://example.com/images/bread.jpg
+Bread,Tortilla,8,piece,60,https://example.com/images/bread.jpg
+Bread,Multigrain bread,1,loaf,110,https://example.com/images/bread.jpg
+Sweetener,White sugar,1,kg,70,https://example.com/images/sweeteners.jpg
+Sweetener,Brown sugar,500,g,85,https://example.com/images/sweeteners.jpg
+Sweetener,Honey,250,ml,160,https://example.com/images/sweeteners.jpg
+Sweetener,Maple syrup,250,ml,290,https://example.com/images/sweeteners.jpg
+Sweetener,Agave nectar,250,ml,220,https://example.com/images/sweeteners.jpg
+Sweetener,Molasses,250,ml,150,https://example.com/images/sweeteners.jpg
+Sweetener,Stevia,50,g,190,https://example.com/images/sweeteners.jpg
+Sweetener,Coconut sugar,250,g,180,https://example.com/images/sweeteners.jpg
+Sweetener,Date syrup,250,ml,240,https://example.com/images/sweeteners.jpg
+Sweetener,Rice syrup,250,ml,170,https://example.com/images/sweeteners.jpg
+Sweetener,Monk fruit sweetener,100,g,320,https://example.com/images/sweeteners.jpg
+Sweetener,Erythritol,250,g,280,https://example.com/images/sweeteners.jpg
+Sweetener,Xylitol,250,g,290,https://example.com/images/sweeteners.jpg
+Sweetener,Turbinado sugar,500,g,130,https://example.com/images/sweeteners.jpg
+Sweetener,Corn syrup,250,ml,120,https://example.com/images/sweeteners.jpg
+Protein,Tofu,400,g,90,https://example.com/images/proteins.jpg
+Protein,Tempeh,250,g,140,https://example.com/images/proteins.jpg
+Protein,Seitan,250,g,160,https://example.com/images/proteins.jpg
+Protein,Protein powder,500,g,850,https://example.com/images/proteins.jpg
+Protein,Textured vegetable protein,250,g,120,https://example.com/images/proteins.jpg
+Protein,Eggs,12,piece,90,https://example.com/images/proteins.jpg
+Protein,Cottage cheese,200,g,90,https://example.com/images/proteins.jpg
+Protein,Greek yogurt,500,g,120,https://example.com/images/proteins.jpg
+Protein,Edamame,300,g,160,https://example.com/images/proteins.jpg
+Protein,Nutritional yeast,100,g,180,https://example.com/images/proteins.jpg
+Protein,Quorn,300,g,220,https://example.com/images/proteins.jpg
+Protein,Hemp hearts,200,g,250,https://example.com/images/proteins.jpg
+Protein,Spirulina,100,g,350,https://example.com/images/proteins.jpg
+Protein,Quinoa,500,g,180,https://example.com/images/proteins.jpg
+Protein,Lentils,500,g,90,https://example.com/images/proteins.jpg
+Fruit,Apple,6,piece,120,https://example.com/images/fruits.jpg
+Fruit,Banana,6,piece,80,https://example.com/images/fruits.jpg
+Fruit,Orange,6,piece,120,https://example.com/images/fruits.jpg
+Fruit,Strawberry,250,g,90,https://example.com/images/fruits.jpg
+Fruit,Blueberry,200,g,160,https://example.com/images/fruits.jpg
+Fruit,Mango,2,piece,140,https://example.com/images/fruits.jpg
+Fruit,Pineapple,1,piece,120,https://example.com/images/fruits.jpg
+Fruit,Watermelon,1,piece,80,https://example.com/images/fruits.jpg
+Fruit,Peach,4,piece,100,https://example.com/images/fruits.jpg
+Fruit,Grape,500,g,120,https://example.com/images/fruits.jpg
+Fruit,Kiwi,6,piece,150,https://example.com/images/fruits.jpg
+Fruit,Pear,4,piece,120,https://example.com/images/fruits.jpg
+Fruit,Lemon,4,piece,60,https://example.com/images/fruits.jpg
+Fruit,Cherry,250,g,180,https://example.com/images/fruits.jpg
+Fruit,Avocado,2,piece,160,https://example.com/images/fruits.jpg
+Seaweed,Nori,10,sheet,120,https://example.com/images/seaweed.jpg
+Seaweed,Kombu,50,g,180,https://example.com/images/seaweed.jpg
+Seaweed,Wakame,50,g,150,https://example.com/images/seaweed.jpg
+Seaweed,Dulse,50,g,160,https://example.com/images/seaweed.jpg
+Seaweed,Hijiki,50,g,190,https://example.com/images/seaweed.jpg
+Seaweed,Arame,50,g,170,https://example.com/images/seaweed.jpg
+Seaweed,Sea lettuce,50,g,160,https://example.com/images/seaweed.jpg
+Seaweed,Agar-agar,50,g,190,https://example.com/images/seaweed.jpg
+Seaweed,Irish moss,50,g,180,https://example.com/images/seaweed.jpg
+Seaweed,Kelp,50,g,140,https://example.com/images/seaweed.jpg
+Seaweed,Spirulina,100,g,350,https://example.com/images/seaweed.jpg
+Seaweed,Chlorella,100,g,380,https://example.com/images/seaweed.jpg
+Seaweed,Bladderwrack,50,g,190,https://example.com/images/seaweed.jpg
+Seaweed,Sea palm,50,g,210,https://example.com/images/seaweed.jpg
+Seaweed,Laver,50,g,160,https://example.com/images/seaweed.jpg
+Seafood,Salmon,500,g,450,https://example.com/images/seafood.jpg
+Seafood,Shrimp,500,g,380,https://example.com/images/seafood.jpg
+Seafood,Tuna,500,g,420,https://example.com/images/seafood.jpg
+Seafood,Cod,500,g,350,https://example.com/images/seafood.jpg
+Seafood,Crab,500,g,580,https://example.com/images/seafood.jpg
+Seafood,Lobster,500,g,950,https://example.com/images/seafood.jpg
+Seafood,Scallops,300,g,420,https://example.com/images/seafood.jpg
+Seafood,Oysters,12,piece,320,https://example.com/images/seafood.jpg
+Seafood,Clams,500,g,380,https://example.com/images/seafood.jpg
+Seafood,Mussels,500,g,290,https://example.com/images/seafood.jpg
+Seafood,Tilapia,500,g,280,https://example.com/images/seafood.jpg
+Seafood,Sea bass,500,g,590,https://example.com/images/seafood.jpg
+Seafood,Haddock,500,g,340,https://example.com/images/seafood.jpg
+Seafood,Squid,300,g,260,https://example.com/images/seafood.jpg
+Seafood,Octopus,300,g,420,https://example.com/images/seafood.jpg
+Herb,Basil,30,g,40,https://example.com/images/herbs.jpg
+Herb,Parsley,30,g,30,https://example.com/images/herbs.jpg
+Herb,Thyme,20,g,35,https://example.com/images/herbs.jpg
+Herb,Rosemary,20,g,35,https://example.com/images/herbs.jpg
+Herb,Cilantro,30,g,30,https://example.com/images/herbs.jpg
+Herb,Mint,30,g,35,https://example.com/images/herbs.jpg
+Herb,Oregano,20,g,35,https://example.com/images/herbs.jpg
+Herb,Dill,20,g,30,https://example.com/images/herbs.jpg
+Herb,Sage,20,g,35,https://example.com/images/herbs.jpg
+Herb,Chives,20,g,30,https://example.com/images/herbs.jpg
+Herb,Bay leaves,10,g,40,https://example.com/images/herbs.jpg
+Herb,Tarragon,20,g,45,https://example.com/images/herbs.jpg
+Herb,Marjoram,20,g,40,https://example.com/images/herbs.jpg
+Herb,Lemongrass,30,g,50,https://example.com/images/herbs.jpg
+Herb,Lavender,15,g,60,https://example.com/images/herbs.jpg
+Beverage,Coffee Powder,250,g,320,https://example.com/images/beverages.jpg
+Beverage,Tea powder,100,g,180,https://example.com/images/beverages.jpg
+Beverage,ThumsUp,1,l,90,https://example.com/images/beverages.jpg
+Beverage,Sprite,1,l,85,https://example.com/images/beverages.jpg
+Beverage,Maaza,750,ml,550,https://example.com/images/beverages.jpg
+Beverage,Coke,750,ml,520,https://example.com/images/beverages.jpg
+Beverage,Soda,6,bottle,120,https://example.com/images/beverages.jpg
+Beverage,Grape Juice,750,ml,1450,https://example.com/images/beverages.jpg
+Beverage,Coconut water,1,l,120,https://example.com/images/beverages.jpg
+Beverage,Almond milk,1,l,160,https://example.com/images/beverages.jpg
+Beverage,Sparkling water,1,l,60,https://example.com/images/beverages.jpg
+Beverage,Lemonade,1,l,90,https://example.com/images/beverages.jpg
+Beverage,Lemonade,1,l,90,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDIXT_Y9EIn12pKg6fPLp7tD6n9cRLSB3uQ&s
+Beverage,Energy Bar,1,piece,150,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDIXT_Y9EIn12pKg6fPLp7tD6n9cRLSB3uQ&s
+Beverage,Chocolate Chips,50,g,250,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDIXT_Y9EIn12pKg6fPLp7tD6n9cRLSB3uQ&s
+Beverage,Biscuit,3,piece,120,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDIXT_Y9EIn12pKg6fPLp7tD6n9cRLSB3uQ&s
+Beverage,Granola Mix,100,g,200,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDIXT_Y9EIn12pKg6fPLp7tD6n9cRLSB3uQ&s
+Dry Fruit,Almonds,50,g,290,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDIXT_Y9EIn12pKg6fPLp7tD6n9cRLSB3uQ&s
+Dry Fruit,Cashews,40,g,230,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDIXT_Y9EIn12pKg6fPLp7tD6n9cRLSB3uQ&s
+Dry Fruit,Walnuts,30,g,200,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDIXT_Y9EIn12pKg6fPLp7tD6n9cRLSB3uQ&s
+Dry Fruit,Pistachios,25,g,160,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDIXT_Y9EIn12pKg6fPLp7tD6n9cRLSB3uQ&s
+Dry Fruit,Raisins,50,g,150,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDIXT_Y9EIn12pKg6fPLp7tD6n9cRLSB3uQ&s
+Dry Fruit,Dates,30,g,280,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDIXT_Y9EIn12pKg6fPLp7tD6n9cRLSB3uQ&s
+Dry Fruit,Figs,40,g,230,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDIXT_Y9EIn12pKg6fPLp7tD6n9cRLSB3uQ&s
+Dry Fruit,Hazelnuts,35,g,220,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDIXT_Y9EIn12pKg6fPLp7tD6n9cRLSB3uQ&s
+Dry Fruit,Brazil Nuts,30,g,250,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDIXT_Y9EIn12pKg6fPLp7tD6n9cRLSB3uQ&s
+Dry Fruit,Macadamia Nuts,30,g,300,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDIXT_Y9EIn12pKg6fPLp7tD6n9cRLSB3uQ&s
+Dry Fruit,Pine Nuts,40,g,280,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDIXT_Y9EIn12pKg6fPLp7tD6n9cRLSB3uQ&s
+Dry Fruit,Pecan Nuts,50,g,290,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDIXT_Y9EIn12pKg6fPLp7tD6n9cRLSB3uQ&s
+Dry Fruit,Apricots,45,g,200,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDIXT_Y9EIn12pKg6fPLp7tD6n9cRLSB3uQ&s
+Dry Fruit,Black Raisins,50,g,180,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDIXT_Y9EIn12pKg6fPLp7tD6n9cRLSB3uQ&s
+Dry Fruit,Sultanas,50,g,160,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDIXT_Y9EIn12pKg6fPLp7tD6n9cRLSB3uQ&s
+Dry Fruit,Dried Cranberries,40,g,150,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDIXT_Y9EIn12pKg6fPLp7tD6n9cRLSB3uQ&s
+Dry Fruit,Dried Blueberries,40,g,140,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDIXT_Y9EIn12pKg6fPLp7tD6n9cRLSB3uQ&s
+Dry Fruit,Dried Cherries,40,g,170,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDIXT_Y9EIn12pKg6fPLp7tD6n9cRLSB3uQ&s
+Dry Fruit,Dried Mulberries,45,g,180,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDIXT_Y9EIn12pKg6fPLp7tD6n9cRLSB3uQ&s
+Dry Fruit,Dried Mango,50,g,200,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDIXT_Y9EIn12pKg6fPLp7tD6n9cRLSB3uQ&s
+Dry Fruit,Dried Coconut,60,g,210,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDIXT_Y9EIn12pKg6fPLp7tD6n9cRLSB3uQ&s
+Dry Fruit,Dried Papaya,50,g,190,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDIXT_Y9EIn12pKg6fPLp7tD6n9cRLSB3uQ&s
+Dry Fruit,Dried Kiwi,40,g,160,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDIXT_Y9EIn12pKg6fPLp7tD6n9cRLSB3uQ&s
+Dry Fruit,Dried Pineapple,45,g,170,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDIXT_Y9EIn12pKg6fPLp7tD6n9cRLSB3uQ&s
+

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+  <link
+    rel="stylesheet"
+    as="style"
+    onload="this.rel='stylesheet'"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
+  />
+
+  <title>Recommended List</title>
+  <link rel="icon" type="image/x-icon" href="https://is3-ssl.mzstatic.com/image/thumb/Purple111/v4/7d/05/17/7d0517b1-f45f-af98-bf8f-87d454ca57f6/source/512x512bb.jpg" />
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <style>
+    .quantity-control {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 5px;
+    }
+    .quantity-btn {
+      background-color: #EAEAEA;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-weight: bold;
+      user-select: none;
+    }
+    .quantity-value {
+      margin: 0 10px;
+      width: 30px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="relative flex size-full min-h-screen flex-col bg-[#FFFFFF] group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+    <div class="layout-container flex h-full grow flex-col">
+      <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#F4EFE6] px-10 py-3">
+        <h1 class="text-xl font-bold text-[#1C160C]">Fresh Groceries</h1>
+      </header>
+      <div class="gap-1 px-6 flex flex-1 justify-center py-5">
+        <div class="layout-content-container flex flex-col max-w-[920px] flex-1">
+          <div id="grocery-container" class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+            <!-- Grocery items will be loaded here dynamically -->
+            <div class="flex flex-col items-center justify-center h-64">
+              <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#019863]"></div>
+              <p class="mt-4 text-[#1C160C]">Loading groceries...</p>
+            </div>
+          </div>
+        </div>
+        <div class="layout-content-container flex flex-col w-[360px]">
+          <h2 class="text-[#1C160C] tracking-light text-[28px] font-bold leading-tight px-4 text-left pb-3 pt-5">Your Grocery List</h2>
+          <div id="selected-items" class="px-4 py-2 max-h-[400px] overflow-y-auto">
+            <!-- Selected items will appear here -->
+            <p id="empty-list-message" class="text-[#1C160C] text-base font-normal leading-normal">Your list is empty</p>
+          </div>
+          <div class="flex px-4 py-3">
+            <button
+              id="save-list-btn"
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 flex-1 bg-[#019863] text-[#FFFFFF] text-base font-bold leading-normal tracking-[0.015em]"
+            >
+              <span class="truncate">Save Grocery List</span>
+            </button>
+          </div>
+          <div class="flex px-4 py-3">
+            <button
+              id="back-btn"
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 flex-1 bg-[#019863] text-[#FFFFFF] text-base font-bold leading-normal tracking-[0.015em]"
+            >
+              <span class="truncate">Back</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Store for selected grocery items
+    let selectedItems = {};
+    
+    // Check if we have items in local storage already
+    document.addEventListener('DOMContentLoaded', () => {
+      loadSelectedItems();
+      fetchGroceries();
+      
+      // Back button functionality
+      document.getElementById('back-btn').addEventListener('click', () => {
+        window.location.href = 'DashBoard.html';
+      });
+      
+      // Save to local storage functionality
+      document.getElementById('save-list-btn').addEventListener('click', saveToLocalStorage);
+    });
+    
+    // Fetch groceries from the API
+    async function fetchGroceries() {
+      try {
+        // In a real environment, this would point to your actual API endpoint
+        const response = await fetch('http://localhost:5000/api/groceries');
+        if (!response.ok) {
+          throw new Error('Failed to fetch groceries');
+        }
+        
+        const groceriesByCategory = await response.json();
+        renderGroceries(groceriesByCategory);
+      } catch (error) {
+        console.error('Error:', error);
+        // For demo purposes, use mock data if API is not available
+        useMockData();
+      }
+    }
+    
+    // Use mock data if API is not available
+    function useMockData() {
+      const mockData = {
+        "Vegetables": [
+          { id: 1, item: "Carrots", price: 1.99, image_url: "https://cdn.usegalileo.ai/sdxl10/147b2ee8-1918-4e58-8829-21cd0601d29e.png" },
+          { id: 2, item: "Tomatoes", price: 2.49, image_url: "https://cdn.usegalileo.ai/sdxl10/9ab4e1f9-069a-4d75-8019-b86a2c0e469c.png" },
+          { id: 3, item: "Broccoli", price: 1.79, image_url: "https://cdn.usegalileo.ai/sdxl10/80af9eb9-5c38-4246-8b7b-4ab720a7ea22.png" }
+        ],
+        "Fruits": [
+          { id: 4, item: "Avocados", price: 3.49, image_url: "https://cdn.usegalileo.ai/sdxl10/ba32f228-ee30-4ae9-be95-b621402ce893.png" },
+          { id: 5, item: "Strawberries", price: 4.99, image_url: "https://cdn.usegalileo.ai/sdxl10/2a1869de-2472-4ee2-9fb8-2a9eb9f94807.png" }
+        ],
+        "Other": [
+          { id: 6, item: "Bread", price: 2.99, image_url: "https://cdn.usegalileo.ai/sdxl10/56140a96-9283-4db3-a245-f456d0a3a6d9.png" },
+          { id: 7, item: "Mushrooms", price: 3.29, image_url: "https://cdn.usegalileo.ai/sdxl10/ef27602a-937c-43f5-b3a6-0b42ad326ae6.png" },
+          { id: 8, item: "Potatoes", price: 1.49, image_url: "https://cdn.usegalileo.ai/sdxl10/fb075776-d4e1-4cc4-bcde-73fad45c39a0.png" }
+        ]
+      };
+      
+      renderGroceries(mockData);
+    }
+    
+    // Render groceries on the page
+    function renderGroceries(groceriesByCategory) {
+      const container = document.getElementById('grocery-container');
+      container.innerHTML = '';
+      
+      // Iterate over each category and its items
+      Object.keys(groceriesByCategory).forEach(category => {
+        groceriesByCategory[category].forEach(item => {
+          const itemElement = createGroceryItemElement(item);
+          container.appendChild(itemElement);
+        });
+      });
+    }
+    
+    // Create a grocery item element
+    function createGroceryItemElement(item) {
+      const div = document.createElement('div');
+      div.className = 'flex flex-col gap-3 pb-3';
+      div.innerHTML = `
+        <div
+          class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+          style="background-image: url('${item.image_url}');"
+        ></div>
+        <div>
+          <p class="text-[#1C160C] text-base font-medium leading-normal">${item.item}</p>
+          <p class="text-[#1C160C] text-sm font-normal leading-normal">$${item.price.toFixed(2)}</p>
+          <div class="quantity-control">
+            <span class="quantity-btn minus" data-id="${item.id}">-</span>
+            <span class="quantity-value" id="qty-${item.id}">${selectedItems[item.id]?.quantity || 0}</span>
+            <span class="quantity-btn plus" data-id="${item.id}">+</span>
+          </div>
+        </div>
+      `;
+      
+      // Add event listeners for the quantity buttons
+      div.querySelector('.minus').addEventListener('click', () => updateQuantity(item, -1));
+      div.querySelector('.plus').addEventListener('click', () => updateQuantity(item, 1));
+      
+      return div;
+    }
+    
+    // Update quantity of an item
+    function updateQuantity(item, change) {
+      const id = item.id;
+      
+      // If item doesn't exist in selected items and we're trying to reduce, do nothing
+      if (!selectedItems[id] && change < 0) return;
+      
+      // If item doesn't exist, create it
+      if (!selectedItems[id]) {
+        selectedItems[id] = {
+          id: id,
+          item: item.item,
+          price: item.price,
+          image_url: item.image_url,
+          quantity: 0
+        };
+      }
+      
+      // Update quantity, ensuring it doesn't go below 0
+      selectedItems[id].quantity += change;
+      if (selectedItems[id].quantity <= 0) {
+        delete selectedItems[id];
+      }
+      
+      // Update the display
+      updateSelectedItemsDisplay();
+      
+      // Update the quantity display on the item
+      const qtyElement = document.getElementById(`qty-${id}`);
+      if (qtyElement) {
+        qtyElement.textContent = selectedItems[id]?.quantity || 0;
+      }
+    }
+    
+    // Update the display of selected items
+    function updateSelectedItemsDisplay() {
+      const container = document.getElementById('selected-items');
+      const emptyMessage = document.getElementById('empty-list-message');
+      
+      // Clear the container
+      container.innerHTML = '';
+      
+      // Check if there are any selected items
+      if (Object.keys(selectedItems).length === 0) {
+        container.appendChild(emptyMessage);
+        return;
+      }
+      
+      // Add each selected item to the display
+      Object.values(selectedItems).forEach(item => {
+        const itemDiv = document.createElement('div');
+        itemDiv.className = 'flex justify-between items-center mb-2 pb-2 border-b border-gray-200';
+        itemDiv.innerHTML = `
+          <div>
+            <p class="text-[#1C160C] font-medium">${item.item}</p>
+            <p class="text-[#1C160C] text-sm">$${(item.price * item.quantity).toFixed(2)}</p>
+          </div>
+          <div class="flex items-center">
+            <span class="text-[#1C160C]">${item.quantity}x</span>
+            <button class="ml-2 text-red-500 hover:text-red-700" data-id="${item.id}">✕</button>
+          </div>
+        `;
+        
+        // Add event listener for the remove button
+        itemDiv.querySelector('button').addEventListener('click', () => {
+          delete selectedItems[item.id];
+          updateSelectedItemsDisplay();
+          
+          // Update quantity display on the item
+          const qtyElement = document.getElementById(`qty-${item.id}`);
+          if (qtyElement) {
+            qtyElement.textContent = 0;
+          }
+        });
+        
+        container.appendChild(itemDiv);
+      });
+      
+      // Add total
+      const totalDiv = document.createElement('div');
+      totalDiv.className = 'flex justify-between font-bold mt-3';
+      const total = Object.values(selectedItems).reduce((sum, item) => sum + (item.price * item.quantity), 0);
+      totalDiv.innerHTML = `
+        <span>Total:</span>
+        <span>$${total.toFixed(2)}</span>
+      `;
+      container.appendChild(totalDiv);
+    }
+    
+    // Save selected items to local storage
+    function saveToLocalStorage() {
+      localStorage.setItem('groceryList', JSON.stringify(selectedItems));
+      alert('Your grocery list has been saved!');
+    }
+    
+    // Load selected items from local storage
+    function loadSelectedItems() {
+      const savedItems = localStorage.getItem('groceryList');
+      if (savedItems) {
+        selectedItems = JSON.parse(savedItems);
+        updateSelectedItemsDisplay();
+      }
+    }
+  </script>
+</body>
+</html>

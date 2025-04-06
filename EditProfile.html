@@ -1,0 +1,262 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
+    />
+
+    <title>Edit Profile</title>
+    <link rel="icon" type="image/x-icon" href="https://is3-ssl.mzstatic.com/image/thumb/Purple111/v4/7d/05/17/7d0517b1-f45f-af98-bf8f-87d454ca57f6/source/512x512bb.jpg" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#FFFFFF] group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#F4EFE6] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#1C160C]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-[#1C160C] text-lg font-bold leading-tight tracking-[-0.015em]">EasyCart</h2>
+          </div>
+          <button
+            class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 bg-[#F4EFE6] text-[#1C160C] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+          >
+            <div class="text-[#1C160C]" data-icon="ArrowLeft" data-size="20px" data-weight="regular">
+              <a href="Profile.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"
+                ></path>
+              </svg></a>
+            </div>
+          </button>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4"><p class="text-[#1C160C] text-4xl font-black leading-tight tracking-[-0.033em] min-w-72">Edit Profile</p></div>
+            <div class="flex p-4 @container">
+              <div class="flex w-full flex-col gap-4 items-center">
+                <div class="flex gap-4 flex-col items-center">
+                  <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/8915ccf1-b169-42aa-8780-b818ce9a0012.png");'
+                  ></div>
+                  <p class="text-[#1C160C] text-[22px] font-bold leading-tight tracking-[-0.015em] text-center">Upload or Change Profile Picture</p>
+                </div>
+                <div class="flex w-full max-w-[480px] gap-3 @[480px]:w-auto">
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#F4EFE6] text-[#1C160C] text-sm font-bold leading-normal tracking-[0.015em] flex-1 @[480px]:flex-auto"
+                  >
+                    <span class="truncate">Upload</span>
+                  </button>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#019863] text-[#FFFFFF] text-sm font-bold leading-normal tracking-[0.015em] flex-1 @[480px]:flex-auto"
+                  >
+                    <span class="truncate">Remove</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#1C160C] text-base font-medium leading-normal pb-2">Username</p>
+                <input id="uname"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1C160C] focus:outline-0 focus:ring-0 border border-[#E9DFCE] bg-[#FFFFFF] focus:border-[#E9DFCE] h-14 placeholder:text-[#A18249] p-[15px] text-base font-normal leading-normal"
+                  value=""
+                />
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#1C160C] text-base font-medium leading-normal pb-2">Email</p>
+                <div class="flex w-full flex-1 items-stretch rounded-xl">
+                  <input id="email"
+                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1C160C] focus:outline-0 focus:ring-0 border border-[#E9DFCE] bg-[#FFFFFF] focus:border-[#E9DFCE] h-14 placeholder:text-[#A18249] p-[15px] rounded-r-none border-r-0 pr-2 text-base font-normal leading-normal"
+                    value=""
+                  />
+                  <div
+                    class="text-[#A18249] flex border border-[#E9DFCE] bg-[#FFFFFF] items-center justify-center pr-[15px] rounded-r-xl border-l-0"
+                    data-icon="CheckCircle"
+                    data-size="24px"
+                    data-weight="regular"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#1C160C] text-base font-medium leading-normal pb-2">Mobile Number</p>
+                <div class="flex w-full flex-1 items-stretch rounded-xl">
+                  <input id="mobile"
+                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1C160C] focus:outline-0 focus:ring-0 border border-[#E9DFCE] bg-[#FFFFFF] focus:border-[#E9DFCE] h-14 placeholder:text-[#A18249] p-[15px] rounded-r-none border-r-0 pr-2 text-base font-normal leading-normal"
+                    value=""
+                  />
+                  <div
+                    class="text-[#A18249] flex border border-[#E9DFCE] bg-[#FFFFFF] items-center justify-center pr-[15px] rounded-r-xl border-l-0"
+                    data-icon="CheckCircle"
+                    data-size="24px"
+                    data-weight="regular"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div id="dietary-preferences-container" class="flex gap-3 p-3 flex-wrap pr-4"></div>
+            <div class="flex justify-stretch">
+              <div class="flex flex-1 gap-3 flex-wrap px-4 py-3 justify-between">
+                <button type="submit"
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#019863] text-[#FFFFFF] text-sm font-bold leading-normal tracking-[0.015em]"
+                >
+                  <span class="truncate">Save Changes</span>
+                </button>
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#F4EFE6] text-[#1C160C] text-sm font-bold leading-normal tracking-[0.015em]"
+                >
+                    <a href="Profile.html">
+                  <span class="truncate">Cancel</span></a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+document.addEventListener("DOMContentLoaded", async () => {
+    const userData = localStorage.getItem("user");
+
+    if (!userData) {
+        console.error("No user data found in localStorage. Redirecting to login.");
+        window.location.href = "login.html";
+        return;
+    }
+
+    const user = JSON.parse(userData);
+    const userEmail = user.email;
+
+    try {
+        const response = await fetch("http://localhost:5000/api/details", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email: userEmail }),
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            console.log("Fetched Data:", data);
+
+            // Populate input placeholders
+            const nameInput = document.getElementById("uname");
+            const emailInput = document.getElementById("email");
+            const mobileInput = document.getElementById("mobile");
+
+            if (nameInput) nameInput.placeholder = data.name || "Enter your name";
+            if (emailInput) emailInput.placeholder = data.email || "Enter your email";
+            if (mobileInput) mobileInput.placeholder = data.mobile || "Enter your mobile";
+
+            const dietaryContainer = document.getElementById("dietary-preferences-container");
+            dietaryContainer.innerHTML = "";
+
+            const userPreferences = data.dietary_preferences ? data.dietary_preferences.split(", ").map(p => p.trim()) : [];
+
+            const allPreferences = [
+                "Ayurvedic", "Carnivore", "Dairy-Free", "Gluten-Free", "Halal",
+                "High-Fat", "High-Fiber", "High-Protein", "Jain", "Keto", "Kosher",
+                "Lactose-Free", "Low-Carb", "Mediterranean", "No Onion-Garlic",
+                "No Processed Foods", "No Sugar", "Nut-Free", "Omega-3-Rich", "Organic",
+                "Paleo", "Pescatarian", "Sugar-Free", "Vegan", "Vegetarian"
+            ];
+
+            allPreferences.forEach(preference => {
+                const div = document.createElement("div");
+                div.className = "flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#F4EFE6] pl-4 pr-4";
+
+                const checkbox = document.createElement("input");
+                checkbox.type = "checkbox";
+                checkbox.value = preference;
+                checkbox.className = "hidden";
+                checkbox.checked = userPreferences.includes(preference);
+
+                const label = document.createElement("label");
+                label.className = "cursor-pointer flex items-center gap-x-2";
+                label.innerHTML = `
+                    <div class="w-5 h-5 border-2 border-gray-700 rounded-full flex justify-center items-center">
+                        ${checkbox.checked ? '<div class="w-3 h-3 bg-gray-700 rounded-full"></div>' : ""}
+                    </div>
+                    <span class="text-[#1C160C] text-sm font-medium leading-normal">${preference}</span>
+                `;
+
+                label.addEventListener("click", () => {
+                    checkbox.checked = !checkbox.checked;
+                    label.innerHTML = `
+                        <div class="w-5 h-5 border-2 border-gray-700 rounded-full flex justify-center items-center">
+                            ${checkbox.checked ? '<div class="w-3 h-3 bg-gray-700 rounded-full"></div>' : ""}
+                        </div>
+                        <span class="text-[#1C160C] text-sm font-medium leading-normal">${preference}</span>
+                    `;
+                });
+
+                div.appendChild(checkbox);
+                div.appendChild(label);
+                dietaryContainer.appendChild(div);
+            });
+
+            // Correctly fetch form values on Save
+            const saveChangesBtn = document.querySelector("button[type='submit']");
+            saveChangesBtn.addEventListener("click", async (event) => {
+                event.preventDefault();
+
+                const selectedPreferences = Array.from(dietaryContainer.querySelectorAll("input[type='checkbox']:checked"))
+                    .map(checkbox => checkbox.value)
+                    .join(", ");
+
+                const uname = nameInput.value || data.name;  // Get value or existing data
+                const mobile = mobileInput.value || data.mobile;
+                const email = data.email;  // Email should not be changed
+                const updateResponse = await fetch("http://localhost:5000/api/update", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ uname, email, mobile, dietary_preferences: selectedPreferences }),
+                });
+
+                const updateData = await updateResponse.json();
+
+                if (updateResponse.ok) {
+                    alert("Profile updated successfully!");
+                    window.location.href = "Profile.html";
+                } else {
+                    console.error("Update failed:", updateData.error);
+                }
+            });
+        } else {
+            console.error("Error fetching profile:", data.message);
+        }
+    } catch (error) {
+        console.error("Fetch error:", error);
+    }
+});
+    </script>
+  </body>
+</html>

@@ -1,0 +1,268 @@
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+  <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" />
+
+  <title>Order Summary</title>
+  <link rel="icon" type="image/x-icon"
+    href="https://is3-ssl.mzstatic.com/image/thumb/Purple111/v4/7d/05/17/7d0517b1-f45f-af98-bf8f-87d454ca57f6/source/512x512bb.jpg" />
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <style>
+    .checkbox-container input[type="checkbox"] {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 18px;
+      height: 18px;
+      border: 2px solid #A18249;
+      border-radius: 4px;
+      outline: none;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .checkbox-container input[type="checkbox"]:checked::before {
+      content: "✓";
+      position: absolute;
+      color: #A18249;
+      font-size: 14px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="relative flex size-full min-h-screen flex-col bg-[#FFFFFF] group/design-root overflow-x-hidden"
+    style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+    <div class="layout-container flex h-full grow flex-col">
+      <header
+        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#F4EFE6] px-10 py-3">
+        <div class="flex items-center gap-4 text-[#1C160C]">
+          <div class="size-4">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z"
+                fill="currentColor"></path>
+            </svg>
+          </div>
+          <h2 class="text-[#1C160C] text-lg font-bold leading-tight tracking-[-0.015em]">Grocery List Summary</h2>
+        </div>
+        <button
+          class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#019863] text-[#FFFFFF] text-sm font-bold leading-normal tracking-[0.015em]"><a
+            href="Cart.html">
+            <span class="truncate">Back</span></a>
+        </button>
+      </header>
+      <div class="px-40 flex flex-1 justify-center py-5">
+        <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+          <div class="p-4">
+            <div class="flex items-stretch justify-between gap-4 rounded-xl">
+              <div class="flex flex-[2_2_0px] flex-col gap-4">
+                <div class="flex flex-col gap-1">
+                  <p class="text-[#1C160C] text-base font-bold leading-tight">Store Name: Grocery Mart</p>
+                  <p class="text-[#A18249] text-sm font-normal leading-normal">Address: 123 Market Street</p>
+                </div>
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 flex-row-reverse bg-[#F4EFE6] text-[#1C160C] pr-2 gap-1 text-sm font-medium leading-normal w-fit">
+                  <div class="text-[#1C160C]" data-icon="MapTrifold" data-size="18px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor"
+                      viewBox="0 0 256 256">
+                      <path
+                        d="M228.92,49.69a8,8,0,0,0-6.86-1.45L160.93,63.52,99.58,32.84a8,8,0,0,0-5.52-.6l-64,16A8,8,0,0,0,24,56V200a8,8,0,0,0,9.94,7.76l61.13-15.28,61.35,30.68A8.15,8.15,0,0,0,160,224a8,8,0,0,0,1.94-.24l64-16A8,8,0,0,0,232,200V56A8,8,0,0,0,228.92,49.69ZM104,52.94l48,24V203.06l-48-24ZM40,62.25l48-12v127.5l-48,12Zm176,131.5-48,12V78.25l48-12Z">
+                      </path>
+                    </svg>
+                  </div>
+                  <span class="truncate">Navigate</span>
+                </button>
+              </div>
+              <!-- Removed the store image div -->
+            </div>
+          </div>
+          <div class="px-4 py-3 @container">
+            <div class="flex overflow-hidden rounded-xl border border-[#E9DFCE] bg-[#FFFFFF]">
+              <table class="flex-1">
+                <thead>
+                  <tr class="bg-[#FFFFFF]">
+                    <th
+                      class="table-5933839a-b1d2-4553-a115-fb4e960734ca-column-120 px-4 py-3 text-left text-[#1C160C] w-[400px] text-sm font-medium leading-normal">
+                      Item Name
+                    </th>
+                    <th
+                      class="table-5933839a-b1d2-4553-a115-fb4e960734ca-column-240 px-4 py-3 text-left text-[#1C160C] w-[400px] text-sm font-medium leading-normal">
+                      Quantity
+                    </th>
+                    <th
+                      class="table-5933839a-b1d2-4553-a115-fb4e960734ca-column-360 px-4 py-3 text-left text-[#1C160C] w-[400px] text-sm font-medium leading-normal">
+                      Price/Unit
+                    </th>
+                    <th
+                      class="table-5933839a-b1d2-4553-a115-fb4e960734ca-column-480 px-4 py-3 text-left text-[#1C160C] w-[400px] text-sm font-medium leading-normal">
+                      Units
+                    </th>
+                    <th
+                      class="table-5933839a-b1d2-4553-a115-fb4e960734ca-column-480 px-4 py-3 text-left text-[#1C160C] w-[400px] text-sm font-medium leading-normal">
+                      Total Price
+                    </th>
+                  </tr>
+                </thead>
+                <tbody id="cartItemsTable">
+                  <!-- Cart items will be inserted here -->
+                </tbody>
+              </table>
+            </div>
+            <style>
+              @container(max-width:120px) {
+                .table-5933839a-b1d2-4553-a115-fb4e960734ca-column-120 {
+                  display: none;
+                }
+              }
+
+              @container(max-width:240px) {
+                .table-5933839a-b1d2-4553-a115-fb4e960734ca-column-240 {
+                  display: none;
+                }
+              }
+
+              @container(max-width:360px) {
+                .table-5933839a-b1d2-4553-a115-fb4e960734ca-column-360 {
+                  display: none;
+                }
+              }
+
+              @container(max-width:480px) {
+                .table-5933839a-b1d2-4553-a115-fb4e960734ca-column-480 {
+                  display: none;
+                }
+              }
+            </style>
+          </div>
+          <div class="p-4">
+            <div class="flex justify-between gap-x-6 py-2">
+              <p class="text-[#A18249] text-sm font-normal leading-normal">Final Total</p>
+              <p id="finalTotal" class="text-[#1C160C] text-sm font-normal leading-normal text-right">₹0.00</p>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <div class="flex flex-1 gap-3 max-w-[480px] flex-col items-stretch px-4 py-3">
+              <button id="generateListsBtn"
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 bg-[#019863] text-[#FFFFFF] text-base font-bold leading-normal tracking-[0.015em] w-full">
+                <span class="truncate">Generate Lists</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get cart items from localStorage
+      let cartItems = [];
+      try {
+        const cartData = localStorage.getItem('cartItems');
+        if (cartData) {
+          cartItems = JSON.parse(cartData);
+          if (!Array.isArray(cartItems)) {
+            console.error("Cart items is not an array, resetting");
+            cartItems = [];
+          }
+        }
+      } catch (e) {
+        console.error("Error parsing cart items:", e);
+        cartItems = [];
+      }
+
+      // Get URL parameters
+      const urlParams = new URLSearchParams(window.location.search);
+      const totalFromCart = urlParams.get('total') || '0.00';
+
+      // Get DOM elements
+      const tbody = document.getElementById('cartItemsTable');
+      const finalTotalElement = document.getElementById('finalTotal');
+      const generateListsBtn = document.getElementById('generateListsBtn');
+
+      // Clear existing static rows
+      tbody.innerHTML = '';
+
+      // Calculate total from cart items if not from URL
+      let calculatedTotal = 0;
+      if (cartItems.length > 0) {
+        calculatedTotal = cartItems.reduce((sum, item) => {
+          return sum + (item.price || 0) * (item.quantity || 1);
+        }, 0);
+      }
+
+      // Use the total from URL if available, otherwise calculate
+      const displayTotal = totalFromCart !== '0.00' ? totalFromCart : calculatedTotal.toFixed(2);
+
+      // Add cart items to the table
+      cartItems.forEach(item => {
+        const row = document.createElement('tr');
+        row.className = 'border-t border-t-[#E9DFCE]';
+        row.innerHTML = `
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#1C160C] text-sm font-normal leading-normal">${item.name}</td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#A18249] text-sm font-normal leading-normal">${item.weight || 'N/A'}</td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#A18249] text-sm font-normal leading-normal">₹${item.price?.toFixed(2) || '0.00'}</td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#A18249] text-sm font-normal leading-normal">${item.quantity || 1}</td>
+          <td class="h-[72px] px-4 py-2 w-[400px] text-[#A18249] text-sm font-normal leading-normal">₹${((item.price || 0) * (item.quantity || 1)).toFixed(2)}</td>
+        `;
+        tbody.appendChild(row);
+      });
+
+      // Update final total
+      if (finalTotalElement) {
+        finalTotalElement.textContent = `₹${displayTotal}`;
+      }
+
+      // Generate Lists button functionality
+      if (generateListsBtn) {
+        generateListsBtn.addEventListener('click', async function() {
+          // Get user data from localStorage
+          const userData = JSON.parse(localStorage.getItem('user')) || {};
+          
+          // Prepare the order data to send to backend
+          const orderData = {
+            userEmail: userData.email,
+            items: cartItems,
+            total: displayTotal,
+            storeName: "Grocery Mart",
+            address: "123 Market Street"
+          };
+
+          // Disable button during processing
+          generateListsBtn.disabled = true;
+          generateListsBtn.innerHTML = 'Generating PDF...';
+
+          try {
+            // Send data to backend
+            const response = await fetch('http://localhost:5000/api/generate-and-send-pdf', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(orderData)
+            });
+
+            const result = await response.json();
+            if (response.ok) {
+              alert('PDF has been generated and sent to your email!');
+            } else {
+              throw new Error(result.error || 'Failed to generate PDF');
+            }
+          } catch (error) {
+            console.error('Error:', error);
+            alert(error.message || 'Error generating PDF. Please try again.');
+          } finally {
+            generateListsBtn.disabled = false;
+            generateListsBtn.innerHTML = 'Generate Lists';
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>

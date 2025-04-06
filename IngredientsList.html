@@ -1,0 +1,264 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
+    />
+
+    <title>Ingredients List</title>
+    <link rel="icon" type="image/x-icon" href="https://is3-ssl.mzstatic.com/image/thumb/Purple111/v4/7d/05/17/7d0517b1-f45f-af98-bf8f-87d454ca57f6/source/512x512bb.jpg" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-[#FFFFFF] group/design-root overflow-x-hidden"
+      style='--checkbox-tick-svg: url(&apos;data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(255,255,255)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e&apos;); font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#F4EFE6] px-10 py-3">
+          <div class="flex items-center gap-4 text-[#1C160C]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-[#1C160C] text-lg font-bold leading-tight tracking-[-0.015em]">EasyCart</h2>
+          </div>
+          <div class="flex gap-2">
+            <a href="Recipes.html">
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#019863] text-[#FFFFFF] text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+                
+              <span class="truncate">Back</span>
+            </button></a>
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#F4EFE6] text-[#1C160C] text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+                <a href="Cart.html">
+              <span class="truncate">Add to Cart</span></a>
+            </button>
+            <button id="cook-button" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#F4EFE6] text-[#1C160C] text-sm font-bold leading-normal tracking-[0.015em]">
+              <span class="truncate">Cook !</span>
+            </button>
+          </div>
+
+        </header>
+        <div class="gap-1 px-6 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[920px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <p class="text-[#1C160C] text-4xl font-black leading-tight tracking-[-0.033em] min-w-72">Recipe Ingredients List</p>
+            </div>
+            <div class="px-4 py-3 @container">
+              <div class="flex overflow-hidden rounded-xl border border-[#E9DFCE] bg-[#FFFFFF]">
+                <table class="flex-1">
+                  <thead>
+                    <tr class="bg-[#FFFFFF]">
+                      <th class="table-39b6e4a8-a2c5-4d12-92a9-b7986ca84520-column-120 px-4 py-3 text-left text-[#1C160C] w-[400px] text-sm font-medium leading-normal">Name</th>
+                      <th class="table-39b6e4a8-a2c5-4d12-92a9-b7986ca84520-column-240 px-4 py-3 text-left text-[#1C160C] w-[400px] text-sm font-medium leading-normal">Category</th>
+                      <th class="table-39b6e4a8-a2c5-4d12-92a9-b7986ca84520-column-360 px-4 py-3 text-left text-[#1C160C] w-[400px] text-sm font-medium leading-normal">Quantity</th>
+                      <th class="table-39b6e4a8-a2c5-4d12-92a9-b7986ca84520-column-360 px-4 py-3 text-left text-[#1C160C] w-[400px] text-sm font-medium leading-normal">Units</th>
+                      <th class="table-39b6e4a8-a2c5-4d12-92a9-b7986ca84520-column-416 px-4 py-3 text-left text-[#1C160C] w-[120px] text-sm font-medium leading-normal">Add</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      <tbody id="ingredients-table-body"></tbody>                  
+                  </tbody>
+                </table>
+              </div>
+              <style>
+                @container(max-width:120px){.table-39b6e4a8-a2c5-4d12-92a9-b7986ca84520-column-120{display: none;}}
+                @container(max-width:240px){.table-39b6e4a8-a2c5-4d12-92a9-b7986ca84520-column-240{display: none;}}
+                @container(max-width:360px){.table-39b6e4a8-a2c5-4d12-92a9-b7986ca84520-column-360{display: none;}}
+                @container(max-width:416px){.table-39b6e4a8-a2c5-4d12-92a9-b7986ca84520-column-416{display: none;}}
+              </style>
+            </div>
+          </div>
+          <div class="layout-content-container flex flex-col w-[360px]">
+            <div class="@container">
+              <div class="@[480px]:px-4 @[480px]:py-3">
+                <div
+                  class="bg-cover bg-center flex flex-col justify-end overflow-hidden bg-[#FFFFFF] @[480px]:rounded-xl min-h-[218px]"
+                  style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 25%), url("https://cdn.usegalileo.ai/sdxl10/b7d4304c-d1cd-4f83-aba0-564a94994d60.png");'
+                >
+                  <div class="flex p-4"><p id="recipe-name" class="text-white tracking-light text-[28px] font-bold leading-tight">Tomato Soup</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 grid grid-cols-[20%_1fr] gap-x-6">
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#E9DFCE] py-5">
+                <p class="text-[#A18249] text-sm font-normal leading-normal">Description</p>
+                <p id="description" class="text-[#1C160C] text-sm font-normal leading-normal">Tomato Curry</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#E9DFCE] py-5">
+                <p class="text-[#A18249] text-sm font-normal leading-normal">Cooking Time</p>
+                <p id="cooking-time" class="text-[#1C160C] text-sm font-normal leading-normal">1 hour</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#E9DFCE] py-5">
+                <p class="text-[#A18249] text-sm font-normal leading-normal">Servings</p>
+                <p id="servings" class="text-[#1C160C] text-sm font-normal leading-normal">4</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#E9DFCE] py-5">
+                <p class="text-[#A18249] text-sm font-normal leading-normal">Calories</p>
+                <p id="calories" class="text-[#1C160C] text-sm font-normal leading-normal">4</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#E9DFCE] py-5">
+                <p class="text-[#A18249] text-sm font-normal leading-normal">Protien</p>
+                <p id="protien" class="text-[#1C160C] text-sm font-normal leading-normal">4</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#E9DFCE] py-5">
+                <p class="text-[#A18249] text-sm font-normal leading-normal">Carbs</p>
+                <p id="carbs" class="text-[#1C160C] text-sm font-normal leading-normal">4</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#E9DFCE] py-5">
+                <p class="text-[#A18249] text-sm font-normal leading-normal">Fats</p>
+                <p id="fats" class="text-[#1C160C] text-sm font-normal leading-normal">4</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#E9DFCE] py-5">
+                <p class="text-[#A18249] text-sm font-normal leading-normal">Fibers</p>
+                <p id="fiber" class="text-[#1C160C] text-sm font-normal leading-normal">4</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const tableBody = document.getElementById("ingredients-table-body");
+
+    if (!tableBody) {
+        console.error("Error: Element with ID 'ingredients-table-body' not found in the DOM.");
+        return;
+    }
+
+    // ✅ Step 1: Get Recipe ID from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const recipeId = urlParams.get("recipe_id");
+
+    if (!recipeId) {
+        tableBody.innerHTML = "<tr><td colspan='4' class='text-center py-4'>Recipe ID not found.</td></tr>";
+        return;
+    }
+
+    // ✅ Step 2: Fetch Ingredients from Backend
+    fetch(`http://localhost:5000/api/ingredients/${recipeId}`)
+        .then(response => response.json())
+        .then(data => {
+            tableBody.innerHTML = ""; // Clear previous content
+
+            if (data.length === 0) {
+                tableBody.innerHTML = "<tr><td colspan='4' class='text-center py-4'>No ingredients found.</td></tr>";
+                return;
+            }
+
+            // ✅ Step 3: Populate Table with Ingredients
+            data.forEach(ingredient => {
+                const row = document.createElement("tr");
+                row.classList.add("border-t", "border-t-[#E9DFCE]");
+
+                row.innerHTML = `
+                    <td class="h-[72px] px-4 py-2 w-[400px] text-[#1C160C] text-sm font-normal leading-normal">
+                        ${ingredient.ingredient_name}
+                    </td>
+                    <td class="h-[72px] px-4 py-2 w-[400px] text-[#A18249] text-sm font-normal leading-normal">
+                        ${ingredient.type || "N/A"} <!-- Category column (if exists) -->
+                    </td>
+                    <td class="h-[72px] px-4 py-2 w-[400px] text-[#A18249] text-sm font-normal leading-normal">
+                        ${ingredient.quantity}
+                    </td>
+                    <td class="h-[72px] px-4 py-2 w-[400px] text-[#A18249] text-sm font-normal leading-normal">
+                        ${ingredient.unit}
+                    </td>
+                    <td class="h-[72px] px-4 py-2 w-[120px] text-center text-sm font-normal leading-normal">
+                        <input type="checkbox" class="h-5 w-5 rounded border-[#E9DFCE] border-2 bg-transparent 
+                            text-[#019863] checked:bg-[#019863] checked:border-[#019863] 
+                            checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 
+                            focus:border-[#E9DFCE] focus:outline-none" />
+                    </td>
+                `;
+                tableBody.appendChild(row);
+            });
+        })
+        .catch(error => {
+            console.error("Error fetching ingredients:", error);
+            tableBody.innerHTML = "<tr><td colspan='4' class='text-center py-4'>Error loading ingredients.</td></tr>";
+        });
+});
+document.addEventListener("DOMContentLoaded", async function () {
+    // ✅ Step 1: Get Recipe ID from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const recipeId = urlParams.get("recipe_id");
+
+    if (!recipeId) {
+        console.error("Recipe ID not found in URL.");
+        return;
+    }
+
+    try {
+        // ✅ Step 2: Fetch Recipe Details from Backend
+        const response = await fetch(`http://localhost:5000/api/recipe_name/${recipeId}`);
+        const data = await response.json();
+
+        if (!data || data.length === 0) {
+            console.error("No recipe found.");
+            return;
+        }
+
+        const recipe = data[0]; // Assuming only one record is fetched
+
+        // ✅ Step 3: Populate Data in HTML
+        document.getElementById("recipe-name").textContent = recipe.recipe_name || "N/A";
+        document.getElementById("description").textContent = recipe.descr || "N/A";
+        document.getElementById("cooking-time").textContent = (recipe.cooking_time ? `${recipe.cooking_time} minutes` : "N/A");
+        document.getElementById("servings").textContent = recipe.default_servings || "N/A";
+        document.getElementById("calories").textContent = recipe.calories || "N/A";
+        document.getElementById("protien").textContent = recipe.protein || "N/A";
+        document.getElementById("carbs").textContent = recipe.carbs || "N/A";
+        document.getElementById("fats").textContent = recipe.fats || "N/A";
+        document.getElementById("fiber").textContent = recipe.fiber || "N/A";
+
+        // ✅ Step 4: Set Background Image Dynamically
+        const imageContainer = document.querySelector(".bg-cover");
+        if (imageContainer && recipe.recipe_image) {
+            imageContainer.style.backgroundImage = `
+                linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 25%), 
+                url('https://static.vecteezy.com/system/resources/previews/002/233/113/non_2x/restaurant-service-abstract-logo-template-symbol-icon-free-vector.jpg')
+            `;
+        }
+
+    } catch (error) {
+        console.error("Error fetching recipe details:", error);
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const cookButton = document.getElementById("cook-button");
+
+    if (!cookButton) {
+        console.error("Error: Button with ID 'cook-button' not found.");
+        return;
+    }
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const recipeId = urlParams.get("recipe_id");
+
+    cookButton.addEventListener("click", function () {
+        if (recipeId) {
+            window.location.href = `Cook.html?recipe_id=${encodeURIComponent(recipeId)}`;
+        } else {
+            alert("Recipe ID not found!");
+        }
+    });
+});
+
+    </script>
+  </body>
+</html>

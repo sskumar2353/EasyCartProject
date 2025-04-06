@@ -1,0 +1,329 @@
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+  <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" />
+
+  <title>Cart</title>
+  <link rel="icon" type="image/x-icon"
+    href="https://is3-ssl.mzstatic.com/image/thumb/Purple111/v4/7d/05/17/7d0517b1-f45f-af98-bf8f-87d454ca57f6/source/512x512bb.jpg" />
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <style>
+    .remove-btn {
+      display: none;
+    }
+
+    .quantity-zero .remove-btn {
+      display: block;
+    }
+
+    .quantity-zero .quantity-controls {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="relative flex size-full min-h-screen flex-col bg-[#FFFFFF] group/design-root overflow-x-hidden"
+    style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+    <div class="layout-container flex h-full grow flex-col">
+      <header
+        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#F4EFE6] px-10 py-3">
+        <div class="flex items-center gap-8">
+          <div class="flex items-center gap-4 text-[#1C160C]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z"
+                  fill="currentColor"></path>
+              </svg>
+            </div>
+            <h2 class="text-[#1C160C] text-lg font-bold leading-tight tracking-[-0.015em]">EasyCart</h2>
+          </div>
+          <div class="flex items-center gap-9">
+            <a class="text-[#1C160C] text-sm font-medium leading-normal" href="Afterlogin.html">Home</a>
+            <a class="text-[#1C160C] text-sm font-medium leading-normal" href="Recipes.html">Recipes</a>
+            <a class="text-[#1C160C] text-sm font-medium leading-normal" href="GroceryList.html">Grocery List</a>
+            <a class="text-[#1C160C] text-sm font-medium leading-normal" href="MealPlanner.html">Meal Planner</a>
+          </div>
+        </div>
+        <div class="flex flex-1 justify-end gap-8">
+          <div class="flex gap-2">
+            <button id="back-btn"
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#019863] text-[#FFFFFF] text-sm font-bold leading-normal tracking-[0.015em]">
+              <span class="truncate">Back</span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <div class="gap-1 px-6 flex flex-1 justify-center py-5">
+        <div class="layout-content-container flex flex-col max-w-[920px] flex-1">
+          <!-- Cart items will be dynamically inserted here -->
+          <div class="cart-items-container"></div>
+
+          <div class="flex flex-col px-4 py-6 empty-cart-message">
+            <div class="flex flex-col items-center gap-6">
+              <div class="bg-center bg-no-repeat aspect-video bg-cover rounded-xl w-full max-w-[360px]"
+                style='background-image: url("https://cdn.usegalileo.ai/sdxl10/afa37ff3-af53-4b26-97ad-eb2c890a2bce.png");'>
+              </div>
+              <div class="flex max-w-[480px] flex-col items-center gap-2">
+                <p class="text-[#1C160C] text-lg font-bold leading-tight tracking-[-0.015em] max-w-[480px] text-center">
+                  Your cart is empty</p>
+                <p class="text-[#1C160C] text-sm font-normal leading-normal max-w-[480px] text-center">Add items to your
+                  cart to start shopping.</p>
+              </div>
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#F4EFE6] text-[#1C160C] text-sm font-bold leading-normal tracking-[0.015em]">
+                <a href="GroceryList.html">
+                  <span class="truncate">Browse Items</span> </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="layout-content-container flex flex-col w-[360px]">
+          <div class="p-4 order-summary">
+            <div class="flex justify-between gap-x-6 py-2">
+              <p class="text-[#A18249] text-sm font-normal leading-normal">No of Items</p>
+              <p class="items-count text-[#1C160C] text-sm font-normal leading-normal text-right">0</p>
+            </div>
+            <div class="flex justify-between gap-x-6 py-2 border-t border-[#F4EFE6]">
+              <p class="text-[#A18249] text-sm font-normal leading-normal">Total</p>
+              <p class="total-price text-[#1C160C] text-sm font-normal leading-normal text-right">₹0.00</p>
+            </div>
+          </div>
+          <div class="flex px-4 py-3">
+            <button
+              class="checkout-btn flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 flex-1 bg-[#019863] text-[#FFFFFF] text-base font-bold leading-normal tracking-[0.015em]">
+              <span class="truncate">Checkout</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <footer class="flex justify-center">
+        <div class="flex max-w-[960px] flex-1 flex-col">
+          <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+            <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+              <a class="text-[#A18249] text-base font-normal leading-normal min-w-40" href="#">Support</a>
+              <a class="text-[#A18249] text-base font-normal leading-normal min-w-40" href="#">Terms &amp;
+                Conditions</a>
+              <a class="text-[#A18249] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
+            </div>
+            <p class="text-[#A18249] text-base font-normal leading-normal">© 2025 EasyCart. All rights reserved.</p>
+          </footer>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get cart items from localStorage
+      let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+      // Get DOM elements
+      const cartItemsContainer = document.querySelector('.cart-items-container');
+      const emptyCartMessage = document.querySelector('.empty-cart-message');
+      const itemsCountElement = document.querySelector('.items-count');
+      const totalPriceElement = document.querySelector('.total-price');
+      const checkoutButton = document.querySelector('.checkout-btn');
+      const orderSummarySection = document.querySelector('.order-summary');
+
+      // Initialize cart with default quantity if not set
+      cartItems = cartItems.map(item => {
+        return {
+          ...item,
+          quantity: item.quantity || 1
+        };
+      });
+
+      // Save cart to localStorage and filter out items with quantity 0
+      function saveCart() {
+        const activeCartItems = cartItems.filter(item => item.quantity > 0);
+        localStorage.setItem('cartItems', JSON.stringify(activeCartItems));
+        return activeCartItems;
+      }
+
+      // Render cart items
+      function renderCart() {
+        // Clear existing items
+        cartItemsContainer.innerHTML = '';
+
+        // Filter out items with quantity 0 for display
+        const displayItems = cartItems.filter(item => item.quantity > 0);
+
+        // Show empty message if cart is empty
+        if (displayItems.length === 0) {
+          emptyCartMessage.style.display = 'flex';
+          itemsCountElement.textContent = '0';
+          totalPriceElement.textContent = '₹0.00';
+          checkoutButton.disabled = true;
+          checkoutButton.classList.add('opacity-50');
+          return;
+        }
+
+        // Hide empty cart message
+        emptyCartMessage.style.display = 'none';
+        checkoutButton.disabled = false;
+        checkoutButton.classList.remove('opacity-50');
+
+        // Add each item to the cart
+        cartItems.forEach((item, index) => {
+          if (item.quantity <= 0) return;
+
+          const cartItem = document.createElement('div');
+          cartItem.className = `flex items-center gap-4 bg-[#FFFFFF] px-4 min-h-[72px] py-2 justify-between cart-item ${item.quantity === 0 ? 'quantity-zero' : ''}`;
+          cartItem.innerHTML = `
+            <div class="flex items-center gap-4">
+              <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-14" 
+                   style="background-image: url('${item.image_url || 'https://via.placeholder.com/100'}')"></div>
+              <div class="flex flex-col justify-center">
+                <p class="text-[#1C160C] text-base font-medium leading-normal line-clamp-1">${item.name}</p>
+                <p class="text-[#A18249] text-sm font-normal leading-normal line-clamp-2">${item.weight}</p>
+                <p class="text-[#A18249] text-sm font-normal leading-normal">₹${item.price.toFixed(2)}</p>
+              </div>
+            </div>
+            <div class="shrink-0 flex items-center gap-2">
+              <div class="quantity-controls flex items-center gap-2 text-[#1C160C]">
+                <button class="decrease-btn text-base font-medium leading-normal flex h-7 w-7 items-center justify-center rounded-full bg-[#F4EFE6] cursor-pointer" data-index="${index}">-</button>
+                <input
+                  class="quantity-input text-base font-medium leading-normal w-8 p-0 text-center bg-transparent focus:outline-0 focus:ring-0 focus:border-none border-none [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+                  type="number"
+                  value="${item.quantity}"
+                  min="0"
+                  data-index="${index}"
+                />
+                <button class="increase-btn text-base font-medium leading-normal flex h-7 w-7 items-center justify-center rounded-full bg-[#F4EFE6] cursor-pointer" data-index="${index}">+</button>
+              </div>
+              <button class="remove-btn text-base font-medium leading-normal flex h-7 w-7 items-center justify-center rounded-full bg-red-100 text-red-600 cursor-pointer" data-index="${index}">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 6h18"></path>
+                  <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                </svg>
+              </button>
+            </div>
+          `;
+          cartItemsContainer.appendChild(cartItem);
+        });
+
+        // Update cart summary
+        updateCartSummary();
+      }
+
+      // Update cart summary (item count and total price)
+      function updateCartSummary() {
+        const activeItems = cartItems.filter(item => item.quantity > 0);
+        const itemCount = activeItems.length;
+        const subtotal = activeItems.reduce((sum, item) => {
+          return sum + (item.price * item.quantity);
+        }, 0);
+
+        itemsCountElement.textContent = itemCount;
+        totalPriceElement.textContent = `₹${subtotal.toFixed(2)}`;
+      }
+
+      // Handle quantity changes
+      function handleQuantityChange(index, change) {
+        if (index < 0 || index >= cartItems.length) return;
+
+        const newQuantity = cartItems[index].quantity + change;
+        if (newQuantity < 0) return;
+
+        cartItems[index].quantity = newQuantity;
+        saveCart();
+        renderCart();
+      }
+
+      // Handle item removal
+      function handleRemoveItem(index) {
+        if (index < 0 || index >= cartItems.length) return;
+
+        cartItems[index].quantity = 0;
+        const activeCartItems = saveCart();
+        renderCart();
+      }
+
+      // Event delegation for quantity buttons
+      document.addEventListener('click', function (e) {
+        if (e.target.classList.contains('increase-btn')) {
+          const index = parseInt(e.target.getAttribute('data-index'));
+          handleQuantityChange(index, 1);
+        } else if (e.target.classList.contains('decrease-btn')) {
+          const index = parseInt(e.target.getAttribute('data-index'));
+          handleQuantityChange(index, -1);
+        } else if (e.target.classList.contains('remove-btn') || e.target.closest('.remove-btn')) {
+          const btn = e.target.classList.contains('remove-btn') ? e.target : e.target.closest('.remove-btn');
+          const index = parseInt(btn.getAttribute('data-index'));
+          handleRemoveItem(index);
+        }
+      });
+
+      // Handle direct input changes
+      document.addEventListener('change', function (e) {
+        if (e.target.classList.contains('quantity-input')) {
+          const index = parseInt(e.target.getAttribute('data-index'));
+          const newQuantity = parseInt(e.target.value) || 0;
+
+          if (newQuantity < 0) {
+            e.target.value = 0;
+            return;
+          }
+
+          cartItems[index].quantity = newQuantity;
+          saveCart();
+          renderCart();
+        }
+      });
+
+      // Handle checkout
+      checkoutButton.addEventListener('click', function (e) {
+        // Save current state to localStorage
+        const activeCartItems = saveCart();
+
+        // If cart is empty, prevent checkout
+        if (activeCartItems.length === 0) {
+          e.preventDefault();
+          alert('Your cart is empty. Please add items before checkout.');
+          return;
+        }
+
+        // Calculate total for checkout page
+        const subtotal = activeCartItems.reduce((sum, item) => {
+          return sum + (item.price * item.quantity);
+        }, 0);
+
+        // Navigate to checkout with total
+        window.location.href = `OrderSummary.html?total=${subtotal.toFixed(2)}`;
+      });
+
+      // Initial render
+      renderCart();
+    });
+    // Back button functionality
+    const backBtn = document.getElementById('back-btn');
+    if (backBtn) {
+      backBtn.addEventListener('click', function () {
+        // Get the referring page from URL parameter or localStorage
+        const urlParams = new URLSearchParams(window.location.search);
+        let fromPage = urlParams.get('from');
+
+        if (!fromPage) {
+          // If no URL parameter, check localStorage
+          fromPage = localStorage.getItem('lastVisitedPage') || 'Afterlogin.html';
+        }
+
+        window.location.href = fromPage;
+      });
+    }
+
+    // Store the current page as the last visited page when leaving
+    window.addEventListener('beforeunload', function () {
+      const currentPage = window.location.pathname.split('/').pop();
+      if (currentPage !== 'Cart.html') {
+        localStorage.setItem('lastVisitedPage', currentPage);
+      }
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,566 @@
+"ingredient_id";"recipe_id";"ingredient_name";"quantity";"unit";"type";"price"
+1;1;"Flour";"120";"grams";"Grain";0.25
+2;1;"Eggs";"2";"whole";"Protein";0.35
+3;1;"Sugar";"100";"grams";"Sweetener";0.2
+4;1;"Butter";"50";"grams";"Dairy";0.4
+5;1;"Milk";"240";"grams";"Dairy";0.5
+6;2;"Chicken";"250";"grams";"Meat";2.5
+7;2;"Lettuce";"1";"head";"Ingredient";1.2
+8;2;"Tomatoes";"2";"medium";"Ingredient";0.6
+9;2;"Cucumber";"1";"medium";"Ingredient";0.75
+10;2;"Olive Oil";"2";"grams";"Ingredient";0.3
+11;3;"Apples";"2";"medium";"Ingredient";0.75
+12;3;"Bananas";"2";"medium";"Ingredient";0.5
+13;3;"Oranges";"1";"medium";"Ingredient";0.6
+14;3;"Grapes";"1";"grams";"Ingredient";1.5
+15;3;"Honey";"21.25";"grams";"Sweetener";0.25
+16;4;"Pasta";"250";"grams";"Ingredient";0.8
+17;4;"Cream";"200";"ml";"Ingredient";1.2
+18;4;"Parmesan Cheese";"100";"grams";"Ingredient";1.5
+19;4;"Butter";"50";"grams";"Dairy";0.4
+20;4;"Garlic";"2";"cloves";"Ingredient";0.1
+21;5;"Eggs";"3";"whole";"Protein";0.35
+22;5;"Bell Peppers";"0.5";"medium";"Ingredient";0.5
+23;5;"Onions";"0.5";"medium";"Ingredient";0.25
+24;5;"Cheese";"50";"grams";"Dairy";0.75
+25;5;"Butter";"20";"grams";"Dairy";0.2
+26;6;"Tortilla";"2";"pieces";"Ingredient";0.5
+27;6;"Bell Peppers";"1";"medium";"Ingredient";0.75
+28;6;"Cucumber";"0.5";"medium";"Ingredient";0.4
+29;6;"Hummus";"2";"grams";"Ingredient";0.6
+30;6;"Spinach";"1";"grams";"Ingredient";0.8
+31;7;"Oats";"90";"grams";"Grain";0.4
+32;7;"Honey";"63.75";"grams";"Sweetener";0.75
+33;7;"Nuts";"0.5";"grams";"Ingredient";1.5
+34;7;"Dried Fruits";"0.25";"grams";"Ingredient";1.0
+35;7;"Coconut Oil";"2";"grams";"Ingredient";0.5
+36;8;"Beef Steak";"300";"grams";"Ingredient";4.5
+37;8;"Potatoes";"4";"large";"Ingredient";1.2
+38;8;"Butter";"50";"grams";"Dairy";0.4
+39;8;"Milk";"60";"grams";"Dairy";0.3
+40;8;"Garlic";"2";"cloves";"Ingredient";0.1
+41;9;"Bread Slices";"2";"pieces";"Ingredient";0.3
+42;9;"Avocado";"1";"large";"Ingredient";1.5
+43;9;"Lemon Juice";"1";"tsp";"Ingredient";0.1
+44;9;"Cherry Tomatoes";"5";"pieces";"Ingredient";0.5
+45;9;"Red Pepper Flakes";"0.5";"tsp";"Ingredient";0.05
+46;10;"Chicken";"500";"grams";"Meat";4.0
+47;10;"Onions";"2";"medium";"Ingredient";0.5
+48;10;"Tomatoes";"3";"medium";"Ingredient";0.9
+49;10;"Spices";"2";"grams";"Ingredient";0.6
+50;10;"Cream";"100";"ml";"Ingredient";0.75
+51;11;"Banana";"1";"medium";"Fruit";0.25
+52;11;"Berries";"1";"grams";"Fruit";2.0
+53;11;"Yogurt";"1";"grams";"Dairy";1.0
+54;11;"Honey";"21.25";"grams";"Sweetener";0.25
+55;11;"Almond Milk";"1";"grams";"Ingredient";0.75
+56;12;"Carrots";"2";"medium";"Ingredient";0.5
+57;12;"Broccoli";"1";"medium head";"Ingredient";1.2
+58;12;"Soy Sauce";"2";"grams";"Ingredient";0.25
+59;12;"Ginger";"1";"tsp";"Ingredient";0.15
+60;12;"Garlic";"2";"cloves";"Ingredient";0.1
+61;13;"Fish Fillet";"250";"grams";"Ingredient";3.5
+62;13;"Rice";"195";"grams";"Grain";0.5
+63;13;"Lemon";"1";"medium";"Ingredient";0.4
+64;13;"Herbs";"1";"grams";"Ingredient";0.3
+65;13;"Olive Oil";"1";"grams";"Ingredient";0.15
+66;14;"Tortilla Chips";"200";"grams";"Ingredient";1.5
+67;14;"Tomatoes";"3";"medium";"Ingredient";0.9
+68;14;"Onions";"1";"small";"Ingredient";0.25
+69;14;"Cilantro";"2";"grams";"Ingredient";0.2
+70;14;"Lime Juice";"1";"grams";"Ingredient";0.15
+71;15;"Basmati Rice";"2";"cups";"Ingredient";1.5
+72;15;"Chicken";"500";"grams";"Meat";4.0
+73;15;"Yogurt";"1";"grams";"Dairy";1.0
+74;15;"Spices";"2";"grams";"Ingredient";0.6
+75;15;"Fried Onions";"0.5";"grams";"Ingredient";0.75
+76;16;"Flour";"2";"cups";"Grain";0.5
+77;16;"Eggs";"2";"whole";"Protein";0.7
+78;16;"Milk";"240";"grams";"Dairy";0.5
+79;16;"Butter";"100";"grams";"Dairy";0.8
+80;16;"Sugar";"25";"grams";"Sweetener";0.15
+81;17;"Pasta";"250";"grams";"Ingredient";0.8
+82;17;"Zucchini";"1";"medium";"Ingredient";0.7
+83;17;"Bell Peppers";"2";"medium";"Ingredient";1.5
+84;17;"Olive Oil";"2";"grams";"Ingredient";0.3
+85;17;"Parmesan Cheese";"50";"grams";"Ingredient";0.75
+86;18;"Yogurt";"1";"grams";"Dairy";1.0
+87;18;"Granola";"0.5";"grams";"Ingredient";0.75
+88;18;"Berries";"0.5";"grams";"Fruit";1.0
+89;18;"Honey";"21.25";"grams";"Sweetener";0.25
+90;18;"Nuts";"1";"grams";"Ingredient";0.4
+91;19;"Lamb";"500";"grams";"Ingredient";6.0
+92;19;"Onions";"2";"medium";"Ingredient";0.5
+93;19;"Tomatoes";"3";"medium";"Ingredient";0.9
+94;19;"Spices";"2";"grams";"Ingredient";0.6
+95;19;"Yogurt";"0.5";"grams";"Dairy";0.5
+96;20;"Granola";"1";"grams";"Ingredient";1.5
+97;20;"Milk";"240";"grams";"Dairy";0.5
+98;20;"Berries";"0.25";"grams";"Fruit";0.5
+99;20;"Honey";"21.25";"grams";"Sweetener";0.25
+100;20;"Nuts";"1";"grams";"Ingredient";0.4
+101;21;"Ground Beef";"250";"grams";"Ingredient";2.5
+102;21;"Burger Buns";"2";"pieces";"Ingredient";0.8
+103;21;"Potatoes";"3";"medium";"Ingredient";0.9
+104;21;"Lettuce";"2";"leaves";"Ingredient";0.3
+105;21;"Cheese";"50";"grams";"Dairy";0.75
+106;22;"Banana";"1";"medium";"Fruit";0.25
+107;22;"Strawberries";"1";"grams";"Ingredient";1.75
+108;22;"Yogurt";"1";"grams";"Dairy";1.0
+109;22;"Honey";"21.25";"grams";"Sweetener";0.25
+110;22;"Orange Juice";"0.5";"grams";"Ingredient";0.5
+111;23;"Beef";"500";"grams";"Meat";5.0
+112;23;"Carrots";"3";"medium";"Ingredient";0.75
+113;23;"Potatoes";"2";"medium";"Ingredient";0.6
+114;23;"Onions";"1";"medium";"Ingredient";0.25
+115;23;"Beef Stock";"2";"cups";"Ingredient";1.2
+116;24;"Eggs";"2";"whole";"Protein";0.7
+117;24;"Bread Slices";"2";"pieces";"Ingredient";0.3
+118;24;"Vinegar";"1";"grams";"Ingredient";0.1
+119;24;"Butter";"20";"grams";"Dairy";0.2
+120;24;"Salt";"1";"pinch";"Spice";0.05
+121;25;"Chicken";"200";"grams";"Meat";2.0
+122;25;"Tortilla";"2";"pieces";"Ingredient";0.5
+123;25;"Lettuce";"1";"grams";"Ingredient";0.6
+124;25;"Mayonnaise";"2";"grams";"Condiment";0.3
+125;25;"Cherry Tomatoes";"5";"pieces";"Ingredient";0.5
+126;26;"Mixed Nuts";"100";"grams";"Ingredient";2.0
+127;26;"Raisins";"50";"grams";"Dry Fruit";0.75
+128;26;"Dried Cranberries";"30";"grams";"Ingredient";0.8
+129;26;"Sunflower Seeds";"20";"grams";"Ingredient";0.5
+130;26;"Pumpkin Seeds";"20";"grams";"Ingredient";0.6
+131;27;"Sushi Rice";"200";"grams";"Ingredient";1.2
+132;27;"Nori Sheets";"4";"pieces";"Ingredient";1.0
+133;27;"Salmon";"100";"grams";"Ingredient";3.5
+134;27;"Cucumber";"1";"medium";"Ingredient";0.75
+135;27;"Soy Sauce";"2";"grams";"Ingredient";0.25
+136;28;"Bread Slices";"4";"pieces";"Ingredient";0.6
+137;28;"Eggs";"3";"whole";"Protein";1.05
+138;28;"Milk";"240";"grams";"Dairy";0.5
+139;28;"Sugar";"25";"grams";"Sweetener";0.15
+140;28;"Cinnamon";"1";"tsp";"Spice";0.1
+141;29;"Bread Slices";"2";"pieces";"Ingredient";0.3
+142;29;"Zucchini";"0.5";"medium";"Ingredient";0.35
+143;29;"Bell Peppers";"0.5";"medium";"Ingredient";0.38
+144;29;"Cheese";"30";"grams";"Dairy";0.45
+145;29;"Pesto Sauce";"1";"grams";"Ingredient";0.5
+146;30;"Apples";"2";"medium";"Ingredient";0.75
+147;30;"Peanut Butter";"3";"grams";"Ingredient";0.6
+148;30;"Honey";"1";"tsp";"Sweetener";0.08
+149;30;"Cinnamon";"0.5";"tsp";"Spice";0.05
+150;30;"Lemon Juice";"0.5";"tsp";"Ingredient";0.05
+151;31;"Pasta";"250";"grams";"Ingredient";0.8
+152;31;"Ground Beef";"300";"grams";"Ingredient";3.0
+153;31;"Tomato Sauce";"1";"grams";"Ingredient";1.2
+154;31;"Onions";"1";"medium";"Ingredient";0.25
+155;31;"Garlic";"2";"cloves";"Ingredient";0.1
+156;32;"Flour";"2";"cups";"Grain";0.5
+157;32;"Blueberries";"1";"grams";"Ingredient";2.5
+158;32;"Sugar";"150";"grams";"Sweetener";0.3
+159;32;"Butter";"100";"grams";"Dairy";0.8
+160;32;"Eggs";"2";"whole";"Protein";0.7
+161;33;"Romaine Lettuce";"1";"head";"Ingredient";1.2
+162;33;"Croutons";"1";"grams";"Ingredient";0.8
+163;33;"Parmesan Cheese";"50";"grams";"Ingredient";0.75
+164;33;"Caesar Dressing";"3";"grams";"Ingredient";0.9
+165;33;"Chicken";"150";"grams";"Meat";1.5
+166;34;"Crackers";"20";"pieces";"Ingredient";1.0
+167;34;"Cheese Slices";"5";"slices";"Ingredient";1.25
+168;34;"Cherry Tomatoes";"5";"pieces";"Ingredient";0.5
+169;34;"Herbs";"1";"tsp";"Ingredient";0.1
+170;34;"Olive Oil";"1";"tsp";"Ingredient";0.08
+171;35;"Salmon Fillet";"250";"grams";"Ingredient";4.5
+172;35;"Lemon";"1";"medium";"Ingredient";0.4
+173;35;"Dill";"1";"grams";"Ingredient";0.3
+174;35;"Olive Oil";"1";"grams";"Ingredient";0.15
+175;35;"Garlic";"1";"clove";"Ingredient";0.05
+176;36;"Eggs";"3";"whole";"Protein";1.05
+177;36;"Milk";"30";"grams";"Dairy";0.1
+178;36;"Butter";"20";"grams";"Dairy";0.2
+179;36;"Cheese";"30";"grams";"Dairy";0.45
+180;36;"Chives";"1";"grams";"Ingredient";0.15
+181;37;"Chickpeas";"1.5";"cups";"Legume";1.2
+182;37;"Onions";"2";"medium";"Ingredient";0.5
+183;37;"Tomatoes";"3";"medium";"Ingredient";0.9
+184;37;"Coconut Milk";"1";"grams";"Ingredient";1.5
+185;37;"Spices";"2";"grams";"Ingredient";0.6
+186;38;"Flour";"2";"cups";"Grain";0.5
+187;38;"Bananas";"3";"ripe";"Ingredient";0.75
+188;38;"Sugar";"150";"grams";"Sweetener";0.3
+189;38;"Butter";"100";"grams";"Dairy";0.8
+190;38;"Eggs";"2";"whole";"Protein";0.7
+191;39;"Whole Chicken";"1";"kg";"Ingredient";8.0
+192;39;"Potatoes";"4";"medium";"Ingredient";1.2
+193;39;"Carrots";"3";"medium";"Ingredient";0.75
+194;39;"Onions";"2";"medium";"Ingredient";0.5
+195;39;"Herbs";"2";"grams";"Ingredient";0.6
+196;40;"Bread Slices";"2";"pieces";"Ingredient";0.3
+197;40;"Jam";"2";"grams";"Ingredient";0.4
+198;40;"Butter";"20";"grams";"Dairy";0.2
+199;40;"Cinnamon";"0.5";"tsp";"Spice";0.05
+200;40;"Sugar";"0.5";"tsp";"Sweetener";0.03
+201;41;"Tortilla";"2";"large";"Ingredient";0.8
+202;41;"Ground Beef";"200";"grams";"Ingredient";2.0
+203;41;"Beans";"0.5";"grams";"Legume";0.5
+204;41;"Rice";"97.5";"grams";"Grain";0.25
+205;41;"Cheese";"50";"grams";"Dairy";0.75
+206;42;"Popcorn Kernels";"0.5";"grams";"Ingredient";0.6
+207;42;"Butter";"30";"grams";"Dairy";0.3
+208;42;"Salt";"1";"tsp";"Spice";0.05
+209;42;"Sugar";"12.5";"grams";"Sweetener";0.08
+210;42;"Oil";"1";"grams";"Ingredient";0.1
+211;43;"Ground Beef";"300";"grams";"Ingredient";3.0
+212;43;"Taco Shells";"6";"pieces";"Ingredient";1.2
+213;43;"Lettuce";"1";"grams";"Ingredient";0.6
+214;43;"Cheese";"100";"grams";"Dairy";1.5
+215;43;"Salsa";"0.5";"grams";"Ingredient";1.0
+216;44;"Oats";"90";"grams";"Grain";0.4
+217;44;"Milk";"240";"grams";"Dairy";0.5
+218;44;"Honey";"42.5";"grams";"Sweetener";0.5
+219;44;"Banana";"1";"medium";"Fruit";0.25
+220;44;"Cinnamon";"0.5";"tsp";"Spice";0.05
+221;45;"Pizza Dough";"1";"base";"Ingredient";1.5
+222;45;"Tomato Sauce";"0.5";"grams";"Ingredient";0.6
+223;45;"Mozzarella";"200";"grams";"Ingredient";2.0
+224;45;"Basil Leaves";"";"whole";"Ingredient";0.3
+225;45;"Olive Oil";"2";"grams";"Ingredient";0.3
+226;46;"Mixed Nuts";"100";"grams";"Ingredient";2.0
+227;46;"Dried Fruits";"50";"grams";"Ingredient";1.25
+228;46;"Chocolate Chips";"30";"grams";"Ingredient";0.6
+229;46;"Pumpkin Seeds";"20";"grams";"Ingredient";0.6
+230;46;"Coconut Flakes";"20";"grams";"Ingredient";0.5
+231;47;"Pasta Sheets";"250";"grams";"Ingredient";1.2
+232;47;"Tomato Sauce";"1";"grams";"Ingredient";1.2
+233;47;"Zucchini";"1";"medium";"Ingredient";0.7
+234;47;"Spinach";"200";"grams";"Ingredient";1.5
+235;47;"Cheese";"200";"grams";"Dairy";2.0
+236;48;"Oats";"90";"grams";"Grain";0.4
+237;48;"Milk";"240";"grams";"Dairy";0.5
+238;48;"Berries";"0.5";"grams";"Fruit";1.0
+239;48;"Honey";"21.25";"grams";"Sweetener";0.25
+240;48;"Nuts";"1";"grams";"Ingredient";0.4
+241;49;"Quinoa";"1";"grams";"Ingredient";1.8
+242;49;"Avocado";"0.5";"medium";"Ingredient";0.75
+243;49;"Cherry Tomatoes";"10";"pieces";"Ingredient";1.0
+244;49;"Cucumber";"0.5";"medium";"Ingredient";0.38
+245;49;"Olive Oil";"1";"grams";"Ingredient";0.15
+246;50;"Flour";"1.5";"cups";"Grain";0.38
+247;50;"Peanut Butter";"1";"grams";"Ingredient";2.0
+248;50;"Sugar";"150";"grams";"Sweetener";0.3
+249;50;"Eggs";"1";"whole";"Protein";0.35
+250;50;"Vanilla Extract";"1";"tsp";"Ingredient";0.2
+251;51;"Chicken";"400";"grams";"Meat";3.2
+252;51;"Coconut Milk";"1";"can";"Ingredient";2.0
+253;51;"Green Curry Paste";"2";"grams";"Ingredient";0.8
+254;51;"Bell Peppers";"1";"medium";"Ingredient";0.75
+255;51;"Basil Leaves";"10";"leaves";"Ingredient";0.4
+256;52;"Flour";"120";"grams";"Grain";0.25
+257;52;"Eggs";"2";"whole";"Protein";0.7
+258;52;"Milk";"240";"grams";"Dairy";0.5
+259;52;"Butter";"30";"grams";"Dairy";0.3
+260;52;"Maple Syrup";"0.25";"grams";"Sweetener";1.5
+261;53;"Chicken";"200";"grams";"Meat";2.0
+262;53;"Romaine Lettuce";"1";"head";"Ingredient";1.2
+263;53;"Croutons";"0.5";"grams";"Ingredient";0.4
+264;53;"Parmesan Cheese";"50";"grams";"Ingredient";0.75
+265;53;"Caesar Dressing";"3";"grams";"Ingredient";0.9
+266;54;"Greek Yogurt";"1";"grams";"Ingredient";1.5
+267;54;"Honey";"42.5";"grams";"Sweetener";0.5
+268;54;"Berries";"0.5";"grams";"Fruit";1.0
+269;54;"Granola";"0.25";"grams";"Ingredient";0.38
+270;54;"Nuts";"1";"grams";"Ingredient";0.4
+271;55;"Chicken";"500";"grams";"Meat";4.0
+272;55;"Lemon";"1";"medium";"Ingredient";0.4
+273;55;"Olive Oil";"2";"grams";"Ingredient";0.3
+274;55;"Garlic";"3";"cloves";"Ingredient";0.15
+275;55;"Mediterranean Herbs";"1";"grams";"Ingredient";0.4
+276;56;"Bread Slices";"2";"pieces";"Ingredient";0.3
+277;56;"Avocado";"1";"large";"Ingredient";1.5
+278;56;"Lemon Juice";"1";"tsp";"Ingredient";0.1
+279;56;"Red Pepper Flakes";"0.5";"tsp";"Ingredient";0.05
+280;56;"Salt";"1";"pinch";"Spice";0.05
+281;57;"Bread Slices";"2";"pieces";"Ingredient";0.3
+282;57;"Tuna";"1";"can";"Ingredient";1.8
+283;57;"Mayonnaise";"1";"grams";"Condiment";0.15
+284;57;"Lettuce";"1";"leaf";"Ingredient";0.15
+285;57;"Onions";"2";"slices";"Ingredient";0.1
+286;58;"Pasta Sheets";"250";"grams";"Ingredient";1.2
+287;58;"Ground Beef";"300";"grams";"Ingredient";3.0
+288;58;"Tomato Sauce";"1";"grams";"Ingredient";1.2
+289;58;"Cheese";"200";"grams";"Dairy";2.0
+290;58;"Spices";"1";"grams";"Ingredient";0.3
+291;59;"Eggs";"3";"whole";"Protein";1.05
+292;59;"Bread Slices";"2";"pieces";"Ingredient";0.3
+293;59;"Butter";"30";"grams";"Dairy";0.3
+294;59;"Milk";"30";"grams";"Dairy";0.1
+295;59;"Salt";"1";"pinch";"Spice";0.05
+296;60;"Apples";"1";"medium";"Ingredient";0.38
+297;60;"Cheese";"100";"grams";"Dairy";1.5
+298;60;"Crackers";"10";"pieces";"Ingredient";0.5
+299;60;"Honey";"1";"tsp";"Sweetener";0.08
+300;60;"Walnuts";"1";"grams";"Dry Fruit";0.4
+301;61;"Chicken";"500";"grams";"Meat";4.0
+302;61;"Tomatoes";"3";"medium";"Ingredient";0.9
+303;61;"Cream";"100";"ml";"Ingredient";0.75
+304;61;"Butter";"50";"grams";"Dairy";0.4
+305;61;"Naan Bread";"2";"pieces";"Ingredient";1.5
+306;62;"Tortilla";"2";"large";"Ingredient";0.8
+307;62;"Beans";"1";"grams";"Legume";1.0
+308;62;"Rice";"97.5";"grams";"Grain";0.25
+309;62;"Avocado";"0.5";"medium";"Ingredient";0.75
+310;62;"Cheese";"50";"grams";"Dairy";0.75
+311;63;"Rice";"2";"cups";"Grain";1.0
+312;63;"Eggs";"2";"whole";"Protein";0.7
+313;63;"Vegetables";"1";"grams";"Ingredient";1.0
+314;63;"Soy Sauce";"2";"grams";"Ingredient";0.25
+315;63;"Oil";"2";"grams";"Ingredient";0.2
+316;64;"Tortilla";"2";"pieces";"Ingredient";0.5
+317;64;"Chicken";"200";"grams";"Meat";2.0
+318;64;"Lettuce";"1";"grams";"Ingredient";0.6
+319;64;"Tomatoes";"1";"medium";"Ingredient";0.3
+320;64;"Sauce";"2";"grams";"Ingredient";0.4
+321;65;"Oats";"2";"cups";"Grain";0.8
+322;65;"Honey";"85";"grams";"Sweetener";1.25
+323;65;"Nuts";"0.5";"grams";"Ingredient";1.5
+324;65;"Dried Fruits";"0.25";"grams";"Ingredient";1.0
+325;65;"Butter";"50";"grams";"Dairy";0.4
+326;66;"Mixed Vegetables";"3";"cups";"Ingredient";2.5
+327;66;"Coconut Milk";"1";"can";"Ingredient";2.0
+328;66;"Curry Paste";"2";"grams";"Ingredient";0.8
+329;66;"Onions";"1";"medium";"Ingredient";0.25
+330;66;"Rice";"195";"grams";"Grain";0.5
+331;67;"Apples";"1";"medium";"Ingredient";0.38
+332;67;"Oranges";"1";"medium";"Ingredient";0.6
+333;67;"Bananas";"1";"medium";"Ingredient";0.25
+334;67;"Grapes";"0.5";"grams";"Ingredient";0.75
+335;67;"Honey";"21.25";"grams";"Sweetener";0.25
+336;68;"Pasta";"250";"grams";"Ingredient";0.8
+337;68;"Eggs";"2";"whole";"Protein";0.7
+338;68;"Bacon";"100";"grams";"Ingredient";2.0
+339;68;"Parmesan Cheese";"50";"grams";"Ingredient";0.75
+340;68;"Black Pepper";"1";"tsp";"Ingredient";0.1
+341;69;"Bananas";"3";"medium";"Ingredient";0.75
+342;69;"Lemon Juice";"1";"grams";"Ingredient";0.15
+343;69;"Honey";"21.25";"grams";"Sweetener";0.25
+344;69;"Cinnamon";"0.5";"tsp";"Spice";0.05
+345;69;"Salt";"1";"pinch";"Spice";0.05
+346;70;"Flour";"120";"grams";"Grain";0.25
+347;70;"Cocoa Powder";"3";"grams";"Ingredient";0.6
+348;70;"Eggs";"2";"whole";"Protein";0.7
+349;70;"Milk";"240";"grams";"Dairy";0.5
+350;70;"Sugar";"37.5";"grams";"Sweetener";0.2
+351;71;"Pasta";"250";"grams";"Ingredient";0.8
+352;71;"Chicken";"300";"grams";"Meat";3.0
+353;71;"Cream";"200";"ml";"Ingredient";1.2
+354;71;"Parmesan Cheese";"75";"grams";"Ingredient";1.15
+355;71;"Garlic";"2";"cloves";"Ingredient";0.1
+356;72;"Bread Slices";"2";"pieces";"Ingredient";0.3
+357;72;"Peanut Butter";"2";"grams";"Ingredient";0.4
+358;72;"Jam";"1";"grams";"Ingredient";0.2
+359;72;"Banana";"0.5";"medium";"Fruit";0.13
+360;72;"Honey";"1";"tsp";"Sweetener";0.08
+361;73;"Lamb";"500";"grams";"Ingredient";6.0
+362;73;"Potatoes";"3";"medium";"Ingredient";0.9
+363;73;"Carrots";"2";"medium";"Ingredient";0.5
+364;73;"Onions";"1";"medium";"Ingredient";0.25
+365;73;"Stock";"2";"cups";"Ingredient";1.2
+366;74;"Oats";"90";"grams";"Grain";0.4
+367;74;"Milk";"240";"grams";"Dairy";0.5
+368;74;"Cinnamon";"1";"tsp";"Spice";0.1
+369;74;"Brown Sugar";"1";"grams";"Ingredient";0.1
+370;74;"Raisins";"2";"grams";"Dry Fruit";0.3
+371;75;"Pizza Dough";"1";"base";"Ingredient";1.5
+372;75;"BBQ Sauce";"0.25";"grams";"Ingredient";0.7
+373;75;"Chicken";"200";"grams";"Meat";2.0
+374;75;"Mozzarella";"150";"grams";"Ingredient";1.5
+375;75;"Red Onions";"0.5";"medium";"Ingredient";0.13
+376;76;"Oats";"90";"grams";"Grain";0.4
+377;76;"Dates";"0.5";"grams";"Ingredient";1.25
+378;76;"Nuts";"0.25";"grams";"Ingredient";0.75
+379;76;"Honey";"42.5";"grams";"Sweetener";0.5
+380;76;"Chia Seeds";"1";"grams";"Ingredient";0.4
+381;77;"Beef Steak";"300";"grams";"Ingredient";4.5
+382;77;"Garlic";"2";"cloves";"Ingredient";0.1
+383;77;"Rosemary";"1";"sprig";"Herb";0.3
+384;77;"Butter";"30";"grams";"Dairy";0.3
+385;77;"Black Pepper";"1";"tsp";"Ingredient";0.1
+386;78;"Eggs";"2";"whole";"Protein";0.7
+387;78;"English Muffins";"2";"pieces";"Ingredient";0.8
+388;78;"Ham";"2";"slices";"Ingredient";1.0
+389;78;"Butter";"50";"grams";"Dairy";0.4
+390;78;"Lemon Juice";"1";"tsp";"Ingredient";0.1
+391;79;"Falafel";"6";"pieces";"Ingredient";1.5
+392;79;"Tortilla";"2";"pieces";"Ingredient";0.5
+393;79;"Tahini Sauce";"2";"grams";"Ingredient";0.6
+394;79;"Lettuce";"1";"grams";"Ingredient";0.6
+395;79;"Tomatoes";"1";"medium";"Ingredient";0.3
+396;80;"Almonds";"50";"grams";"Dry Fruit";1.25
+397;80;"Cashews";"50";"grams";"Ingredient";1.5
+398;80;"Walnuts";"30";"grams";"Dry Fruit";1.0
+399;80;"Pecans";"30";"grams";"Ingredient";1.2
+400;80;"Peanuts";"40";"grams";"Ingredient";0.6
+401;81;"Rice";"2";"cups";"Grain";1.0
+402;81;"Shrimp";"200";"grams";"Seafood";3.5
+403;81;"Mussels";"200";"grams";"Ingredient";2.5
+404;81;"Bell Peppers";"1";"medium";"Ingredient";0.75
+405;81;"Saffron";"1";"pinch";"Ingredient";1.0
+406;82;"Banana";"2";"medium";"Fruit";0.5
+407;82;"Milk";"240";"grams";"Dairy";0.5
+408;82;"Yogurt";"0.5";"grams";"Dairy";0.5
+409;82;"Honey";"21.25";"grams";"Sweetener";0.25
+410;82;"Ice Cubes";"5";"pieces";"Ingredient";0.0
+411;83;"Chicken";"500";"grams";"Meat";4.0
+412;83;"Yogurt";"1";"grams";"Dairy";1.0
+413;83;"Lemon Juice";"2";"grams";"Ingredient";0.3
+414;83;"Tandoori Spices";"2";"grams";"Ingredient";0.6
+415;83;"Garlic";"3";"cloves";"Ingredient";0.15
+416;84;"Carrots";"3";"medium";"Ingredient";0.75
+417;84;"Hummus";"0.5";"grams";"Ingredient";1.2
+418;84;"Lemon Juice";"1";"tsp";"Ingredient";0.1
+419;84;"Olive Oil";"1";"tsp";"Ingredient";0.08
+420;84;"Paprika";"0.5";"tsp";"Ingredient";0.05
+421;85;"Miso Paste";"2";"grams";"Ingredient";0.8
+422;85;"Tofu";"200";"grams";"Protein";1.5
+423;85;"Seaweed";"1";"strip";"Ingredient";0.4
+424;85;"Scallions";"2";"stalks";"Ingredient";0.3
+425;85;"Rice";"195";"grams";"Grain";0.5
+426;86;"Bread Slices";"2";"pieces";"Ingredient";0.3
+427;86;"Eggs";"2";"whole";"Protein";0.7
+428;86;"Butter";"20";"grams";"Dairy";0.2
+429;86;"Cheese";"30";"grams";"Dairy";0.45
+430;86;"Herbs";"1";"tsp";"Ingredient";0.1
+431;87;"Lentils";"1";"grams";"Legume";0.9
+432;87;"Carrots";"2";"medium";"Ingredient";0.5
+433;87;"Onions";"1";"medium";"Ingredient";0.25
+434;87;"Tomatoes";"2";"medium";"Ingredient";0.6
+435;87;"Vegetable Stock";"4";"cups";"Ingredient";1.2
+436;88;"Mixed Berries";"2";"cups";"Ingredient";4.0
+437;88;"Heavy Cream";"0.5";"grams";"Ingredient";1.0
+438;88;"Sugar";"12.5";"grams";"Sweetener";0.08
+439;88;"Mint Leaves";"3";"pieces";"Ingredient";0.15
+440;88;"Vanilla Extract";"0.5";"tsp";"Ingredient";0.1
+441;89;"Shrimp";"300";"grams";"Seafood";5.0
+442;89;"Taco Shells";"6";"pieces";"Ingredient";1.2
+443;89;"Avocado";"1";"medium";"Ingredient";1.5
+444;89;"Lime";"1";"medium";"Ingredient";0.4
+445;89;"Cilantro";"2";"grams";"Ingredient";0.2
+446;90;"Chia Seeds";"0.25";"grams";"Ingredient";1.0
+447;90;"Almond Milk";"1";"grams";"Ingredient";0.75
+448;90;"Honey";"21.25";"grams";"Sweetener";0.25
+449;90;"Berries";"0.5";"grams";"Fruit";1.0
+450;90;"Vanilla Extract";"0.5";"tsp";"Ingredient";0.1
+451;91;"Veggie Patties";"2";"pieces";"Ingredient";3.0
+452;91;"Burger Buns";"2";"pieces";"Ingredient";0.8
+453;91;"Lettuce";"2";"leaves";"Ingredient";0.3
+454;91;"Tomatoes";"1";"medium";"Ingredient";0.3
+455;91;"Cheese";"30";"grams";"Dairy";0.45
+456;92;"Dark Chocolate";"100";"grams";"Ingredient";2.5
+457;92;"Nuts";"30";"grams";"Ingredient";0.9
+458;92;"Dried Fruits";"20";"grams";"Ingredient";0.5
+459;92;"Sea Salt";"1";"pinch";"Ingredient";0.05
+460;92;"Orange Zest";"1";"tsp";"Ingredient";0.1
+461;93;"Rice Noodles";"200";"grams";"Ingredient";1.5
+462;93;"Beef";"200";"grams";"Meat";2.0
+463;93;"Bean Sprouts";"1";"grams";"Ingredient";0.8
+464;93;"Herbs";"0.25";"grams";"Ingredient";0.5
+465;93;"Beef Stock";"4";"cups";"Ingredient";2.4
+466;94;"Croissant";"2";"pieces";"Ingredient";2.0
+467;94;"Coffee";"1";"grams";"Beverage";0.5
+468;94;"Butter";"20";"grams";"Dairy";0.2
+469;94;"Jam";"2";"grams";"Ingredient";0.4
+470;94;"Sugar";"1";"tsp";"Sweetener";0.05
+471;95;"Bread Slices";"3";"pieces";"Ingredient";0.45
+472;95;"Chicken";"100";"grams";"Meat";1.0
+473;95;"Bacon";"50";"grams";"Ingredient";1.0
+474;95;"Lettuce";"2";"leaves";"Ingredient";0.3
+475;95;"Mayonnaise";"1";"grams";"Condiment";0.15
+476;96;"Grapes";"300";"grams";"Ingredient";2.5
+477;96;"Cheese";"50";"grams";"Dairy";0.75
+478;96;"Crackers";"10";"pieces";"Ingredient";0.5
+479;96;"Honey";"1";"tsp";"Sweetener";0.08
+480;96;"Nuts";"1";"grams";"Ingredient";0.4
+481;97;"Bell Peppers";"4";"large";"Ingredient";3.0
+482;97;"Ground Beef";"300";"grams";"Ingredient";3.0
+483;97;"Rice";"195";"grams";"Grain";0.5
+484;97;"Tomato Sauce";"0.5";"grams";"Ingredient";0.6
+485;97;"Cheese";"100";"grams";"Dairy";1.5
+486;98;"Bagel";"2";"pieces";"Ingredient";1.6
+487;98;"Cream Cheese";"4";"grams";"Ingredient";1.0
+488;98;"Smoked Salmon";"50";"grams";"Ingredient";2.5
+489;98;"Capers";"1";"grams";"Ingredient";0.3
+490;98;"Red Onion";"0.25";"medium";"Ingredient";0.06
+491;99;"Penne";"250";"grams";"Ingredient";0.8
+492;99;"Tomato Sauce";"1";"grams";"Ingredient";1.2
+493;99;"Bell Peppers";"1";"medium";"Ingredient";0.75
+494;99;"Onions";"1";"medium";"Ingredient";0.25
+495;99;"Parmesan Cheese";"50";"grams";"Ingredient";0.75
+496;100;"Mango";"1";"large";"Ingredient";1.75
+497;100;"Lime Juice";"1";"tsp";"Ingredient";0.1
+498;100;"Chili Powder";"0.5";"tsp";"Ingredient";0.05
+499;100;"Sugar";"1";"tsp";"Sweetener";0.05
+500;100;"Mint Leaves";"5";"leaves";"Ingredient";0.2
+501;101;"Chicken";"400";"grams";"Meat";3.2
+502;101;"Puff Pastry";"1";"sheet";"Ingredient";2.0
+503;101;"Mixed Vegetables";"2";"cups";"Ingredient";1.5
+504;101;"Cream";"100";"ml";"Ingredient";0.75
+505;101;"Butter";"30";"grams";"Dairy";0.3
+506;102;"Oats";"90";"grams";"Grain";0.4
+507;102;"Milk";"240";"grams";"Dairy";0.5
+508;102;"Mixed Nuts";"2";"grams";"Ingredient";0.6
+509;102;"Honey";"21.25";"grams";"Sweetener";0.25
+510;102;"Cinnamon";"0.5";"tsp";"Spice";0.05
+511;103;"Ground Beef";"400";"grams";"Ingredient";4.0
+512;103;"Kidney Beans";"1";"can";"Ingredient";0.9
+513;103;"Tomatoes";"3";"medium";"Ingredient";0.9
+514;103;"Onions";"1";"medium";"Ingredient";0.25
+515;103;"Spices";"2";"grams";"Ingredient";0.6
+516;104;"Celery";"1";"stalk";"Ingredient";0.8
+517;104;"Hummus";"0.25";"grams";"Ingredient";0.6
+518;104;"Ranch Dressing";"0.25";"grams";"Ingredient";0.5
+519;104;"Peanut Butter";"2";"grams";"Ingredient";0.4
+520;104;"Cream Cheese";"2";"grams";"Ingredient";0.5
+521;105;"Eggplant";"1";"large";"Ingredient";1.2
+522;105;"Zucchini";"2";"medium";"Ingredient";1.4
+523;105;"Bell Peppers";"2";"medium";"Ingredient";1.5
+524;105;"Tomatoes";"4";"medium";"Ingredient";1.2
+525;105;"Herbs";"2";"grams";"Ingredient";0.6
+526;106;"Cereal";"1";"grams";"Ingredient";0.8
+527;106;"Milk";"240";"grams";"Dairy";0.5
+528;106;"Banana";"0.5";"medium";"Fruit";0.13
+529;106;"Berries";"0.25";"grams";"Fruit";0.5
+530;106;"Honey";"1";"tsp";"Sweetener";0.08
+531;107;"Pizza Dough";"1";"base";"Ingredient";1.5
+532;107;"Tomato Sauce";"0.5";"grams";"Ingredient";0.6
+533;107;"Mozzarella";"200";"grams";"Ingredient";2.0
+534;107;"Basil Leaves";"10";"leaves";"Ingredient";0.4
+535;107;"Olive Oil";"1";"grams";"Ingredient";0.15
+536;108;"Flour";"2";"cups";"Grain";0.5
+537;108;"Sugar";"150";"grams";"Sweetener";0.3
+538;108;"Eggs";"2";"whole";"Protein";0.7
+539;108;"Almonds";"100";"grams";"Dry Fruit";2.5
+540;108;"Vanilla Extract";"1";"tsp";"Ingredient";0.2
+541;109;"Lamb Chops";"4";"pieces";"Ingredient";8.0
+542;109;"Rosemary";"2";"sprigs";"Herb";0.6
+543;109;"Garlic";"2";"cloves";"Ingredient";0.1
+544;109;"Olive Oil";"2";"grams";"Ingredient";0.3
+545;109;"Lemon";"1";"medium";"Ingredient";0.4
+546;110;"English Muffins";"2";"pieces";"Ingredient";0.8
+547;110;"Butter";"20";"grams";"Dairy";0.2
+548;110;"Jam";"2";"grams";"Ingredient";0.4
+549;110;"Honey";"21.25";"grams";"Sweetener";0.25
+550;110;"Cinnamon";"0.5";"tsp";"Spice";0.05
+551;111;"Zucchini";"4";"medium";"Ingredient";2.8
+552;111;"Ground Beef";"200";"grams";"Ingredient";2.0
+553;111;"Rice";"97.5";"grams";"Grain";0.25
+554;111;"Tomato Sauce";"0.25";"grams";"Ingredient";0.3
+555;111;"Cheese";"50";"grams";"Dairy";0.75
+556;112;"Protein Powder";"1";"scoop";"Ingredient";1.5
+557;112;"Milk";"240";"grams";"Dairy";0.5
+558;112;"Banana";"1";"medium";"Fruit";0.25
+559;112;"Peanut Butter";"1";"grams";"Ingredient";0.2
+560;112;"Ice Cubes";"5";"pieces";"Ingredient";0.0
+561;113;"Arborio Rice";"1.5";"cups";"Ingredient";2.25
+562;113;"Mushrooms";"200";"grams";"Ingredient";2.0
+563;113;"Onions";"1";"medium";"Ingredient";0.25
+564;113;"Parmesan Cheese";"75";"grams";"Ingredient";1.15
+565;113;"Vegetable Stock";"4";"cups";"Ingredient";1.2

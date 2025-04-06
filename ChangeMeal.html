@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Meal</title>
+    <link rel="icon" type="image/x-icon"
+        href="https://is3-ssl.mzstatic.com/image/thumb/Purple111/v4/7d/05/17/7d0517b1-f45f-af98-bf8f-87d454ca57f6/source/512x512bb.jpg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .meal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body class="bg-[#FFFFFF] font-sans">
+    <div class="container mx-auto p-4">
+        <!-- Back Button -->
+        <button id="back-button" class="flex items-center gap-2 mb-6 text-[#1C160C] hover:text-[#019863]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                    d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z">
+                </path>
+            </svg>
+            Back to Meal Planner
+        </button>
+
+        <!-- Date Display -->
+        <h2 id="selected-date" class="text-2xl font-bold text-[#1C160C] mb-6"></h2>
+
+        <!-- Meal Type Filters -->
+        <div class="flex gap-4 mb-6">
+            <button id="all-btn" class="meal-filter-btn active px-4 py-2 rounded-full bg-[#019863] text-white"
+                data-type="all">All</button>
+            <button id="breakfast-btn" class="meal-filter-btn px-4 py-2 rounded-full bg-[#F4EFE6] text-[#1C160C]"
+                data-type="breakfast">Breakfast</button>
+            <button id="lunch-btn" class="meal-filter-btn px-4 py-2 rounded-full bg-[#F4EFE6] text-[#1C160C]"
+                data-type="lunch">Lunch</button>
+            <button id="snack-btn" class="meal-filter-btn px-4 py-2 rounded-full bg-[#F4EFE6] text-[#1C160C]"
+                data-type="snack">Snack</button>
+            <button id="dinner-btn" class="meal-filter-btn px-4 py-2 rounded-full bg-[#F4EFE6] text-[#1C160C]"
+                data-type="dinner">Dinner</button>
+        </div>
+
+        <!-- Meal Grid -->
+        <div id="meal-grid" class="meal-grid"></div>
+
+        <!-- Success Modal -->
+        <div id="success-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+            <div class="bg-white p-6 rounded-lg max-w-sm w-full">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-lg font-bold text-[#1C160C]">Success!</h3>
+                    <button id="close-modal" class="text-[#1C160C]">&times;</button>
+                </div>
+                <p class="text-[#1C160C] mb-4">Meal changed successfully!</p>
+                <button id="modal-ok-btn" class="w-full py-2 bg-[#019863] text-white rounded-full">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const mealDate = urlParams.get('date');
+            const mealType = urlParams.get('mealType'); // Changed from 'type' to 'mealType'
+            const mealId = urlParams.get('mealId');
+
+            // Debug log to trace parameter values
+            console.log("URL Parameters:", {
+                date: mealDate,
+                mealType: mealType,
+                mealId: mealId
+            });
+
+            // DOM Elements
+            const backButton = document.getElementById('back-button');
+            const selectedDateElement = document.getElementById('selected-date');
+            const mealGrid = document.getElementById('meal-grid');
+            const filterButtons = document.querySelectorAll('.meal-filter-btn');
+            const successModal = document.getElementById('success-modal');
+            const closeModal = document.getElementById('close-modal');
+            const modalOkBtn = document.getElementById('modal-ok-btn');
+
+            // Set the selected date
+            if (mealDate) {
+                const dateObj = new Date(mealDate);
+                selectedDateElement.textContent = `Meals for ${dateObj.toLocaleDateString('en-US', {
+                    weekday: 'long',
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                })}`;
+            }
+
+            // Pre-select the filter button based on mealType from URL
+            if (mealType) {
+                const matchingButton = document.querySelector(`.meal-filter-btn[data-type="${mealType.toLowerCase()}"]`);
+                if (matchingButton) {
+                    filterButtons.forEach(b => b.classList.remove('active', 'bg-[#019863]', 'text-white'));
+                    filterButtons.forEach(b => b.classList.add('bg-[#F4EFE6]', 'text-[#1C160C]'));
+                    matchingButton.classList.remove('bg-[#F4EFE6]', 'text-[#1C160C]');
+                    matchingButton.classList.add('active', 'bg-[#019863]', 'text-white');
+                }
+            }
+
+            // Fetch meals from API
+            async function fetchMeals(filterType = 'all') {
+                try {
+                    // Show loading indicator
+                    mealGrid.innerHTML = '<p class="text-center text-gray-500">Loading meals...</p>';
+
+                    const response = await fetch('http://localhost:5000/api/meals-update');
+                    if (!response.ok) throw new Error('Failed to fetch meals');
+
+                    const meals = await response.json();
+                    filterAndDisplayMeals(meals, filterType);
+                } catch (error) {
+                    console.error('Error fetching meals:', error);
+                    mealGrid.innerHTML = '<p class="text-red-500">Error loading meals. Please try again.</p>';
+                }
+            }
+
+            function filterAndDisplayMeals(meals, filterType) {
+                let filteredMeals = filterType === 'all' ? meals : meals.filter(meal => meal.meal_type.toLowerCase() === filterType.toLowerCase());
+                displayMeals(filteredMeals);
+            }
+
+            function displayMeals(meals) {
+                mealGrid.innerHTML = meals.length === 0 ? '<p class="text-gray-500">No meals found for this category.</p>' : '';
+
+                meals.forEach(meal => {
+                    const mealCard = document.createElement('div');
+                    mealCard.className = 'flex flex-col gap-3 pb-3 items-center text-center border border-[#F4EFE6] rounded-xl p-4';
+
+                    mealCard.innerHTML = `
+                <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                    style='background-image: url("${meal.meal_image || 'https://cdn.usegalileo.ai/sdxl10/55592608-5a64-4ee3-8946-6dda8caa409f.png'}"); width: 150px; height: 150px;'>
+                </div>
+                <div class="w-full">
+                    <p class="text-[#1C160C] text-base font-medium leading-normal capitalize">${meal.meal_name}</p>
+                    <p class="text-[#A18249] text-sm font-normal leading-normal">${meal.meal_type}</p>            
+                    <button class="add-meal-btn flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#019863] text-white text-sm font-bold leading-normal tracking-[0.015em] w-full"
+                        data-meal-id="${meal.id}" data-meal-name="${meal.meal_name}">
+                        <span class="truncate">Add This Meal</span>
+                    </button>
+                </div>
+            `;
+
+                    mealGrid.appendChild(mealCard);
+                });
+
+                document.querySelectorAll('.add-meal-btn').forEach(btn => {
+                    btn.addEventListener('click', function () {
+                        const mealId = this.getAttribute('data-meal-id');
+                        const mealName = this.getAttribute('data-meal-name');
+                        updateMealPlan(mealId, mealName);
+                    });
+                });
+            }
+
+            async function updateMealPlan(mealId, mealName) {
+                try {
+                    // Validate required parameters
+                    if (!mealDate || !mealType) {
+                        console.error("Missing parameters:", { mealDate, mealType });
+                        throw new Error('Meal date or type missing.');
+                    }
+
+                    // Prepare request data
+                    const requestData = {
+                        meal_id: mealId,
+                        meal_date: mealDate,
+                        meal_type: mealType,
+                        meal_name: mealName
+                    };
+
+                    console.log("Submitting meal with data:", requestData);
+
+                    const endpoint = mealId ? 'http://localhost:5000/api/update-meal' : 'http://localhost:5000/api/add-meal';
+
+                    const response = await fetch(endpoint, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(requestData),
+                    });
+
+                    if (!response.ok) {
+                        const errorData = await response.json().catch(() => ({}));
+                        throw new Error(errorData.message || 'Failed to submit meal plan');
+                    }
+
+                    // Show success modal
+                    successModal.classList.remove('hidden');
+                } catch (error) {
+                    console.error('Error submitting meal plan:', error);
+
+                    const errorElement = document.createElement('div');
+                    errorElement.className = 'fixed top-4 right-4 bg-red-500 text-white p-4 rounded-lg shadow-lg z-50';
+                    errorElement.textContent = error.message;
+                    document.body.appendChild(errorElement);
+
+                    setTimeout(() => errorElement.remove(), 3000);
+                }
+            }
+
+
+            // Event Listeners
+            backButton.addEventListener('click', () => window.location.href = 'MealPlanner.html');
+
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    filterButtons.forEach(b => b.classList.remove('active', 'bg-[#019863]', 'text-white'));
+                    filterButtons.forEach(b => b.classList.add('bg-[#F4EFE6]', 'text-[#1C160C]'));
+                    this.classList.remove('bg-[#F4EFE6]', 'text-[#1C160C]');
+                    this.classList.add('active', 'bg-[#019863]', 'text-white');
+                    fetchMeals(this.getAttribute('data-type'));
+                });
+            });
+
+            closeModal.addEventListener('click', () => {
+                successModal.classList.add('hidden');
+                window.location.href = 'MealPlanner.html';
+            });
+
+            modalOkBtn.addEventListener('click', () => {
+                successModal.classList.add('hidden');
+                window.location.href = 'MealPlanner.html';
+            });
+
+            // Initialize: fetch meals and apply initial filter if mealType provided
+            const initialFilterType = mealType || 'all';
+            fetchMeals(initialFilterType);
+        });
+    </script>
+</body>
+
+</html>

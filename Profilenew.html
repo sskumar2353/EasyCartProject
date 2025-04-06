@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Users from MySQL</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        table { width: 50%; margin: auto; border-collapse: collapse; }
+        th, td { border: 1px solid black; padding: 10px; }
+    </style>
+</head>
+<body>
+
+    <h2>User List</h2>
+    <button onclick="fetchUsers()">Load Users</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>password</th>
+            </tr>
+        </thead>
+        <tbody id="userTableBody">
+            <!-- Data will be inserted here -->
+        </tbody>
+    </table>
+
+    <script>
+        async function fetchUsers() {
+            try {
+                let response = await fetch("http://localhost:5000/users");
+                let users = await response.json();
+
+                let tableBody = document.getElementById("userTableBody");
+                tableBody.innerHTML = ""; // Clear previous data
+
+                users.forEach(user => {
+                    let row = `<tr>
+                        <td>${user.id}</td>
+                        <td>${user.name}</td>
+                        <td>${user.email}</td>
+                        <td>${user.password}</td>
+                    </tr>`;
+                    tableBody.innerHTML += row;
+                });
+
+            } catch (error) {
+                console.error("Error fetching users:", error);
+            }
+        }
+    </script>
+
+</body>
+</html>

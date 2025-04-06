@@ -1,0 +1,532 @@
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+  <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" />
+
+  <title>Groceries</title>
+  <link rel="icon" type="image/x-icon"
+    href="https://is3-ssl.mzstatic.com/image/thumb/Purple111/v4/7d/05/17/7d0517b1-f45f-af98-bf8f-87d454ca57f6/source/512x512bb.jpg" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+
+<body>
+  <div class="relative flex size-full min-h-screen flex-col bg-[#FFFFFF] group/design-root overflow-x-hidden"
+    style='--checkbox-tick-svg: url(&apos;data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(255,255,255)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e&apos;); font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+    <div class="layout-container flex h-full grow flex-col">
+      <header
+        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#F4EFE6] px-10 py-3">
+        <div class="flex items-center gap-8">
+          <div class="flex items-center gap-4 text-[#1C160C]">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z"
+                  fill="currentColor"></path>
+              </svg>
+            </div>
+            <h2 class="text-[#1C160C] text-lg font-bold leading-tight tracking-[-0.015em]">Groceries</h2>
+          </div>
+          <div class="flex items-center gap-9">
+            <a class="text-[#1C160C] text-sm font-medium leading-normal" href="AfterLogin.html">Home</a>
+            <a class="text-[#1C160C] text-sm font-medium leading-normal" href="Cart.html">Cart</a>
+          </div>
+        </div>
+        <div class="flex flex-1 justify-end gap-8">
+          <div class="flex gap-2">
+            <button id="back-btn"
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#019863] text-[#FFFFFF] text-sm font-bold leading-normal tracking-[0.015em]">
+              <span class="truncate">Back</span>
+            </button>
+            <button id="export-btn"
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#019863] text-[#FFFFFF] text-sm font-bold leading-normal tracking-[0.015em]">
+              <a href="Cart.html">
+                <span class="truncate">Export</span></a>
+            </button>
+          </div>
+        </div>
+      </header>
+      <div class="gap-1 px-6 flex flex-1 justify-center py-5">
+        <div class="layout-content-container flex flex-col w-80">
+          <div class="px-4 py-3">
+            <label class="flex flex-col min-w-40 h-12 w-full">
+              <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+                <div
+                  class="text-[#A18249] flex border-none bg-[#F4EFE6] items-center justify-center pl-4 rounded-l-xl border-r-0"
+                  data-icon="MagnifyingGlass" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                    viewBox="0 0 256 256">
+                    <path
+                      d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z">
+                    </path>
+                  </svg>
+                </div>
+                <input placeholder="Search items"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1C160C] focus:outline-0 focus:ring-0 border-none bg-[#F4EFE6] focus:border-none h-full placeholder:text-[#A18249] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                  value="" />
+              </div>
+            </label>
+          </div>
+          <button id="search-btn"
+            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#019863] text-[#FFFFFF] text-sm font-bold leading-normal w-full">
+            <span class="truncate">Search</span>
+          </button>
+          <div id="categories-container" class="px-4" style="max-height: 260px; overflow-y: auto; padding-right: 5px;">
+            <!-- Categories will be dynamically added here -->
+          </div>
+          <div class="flex flex-col gap-2 px-4 pt-2">
+            <button id="apply-filters-btn"
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#019863] text-[#FFFFFF] text-sm font-bold leading-normal w-full">
+              <span class="truncate">Apply Filters</span>
+            </button>
+            <button id="clear-filters-btn"
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#F4EFE6] text-[#1C160C] text-sm font-medium leading-normal w-full">
+              <span class="truncate">Clear Filters</span>
+            </button>
+            <button id="search-filter-btn"
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#019863] text-[#FFFFFF] text-sm font-bold leading-normal w-full">
+              <span class="truncate">Search by filters</span>
+            </button>
+          </div>
+          <a href="StoreLocator.html" class="block">
+            <div class="flex px-4 py-3">
+              <div
+                class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl object-cover"
+                style='background-image: url("https://cdn.usegalileo.ai/maps/41134575-e9f2-440c-9967-a41314a6ecd0.png");'>
+              </div>
+            </div>
+          </a>
+       
+
+        </div>
+        <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+          <div class="flex flex-wrap justify-between gap-3 p-4">
+            <div class="flex min-w-72 flex-col gap-3">
+              <p class="text-[#1C160C] text-4xl font-black leading-tight tracking-[-0.033em]">Smart meal-based grocery
+                organizer</p>
+              <p class="text-[#A18249] text-base font-normal leading-normal">Organize and manage your grocery lists
+                efficiently</p>
+            </div>
+          </div>
+          <div id="filters-container" class="flex gap-3 p-3 flex-wrap pr-4">
+            <!-- Filter buttons will be dynamically added here -->
+          </div>
+          <div id="meal-display-section">
+            <!-- Meal sections will be dynamically added here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // All food categories
+      const foodCategories = ["Dairy", "Vegetable", "Spice", "Grain", "Condiment", "Legume", "Meat", "Ingredient", "Bread", "Sweetener", "Protein", "Fruit", "Seaweed", "Seafood", "Herb", "Beverage", "Dry Fruit"];
+
+      const categoriesContainer = document.getElementById('categories-container');
+      const applyFiltersBtn = document.getElementById('apply-filters-btn');
+      const searchBtn = document.getElementById('search-btn');
+      const searchbyFilterBtn = document.getElementById('search-filter-btn');
+      const filtersContainer = document.getElementById('filters-container');
+      const mealDisplaySection = document.getElementById('meal-display-section');
+      const searchInput = document.querySelector('input[placeholder="Search items"]');
+      const clearFiltersBtn = document.getElementById('clear-filters-btn');
+      const exportBtn = document.getElementById('export-btn'); // Assuming you have an export button
+
+      // Store for added grocery items
+      const addedItems = [];
+
+      // Remove the search button that was added to the search bar
+      const searchBarContainer = document.querySelector('label.flex.flex-col.min-w-40');
+      const existingSearchButton = searchBarContainer.querySelector('button');
+      if (existingSearchButton) {
+        existingSearchButton.remove();
+      }
+
+      // Set overflow-y to scroll for meal-display-section to maintain scrollbar
+      mealDisplaySection.style.overflowY = 'auto';
+      mealDisplaySection.style.maxHeight = 'calc(100vh - 80px)';
+
+      // Style the categories container to have a scrollbar and fixed height for 5 items
+      categoriesContainer.style.maxHeight = '260px'; // Approximate height for 5 items
+      categoriesContainer.style.overflowY = 'auto';
+      categoriesContainer.style.paddingRight = '5px';
+
+      // Function to create a checkbox for a category
+      function createCategoryCheckbox(category) {
+        const label = document.createElement('label');
+        label.className = 'flex gap-x-3 py-3 flex-row';
+        label.innerHTML = `
+      <input
+        type="checkbox"
+        value="${category}"
+        class="category-checkbox h-5 w-5 rounded border-[#E9DFCE] border-2 bg-transparent text-[#019863] checked:bg-[#019863] checked:border-[#019863] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#E9DFCE] focus:outline-none"
+      />
+      <p class="text-[#1C160C] text-base font-normal leading-normal">${category}</p>
+    `;
+        return label;
+      }
+
+      // Render all categories initially
+      foodCategories.forEach(category => {
+        categoriesContainer.appendChild(createCategoryCheckbox(category));
+      });
+
+      // Show all buttons
+      applyFiltersBtn.style.display = 'flex';
+      searchBtn.style.display = 'flex';
+
+      // Apply Filters button functionality
+      applyFiltersBtn.addEventListener('click', function () {
+        // Get all checked categories
+        const checkedCategories = [];
+        document.querySelectorAll('.category-checkbox:checked').forEach(checkbox => {
+          checkedCategories.push(checkbox.value);
+        });
+
+        // Clear existing filter buttons
+        filtersContainer.innerHTML = '';
+
+        // Add filter buttons for each selected category
+        checkedCategories.forEach(category => {
+          const button = document.createElement('button');
+          button.className = 'flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#F4EFE6] pl-4 pr-2';
+          button.dataset.category = category;
+          button.innerHTML = `
+        <p class="text-[#1C160C] text-sm font-medium leading-normal">${category}</p>
+        <div class="text-[#1C160C] filter-remove-btn" data-category="${category}">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+            <path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
+          </svg>
+        </div>
+      `;
+
+          // Add click event to remove filter
+          button.querySelector('.filter-remove-btn').addEventListener('click', function (e) {
+            e.stopPropagation();
+            const categoryToRemove = this.dataset.category;
+
+            // Uncheck the corresponding checkbox
+            document.querySelectorAll('.category-checkbox').forEach(checkbox => {
+              if (checkbox.value === categoryToRemove) {
+                checkbox.checked = false;
+              }
+            });
+
+            // Remove the filter button
+            button.remove();
+
+            // Update meal display section
+            const remainingCategories = [];
+            document.querySelectorAll('.category-checkbox:checked').forEach(checkbox => {
+              remainingCategories.push(checkbox.value);
+            });
+
+            updateMealDisplaySection(remainingCategories);
+          });
+
+          filtersContainer.appendChild(button);
+        });
+
+        // Update the meal display section
+        updateMealDisplaySection(checkedCategories);
+      });
+
+      // Clear Filters button functionality - MODIFIED FOR FUNCTIONALITY 1
+      // Clear Filters Button - shows ALL categories as cards
+      clearFiltersBtn.addEventListener('click', function () {
+        // Uncheck all checkboxes
+        document.querySelectorAll('.category-checkbox:checked').forEach(checkbox => {
+          checkbox.checked = false;
+        });
+
+        // Clear the filter buttons
+        filtersContainer.innerHTML = '';
+
+        // Show ALL category cards
+        showCategoryCards(foodCategories);
+      });
+
+      // Search by Filters Button - shows ONLY SELECTED categories as cards
+      searchbyFilterBtn.addEventListener('click', function () {
+        // Get checked categories
+        const selectedCategories = [];
+        document.querySelectorAll('.category-checkbox:checked').forEach(checkbox => {
+          selectedCategories.push(checkbox.value);
+        });
+
+        // If nothing selected, show all (same as clear filters)
+        if (selectedCategories.length === 0) {
+          showCategoryCards(foodCategories);
+          return;
+        }
+
+        // Clear existing filter buttons (optional - remove if you want to keep them)
+        filtersContainer.innerHTML = '';
+
+        // Show ONLY the selected categories as cards
+        showCategoryCards(selectedCategories);
+      });
+
+      // Search button functionality
+      searchBtn.addEventListener('click', function () {
+        performSearch();
+      });
+
+
+      // Allow search on Enter key press
+      searchInput.addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') {
+          performSearch();
+        }
+      });
+
+      // Function to update the meal display section based on selected categories
+      async function updateMealDisplaySection(categories) {
+        // Clear existing content
+        mealDisplaySection.innerHTML = '';
+
+        // If no categories selected, show default category cards
+        if (categories.length === 0) {
+          showCategoryCards(foodCategories);
+          return;
+        }
+
+        // Fetch grocery items for selected categories
+        try {
+          const response = await fetch('http://localhost:5000/api/groceries-by-categories', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ categories })
+          });
+
+          if (!response.ok) throw new Error('Network response was not ok');
+
+          const groceries = await response.json();
+
+          if (groceries.length === 0) {
+            mealDisplaySection.innerHTML = '<p class="p-4 text-[#1C160C]">No items found for selected categories</p>';
+            return;
+          }
+
+          // Display grocery items in grid layout
+          showGroceryItems(groceries);
+        } catch (error) {
+          console.error('Error fetching groceries:', error);
+          mealDisplaySection.innerHTML = '<p class="p-4 text-[#1C160C]">Error loading items. Please try again.</p>';
+        }
+      }
+
+      // Function to show category cards (initial view)
+      // Function to show category cards (initial view)
+      function showCategoryCards(categories) {
+        mealDisplaySection.innerHTML = ''; // Clear existing content
+
+        // Clear any existing filter buttons (since we're showing categories, not filtered items)
+        filtersContainer.innerHTML = '';
+
+        categories.forEach(category => {
+          const imagePath = "https://is3-ssl.mzstatic.com/image/thumb/Purple111/v4/7d/05/17/7d0517b1-f45f-af98-bf8f-87d454ca57f6/source/512x512bb.jpg";
+          const section = document.createElement('div');
+          section.className = 'p-4';
+          section.innerHTML = `
+        <div class="flex items-stretch justify-between gap-4 rounded-xl bg-[#FFFFFF] p-4 shadow-[0_0_4px_rgba(0,0,0,0.1)]">
+            <div class="flex flex-[2_2_0px] flex-col gap-4">
+                <div class="flex flex-col gap-1">
+                    <p class="text-[#1C160C] text-base font-bold leading-tight">${category}</p>
+                </div>
+                <button class="view-category-btn flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 flex-row-reverse bg-[#F4EFE6] text-[#1C160C] pr-2 gap-1 text-sm font-medium leading-normal w-fit"
+                data-category="${category}">
+                    <div class="text-[#1C160C]" data-icon="ArrowRight" data-size="18px" data-weight="regular">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor" viewBox="0 0 256 256">
+                            <path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path>
+                        </svg>
+                    </div>
+                    <span class="truncate">View</span>
+                </button>
+            </div>
+            <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1" style='background-image: url("${imagePath}");'></div>
+        </div>
+        `;
+          mealDisplaySection.appendChild(section);
+        });
+
+        // Add event listeners to view buttons
+        document.querySelectorAll('.view-category-btn').forEach(button => {
+          button.addEventListener('click', function () {
+            const category = this.getAttribute('data-category');
+
+            // Clear existing filter buttons
+            filtersContainer.innerHTML = '';
+
+            // Create and add the filter button for this category
+            const filterButton = document.createElement('button');
+            filterButton.className = 'flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#F4EFE6] pl-4 pr-2';
+            filterButton.dataset.category = category;
+            filterButton.innerHTML = `
+                <p class="text-[#1C160C] text-sm font-medium leading-normal">${category}</p>
+                <div class="text-[#1C160C] filter-remove-btn" data-category="${category}">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
+                    </svg>
+                </div>
+            `;
+
+            // Add click event to remove filter
+            filterButton.querySelector('.filter-remove-btn').addEventListener('click', function (e) {
+              e.stopPropagation();
+
+              // Uncheck the corresponding checkbox (if it exists)
+              document.querySelectorAll('.category-checkbox').forEach(checkbox => {
+                if (checkbox.value === category) {
+                  checkbox.checked = false;
+                }
+              });
+
+              // Remove the filter button
+              filterButton.remove();
+
+              // Show all categories again
+              showCategoryCards(foodCategories);
+            });
+
+            filtersContainer.appendChild(filterButton);
+
+            // Update the display to show items for this category
+            updateMealDisplaySection([category]);
+          });
+        });
+      }
+
+      // Function to show grocery items in grid layout - MODIFIED FOR FUNCTIONALITY 2
+      function showGroceryItems(groceries) {
+        const gridContainer = document.createElement('div');
+        gridContainer.className = 'grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4';
+
+        groceries.forEach(item => {
+          // Safely format the price
+          let priceDisplay = 'N/A';
+          try {
+            const priceNum = typeof item.price === 'string' ?
+              parseFloat(item.price) :
+              item.price;
+            priceDisplay = `&#8377;${priceNum.toFixed(2)}`;
+          } catch (e) {
+            console.error('Error formatting price:', e);
+          }
+
+          // Check if item is already added
+          const isAdded = addedItems.some(addedItem => addedItem.id === item.id);
+
+          const itemElement = document.createElement('div');
+          itemElement.className = 'flex flex-col gap-3 pb-3';
+          itemElement.innerHTML = `
+        <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl" 
+             style='background-image: url("${item.image_url || getImagePath(item.category)}");'></div>
+        <div>
+            <p class="text-[#1C160C] text-base font-medium leading-normal">${item.name}</p>
+            <p class="text-[#A18249] text-sm font-normal leading-normal">${item.weight || 'N/A'}</p>
+            <p class="text-[#A18249] text-sm font-normal leading-normal">${priceDisplay}</p>
+            <button
+              class="add-to-cart-btn flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 ${isAdded ? 'bg-gray-400' : 'bg-[#019863]'} text-[#FFFFFF] text-sm font-bold leading-normal tracking-[0.015em]"
+              data-item-id="${item.id}"
+              ${isAdded ? 'disabled' : ''}
+            >
+              <span class="truncate">${isAdded ? 'Added' : 'Add'}</span>
+            </button>
+        </div>
+      `;
+          gridContainer.appendChild(itemElement);
+        });
+
+        mealDisplaySection.innerHTML = '';
+        mealDisplaySection.appendChild(gridContainer);
+
+        // Add event listeners to add buttons
+        document.querySelectorAll('.add-to-cart-btn:not([disabled])').forEach(button => {
+          button.addEventListener('click', function () {
+            const itemId = this.getAttribute('data-item-id');
+            const item = groceries.find(g => g.id == itemId);
+
+            if (item) {
+              // Add to cart
+              addedItems.push(item);
+
+              // Update button state
+              this.textContent = 'Added';
+              this.classList.remove('bg-[#019863]');
+              this.classList.add('bg-gray-400');
+              this.disabled = true;
+
+              console.log('Item added to cart:', item);
+            }
+          });
+        });
+      }
+
+      //Export button functionality - Modified to prevent navigation when no items
+      if (exportBtn) {
+        exportBtn.addEventListener('click', function (e) {
+          if (addedItems.length === 0) {
+            e.preventDefault(); // Prevent any default behavior
+            alert('Please add at least one item to your cart before exporting.');
+            return; // Exit the function completely
+          }
+
+          // Store the items in localStorage
+          try {
+            localStorage.setItem('cartItems', JSON.stringify(addedItems));
+            // Only navigate if storage was successful
+            window.location.href = 'Cart.html';
+          } catch (error) {
+            console.error('Error saving cart items:', error);
+            alert('Error saving your cart. Please try again.');
+          }
+        });
+      }
+
+      // Initialize with default category cards
+      showCategoryCards(foodCategories);
+    });
+
+    function navigateToGroceries(category) {
+      // Encode the category to handle special characters in URLs
+      const encodedCategory = encodeURIComponent(category);
+    }
+
+    // Helper function to get image path based on category
+    function getImagePath(category) {
+      // You can implement your own logic here to return appropriate images for categories
+      return "https://is3-ssl.mzstatic.com/image/thumb/Purple111/v4/7d/05/17/7d0517b1-f45f-af98-bf8f-87d454ca57f6/source/512x512bb.jpg";
+    }
+    // Back button functionality
+    const backBtn = document.getElementById('back-btn');
+    if (backBtn) {
+      backBtn.addEventListener('click', function () {
+        // Get the referring page from URL parameter or localStorage
+        const urlParams = new URLSearchParams(window.location.search);
+        let fromPage = urlParams.get('from');
+
+        if (!fromPage) {
+          // If no URL parameter, check localStorage
+          fromPage = localStorage.getItem('lastVisitedPage') || 'Afterlogin.html';
+        }
+
+        window.location.href = fromPage;
+      });
+    }
+
+    // Store the current page as the last visited page when leaving
+    window.addEventListener('beforeunload', function () {
+      const currentPage = window.location.pathname.split('/').pop();
+      if (currentPage !== 'GroceryList.html') {
+        localStorage.setItem('lastVisitedPage', currentPage);
+      }
+    });
+  </script>
+</body>
+
+</html>

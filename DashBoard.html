@@ -1,0 +1,490 @@
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+  <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" />
+
+  <title>DashBoard</title>
+  <link rel="icon" type="image/x-icon"
+    href="https://is3-ssl.mzstatic.com/image/thumb/Purple111/v4/7d/05/17/7d0517b1-f45f-af98-bf8f-87d454ca57f6/source/512x512bb.jpg" />
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <div class="relative flex size-full min-h-screen flex-col bg-[#FFFFFF] group/design-root overflow-x-hidden"
+    style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+    <div class="layout-container flex h-full grow flex-col">
+      <header
+        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#F4EFE6] px-10 py-3">
+        <div class="flex items-center gap-4 text-[#1C160C]">
+          <div class="size-4">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z"
+                fill="currentColor"></path>
+            </svg>
+          </div>
+          <h2 class="text-[#1C160C] text-lg font-bold leading-tight tracking-[-0.015em]">EasyCart</h2>
+        </div>
+        <div class="flex gap-2">
+          <a href="AfterLogin.html"> <button
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 bg-[#F4EFE6] text-[#1C160C] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+              <div class="text-[#1C160C]" data-icon="House" data-size="20px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="none" viewBox="0 0 256 256"
+                  stroke="currentColor" stroke-width="16">
+                  <path
+                    d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z">
+                  </path>
+                </svg>
+              </div>
+            </button> </a>
+        </div>
+      </header>
+      <div class="gap-1 px-6 flex flex-1 justify-center py-5">
+        <div class="layout-content-container flex flex-col w-80">
+          <div class="flex h-full min-h-[700px] flex-col justify-between bg-[#FFFFFF] p-4">
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-3">
+                <button
+                  class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 bg-[#F4EFE6] text-[#1C160C] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+                  <a href="Profile.html">
+                    <div class="text-[#1C160C]" data-icon="User" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor"
+                        viewBox="0 0 256 256">
+                        <path
+                          d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z">
+                        </path>
+                      </svg>
+                    </div>
+                  </a>
+                </button>
+                <div class="flex flex-col">
+                  <h1 class="text-[#1C160C] text-base font-medium leading-normal">Hello, there!</h1>
+                  <p class="text-[#A18249] text-sm font-normal leading-normal">Here's your Grocery Overview</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="flex items-center gap-3 px-3 py-2 rounded-full bg-[#F4EFE6]">
+                  <div class="text-[#1C160C]" data-icon="List" data-size="24px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                      viewBox="0 0 256 256">
+                      <path
+                        d="M224,120v16a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V120a8,8,0,0,1,8-8H216A8,8,0,0,1,224,120Zm-8,56H40a8,8,0,0,0-8,8v16a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V184A8,8,0,0,0,216,176Zm0-128H40a8,8,0,0,0-8,8V72a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V56A8,8,0,0,0,216,48Z">
+                      </path>
+                    </svg>
+                  </div>
+                  <a href="GroceryList.html">
+                    <p class="text-[#1C160C] text-sm font-medium leading-normal">Grocery List</p>
+                  </a>
+                </div>
+                <div class="flex items-center gap-3 px-3 py-2">
+                  <div class="text-[#1C160C]" data-icon="BowlFood" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                      viewBox="0 0 256 256">
+                      <path
+                        d="M224,104h-8.37a88,88,0,0,0-175.26,0H32a8,8,0,0,0-8,8,104.35,104.35,0,0,0,56,92.28V208a16,16,0,0,0,16,16h64a16,16,0,0,0,16-16v-3.72A104.35,104.35,0,0,0,232,112,8,8,0,0,0,224,104Zm-24.46,0H148.12a71.84,71.84,0,0,1,41.27-29.57A71.45,71.45,0,0,1,199.54,104ZM173.48,56.23q2.75,2.25,5.27,4.75a87.92,87.92,0,0,0-49.15,43H100.1A72.26,72.26,0,0,1,168,56C169.83,56,171.66,56.09,173.48,56.23ZM128,40a71.87,71.87,0,0,1,19,2.57A88.36,88.36,0,0,0,83.33,104H56.46A72.08,72.08,0,0,1,128,40Zm36.66,152A8,8,0,0,0,160,199.3V208H96v-8.7A8,8,0,0,0,91.34,192a88.29,88.29,0,0,1-51-72H215.63A88.29,88.29,0,0,1,164.66,192Z">
+                      </path>
+                    </svg>
+                  </div>
+                  <a href="MealPlanner.html">
+                    <p class="text-[#1C160C] text-sm font-medium leading-normal">Meal Plans</p>
+                  </a>
+                </div>
+                <!-- <div class="flex items-center gap-3 px-3 py-2">
+                    <div class="text-[#1C160C]" data-icon="Presentation" data-size="24px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M216,40H136V24a8,8,0,0,0-16,0V40H40A16,16,0,0,0,24,56V176a16,16,0,0,0,16,16H79.36L57.75,219a8,8,0,0,0,12.5,10l29.59-37h56.32l29.59,37a8,8,0,1,0,12.5-10l-21.61-27H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,136H40V56H216V176Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  <a href="Nutrition.html">
+                    <p class="text-[#1C160C] text-sm font-medium leading-normal">Stats</p></a>
+                  </div> -->
+              </div>
+            </div>
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#019863] text-[#FFFFFF] text-sm font-bold leading-normal tracking-[0.015em]">
+              <a href="GroceryList.html"> <span class="truncate">Grocery List</span> </a>
+            </button>
+          </div>
+        </div>
+        <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+          <div class="flex flex-wrap justify-between gap-3 p-4">
+            <div class="flex min-w-72 flex-col gap-3">
+              <p class="text-[#1C160C] text-4xl font-black leading-tight tracking-[-0.033em]">Here's your Grocery
+                Overview</p>
+              <p class="text-[#A18249] text-base font-normal leading-normal">Manage your groceries and meals easily.</p>
+            </div>
+          </div>
+          <div class="p-4">
+            <div
+              class="flex items-stretch justify-between gap-4 rounded-xl bg-[#FFFFFF] p-4 shadow-[0_0_4px_rgba(0,0,0,0.1)]">
+              <div class="flex flex-[2_2_0px] flex-col gap-4">
+                <div class="flex flex-col gap-1">
+                  <p class="text-[#1C160C] text-base font-bold leading-tight">Grocery Suggestions</p>
+                  <p class="text-[#A18249] text-sm font-normal leading-normal">Recommended items for your list.</p>
+                </div>
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 flex-row-reverse bg-[#F4EFE6] text-[#1C160C] text-sm font-medium leading-normal w-fit">
+                  <a href="RecommendList.html">
+                    <span class="truncate">View List</span></a>
+                </button>
+              </div>
+              <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+                style='background-image: url("https://cdn.usegalileo.ai/sdxl10/ae9504a1-f357-41d6-9d20-7cb59a261d39.png");'>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+            <div class="flex items-stretch p-4 gap-3">
+              <div
+                class="flex h-full flex-1 flex-col gap-4 rounded-xl bg-[#FFFFFF] shadow-[0_0_4px_rgba(0,0,0,0.1)] min-w-40">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/cf8cc48a-e2f4-4ad2-9fe8-e17441695463.png");'>
+                </div>
+                <div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+                  <div>
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Monday Plan</p>
+                    <p class="text-[#A18249] text-sm font-normal leading-normal">Balanced meals</p>
+                  </div>
+                  <!-- <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#F4EFE6] text-[#1C160C] text-sm font-bold leading-normal tracking-[0.015em]"
+                    >
+                      <span class="truncate">Quick Actions</span>
+                    </button> -->
+                </div>
+              </div>
+              <div
+                class="flex h-full flex-1 flex-col gap-4 rounded-xl bg-[#FFFFFF] shadow-[0_0_4px_rgba(0,0,0,0.1)] min-w-40">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/c213d56c-9098-44ad-bc1f-2b327cdd64a7.png");'>
+                </div>
+                <div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+                  <div>
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Tuesday Plan</p>
+                    <p class="text-[#A18249] text-sm font-normal leading-normal">Low carb</p>
+                  </div>
+                  <!-- <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#F4EFE6] text-[#1C160C] text-sm font-bold leading-normal tracking-[0.015em]"
+                    >
+                      <span class="truncate">Quick Actions</span>
+                    </button> -->
+                </div>
+              </div>
+              <div
+                class="flex h-full flex-1 flex-col gap-4 rounded-xl bg-[#FFFFFF] shadow-[0_0_4px_rgba(0,0,0,0.1)] min-w-40">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/52609d07-9c50-4878-9cab-690041abed93.png");'>
+                </div>
+                <div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+                  <div>
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Wednesday Plan</p>
+                    <p class="text-[#A18249] text-sm font-normal leading-normal">High protein</p>
+                  </div>
+                  <!-- <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#F4EFE6] text-[#1C160C] text-sm font-bold leading-normal tracking-[0.015em]"
+                    >
+                      <span class="truncate">Quick Actions</span>
+                    </button> -->
+                </div>
+              </div>
+              <div
+                class="flex h-full flex-1 flex-col gap-4 rounded-xl bg-[#FFFFFF] shadow-[0_0_4px_rgba(0,0,0,0.1)] min-w-40">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/cf8cc48a-e2f4-4ad2-9fe8-e17441695463.png");'>
+                </div>
+                <div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+                  <div>
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Thursday Plan</p>
+                    <p class="text-[#A18249] text-sm font-normal leading-normal">Balanced meals</p>
+                  </div>
+                  <!-- <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#F4EFE6] text-[#1C160C] text-sm font-bold leading-normal tracking-[0.015em]"
+                    >
+                      <span class="truncate">Quick Actions</span>
+                    </button> -->
+                </div>
+              </div>
+              <div
+                class="flex h-full flex-1 flex-col gap-4 rounded-xl bg-[#FFFFFF] shadow-[0_0_4px_rgba(0,0,0,0.1)] min-w-40">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/cf8cc48a-e2f4-4ad2-9fe8-e17441695463.png");'>
+                </div>
+                <div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+                  <div>
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Friday Plan</p>
+                    <p class="text-[#A18249] text-sm font-normal leading-normal">Balanced meals</p>
+                  </div>
+                  <!-- <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#F4EFE6] text-[#1C160C] text-sm font-bold leading-normal tracking-[0.015em]"
+                    >
+                      <span class="truncate">Quick Actions</span>
+                    </button> -->
+                </div>
+              </div>
+              <div
+                class="flex h-full flex-1 flex-col gap-4 rounded-xl bg-[#FFFFFF] shadow-[0_0_4px_rgba(0,0,0,0.1)] min-w-40">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/cf8cc48a-e2f4-4ad2-9fe8-e17441695463.png");'>
+                </div>
+                <div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+                  <div>
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Saturday Plan</p>
+                    <p class="text-[#A18249] text-sm font-normal leading-normal">Balanced meals</p>
+                  </div>
+                  <!-- <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#F4EFE6] text-[#1C160C] text-sm font-bold leading-normal tracking-[0.015em]"
+                    >
+                      <span class="truncate">Quick Actions</span>
+                    </button> -->
+                </div>
+              </div>
+              <div
+                class="flex h-full flex-1 flex-col gap-4 rounded-xl bg-[#FFFFFF] shadow-[0_0_4px_rgba(0,0,0,0.1)] min-w-40">
+                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/cf8cc48a-e2f4-4ad2-9fe8-e17441695463.png");'>
+                </div>
+                <div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+                  <div>
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Sunday Plan</p>
+                    <p class="text-[#A18249] text-sm font-normal leading-normal">Balanced meals</p>
+                  </div>
+                  <!-- <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#F4EFE6] text-[#1C160C] text-sm font-bold leading-normal tracking-[0.015em]"
+                    >
+                      <span class="truncate">Quick Actions</span>
+                    </button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-4 px-4 py-6">
+            <div class="flex min-w-72 flex-1 flex-col gap-2 rounded-xl border border-[#E9DFCE] p-6">
+              <p class="text-[#1C160C] text-base font-medium leading-normal">Calorie Tracking</p>
+              <p class="text-[#1C160C] tracking-light text-[32px] font-bold leading-tight truncate"
+                id="average-calories">Loading...</p>
+              <div class="flex gap-1">
+                <!-- <p class="text-[#A18249] text-base font-normal leading-normal">Weekly</p>
+                  <p id="calorie-change" class="text-base font-medium leading-normal">--</p> -->
+              </div>
+              <div
+                class="grid min-h-[180px] grid-flow-col gap-6 grid-rows-[1fr_auto] items-end justify-items-center px-3"
+                id="calorie-chart">
+                <!-- Bars will be generated dynamically with JavaScript -->
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3 p-4" id="dietary-consistency-container">
+            <div class="flex gap-6 justify-between">
+              <p class="text-[#1C160C] text-base font-medium leading-normal">Dietary Consistency</p>
+              <p class="text-[#1C160C] text-sm font-normal leading-normal" id="consistency-percentage">--</p>
+            </div>
+            <div class="rounded bg-[#E9DFCE]">
+              <div class="h-2 rounded bg-[#019863]" id="consistency-bar" style="width: 0%;"></div>
+            </div>
+            <p class="text-[#A18249] text-sm font-normal leading-normal" id="consistency-text">Calculating
+              consistency...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', async function () {
+      try {
+        // Fetch and process all data
+        const [weeklyData, consistencyData] = await Promise.all([
+          fetchWeeklyCalorieData(),
+          fetchDietaryConsistency()
+        ]);
+
+        updateCalorieChart(weeklyData);
+        updateConsistencyChart(consistencyData);
+
+      } catch (error) {
+        console.error('Error loading nutrition statistics:', error);
+        document.getElementById('average-calories').textContent = 'Error loading data';
+        document.getElementById('consistency-percentage').textContent = '--';
+      }
+    });
+
+    async function fetchWeeklyCalorieData() {
+      try {
+        const response = await axios.get('http://localhost:5000/api/weekly-calories');
+        console.log(response.data);
+        // Ensure data structure is complete
+        if (!response.data.averageCalories) {
+          response.data.averageCalories = Math.round(response.data.totalCaloriesThisWeek / 7);
+        }
+        if (!response.data.weeklyChangePercentage) {
+          response.data.weeklyChangePercentage = 0;
+        }
+
+        return response.data;
+      } catch (error) {
+        console.error('Error fetching weekly calorie data:', error);
+        // Return fallback data to maintain UI structure
+        return {
+          dailyCalories: Array(7).fill().map((_, i) => ({
+            dayOfWeek: i + 1,
+            calories: 0,
+            isToday: i === new Date().getDay() - 1
+          })),
+          averageCalories: 0,
+          weeklyChangePercentage: 0,
+          totalCaloriesThisWeek: 0
+        };
+      }
+    }
+
+    async function fetchDietaryConsistency() {
+      try {
+        const response = await axios.get('http://localhost:5000/api/dietary-consistency');
+        console.log(response.data);
+        return response.data;
+      } catch (error) {
+        console.error('Error fetching dietary consistency data:', error);
+        // Return fallback data
+        return {
+          daysConsistent: 0,
+          totalDays: 7,
+          consistencyPercentage: 0
+        };
+      }
+    }
+
+    function updateCalorieChart(data) {
+      const chartContainer = document.getElementById('calorie-chart');
+      const averageCaloriesElement = document.getElementById('average-calories');
+      // const calorieChangeElement = document.getElementById('calorie-change');
+
+      // Clear existing content
+      chartContainer.innerHTML = '';
+
+      // Set average calories (with fallback)
+      const averageCalories = data.averageCalories || 0;
+      averageCaloriesElement.textContent = `${Math.round(averageCalories)} kcal/day`;
+
+      // Set weekly change percentage with color (with fallback)
+      // const changePercentage = data.weeklyChangePercentage || 0;
+      // calorieChangeElement.textContent = `${changePercentage > 0 ? '+' : ''}${changePercentage}%`;
+      // calorieChangeElement.className = `text-base font-medium leading-normal ${
+      //     changePercentage >= 0 ? 'text-[#019863]' : 'text-[#E53935]'
+      // }`;
+
+      // Day labels (Monday to Sunday)
+      const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+
+      // Find max calories for normalization (minimum 1 to avoid division by zero)
+      const maxCalories = Math.max(1, ...data.dailyCalories.map(day => day.calories));
+
+      // Generate the bar chart
+      data.dailyCalories.forEach((dayData, index) => {
+        const heightPercentage = (dayData.calories / maxCalories) * 100;
+        const isToday = dayData.isToday || index === new Date().getDay() - 1;
+
+        // Create bar
+        const barDiv = document.createElement('div');
+        barDiv.className = `border-[#A18249] bg-[#F4EFE6] border-t-2 w-full ${isToday ? 'border-[#019863] bg-[#D7F4E3]' : ''
+          }`;
+        barDiv.style.height = `${heightPercentage}%`;
+
+        // Create day label
+        const dayLabel = document.createElement('p');
+        dayLabel.className = `text-[#A18249] text-[13px] font-bold leading-normal tracking-[0.015em] ${isToday ? 'text-[#019863]' : ''
+          }`;
+        dayLabel.textContent = days[index];
+
+        // Append elements
+        chartContainer.appendChild(barDiv);
+        chartContainer.appendChild(dayLabel);
+      });
+    }
+
+    function updateConsistencyChart(data) {
+      const percentageElement = document.getElementById('consistency-percentage');
+      const barElement = document.getElementById('consistency-bar');
+      const textElement = document.getElementById('consistency-text');
+
+      // Ensure data exists
+      const percentage = data.consistencyPercentage || 0;
+      const daysConsistent = data.daysConsistent || 0;
+      const totalDays = data.totalDays || 7;
+
+      // Update UI
+      percentageElement.textContent = `${percentage}%`;
+      barElement.style.width = `${percentage}%`;
+      textElement.textContent = `${daysConsistent} out of ${totalDays} days consistent.`;
+    }    </script>
+  <script>
+    // Function to render meal plan cards dynamically
+    async function renderMealPlans() {
+      try {
+        const response = await axios.get('http://localhost:5000/api/weekly-meal-plans');
+        const mealPlans = response.data;
+        const container = document.querySelector('.flex.overflow-y-auto div.flex.items-stretch');
+
+        // Clear existing static content
+        container.innerHTML = '';
+
+        // Image URLs for different meal plan types
+        const imageUrls = {
+          'Balanced meals': 'https://cdn.usegalileo.ai/sdxl10/cf8cc48a-e2f4-4ad2-9fe8-e17441695463.png',
+          'Low carb': 'https://cdn.usegalileo.ai/sdxl10/c213d56c-9098-44ad-bc1f-2b327cdd64a7.png',
+          'High protein': 'https://cdn.usegalileo.ai/sdxl10/52609d07-9c50-4878-9cab-690041abed93.png',
+          'Custom': 'https://cdn.usegalileo.ai/sdxl10/cf8cc48a-e2f4-4ad2-9fe8-e17441695463.png'
+        };
+
+        // Create a card for each day
+        mealPlans.forEach(plan => {
+          const card = document.createElement('div');
+          card.className = 'flex h-full flex-1 flex-col gap-4 rounded-xl bg-[#FFFFFF] shadow-[0_0_4px_rgba(0,0,0,0.1)] min-w-40';
+
+          card.innerHTML = `
+                  <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                      style="background-image: url('${imageUrls[plan.type] || imageUrls['Custom']}')">
+                  </div>
+                  <div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+                      <div>
+                          <p class="text-[#1C160C] text-base font-medium leading-normal">${plan.dayName} Plan</p>
+                          <p class="text-[#A18249] text-sm font-normal leading-normal">${plan.type}</p>
+                      </div>
+                  </div>
+              `;
+
+          container.appendChild(card);
+        });
+
+      } catch (error) {
+        console.error('Error loading meal plans:', error);
+      }
+    }
+
+    // Update the DOMContentLoaded event listener
+    document.addEventListener('DOMContentLoaded', async function () {
+      try {
+        // Fetch and process all data
+        const [weeklyData, consistencyData] = await Promise.all([
+          fetchWeeklyCalorieData(),
+          fetchDietaryConsistency()
+        ]);
+
+        updateCalorieChart(weeklyData);
+        updateConsistencyChart(consistencyData);
+        renderMealPlans(); // Add this line
+
+      } catch (error) {
+        console.error('Error loading nutrition statistics:', error);
+        document.getElementById('average-calories').textContent = 'Error loading data';
+        document.getElementById('consistency-percentage').textContent = '--';
+      }
+    });
+  </script>
+</body>
+
+</html>

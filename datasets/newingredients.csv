@@ -1,0 +1,707 @@
+ingredient_id,recipe_id,ingredient_name,quantity,unit,type,price_inr,proteins,calories,carbs,fats,fibres
+1,1,Paneer,200,g,Dairy,80,14.0,265,4.0,20.0,0.0
+2,1,Tomatoes,300,g,Fruit,15,2.4,54,12.0,0.6,3.6
+3,1,Onion,100,g,Vegetable,10,1.0,40,9.0,0.1,1.7
+4,1,Ginger-Garlic Paste,20,g,Condiment,2,0.5,20,4.0,0.1,0.5
+5,1,Garam Masala,5,g,Spice,5,0.3,30,6.0,0.5,2.0
+6,1,Fresh Cream,100,ml,Dairy,40,2.1,340,3.0,35.0,0.0
+7,1,Butter,30,g,Dairy,15,0.2,215,0.1,24.0,0.0
+8,2,Toor Dal,150,g,Legume,20,11.0,180,30.0,1.0,6.0
+9,2,Ghee,20,g,Dairy,15,0.1,180,0.0,20.0,0.0
+10,2,Cumin Seeds,5,g,Spice,3,0.3,18,2.0,1.0,1.0
+11,2,Green Chilli,2,pc,Spice,2,0.2,10,2.0,0.1,0.5
+12,2,Onion,100,g,Vegetable,10,1.0,40,9.0,0.1,1.7
+13,2,Tomato,100,g,Fruit,5,0.9,18,3.9,0.2,1.2
+14,3,Rajma,200,g,Legume,30,16.0,220,40.0,1.5,12.0
+15,3,Basmati Rice,150,g,Grain,25,3.5,205,45.0,0.5,0.6
+16,3,Onion,100,g,Vegetable,10,1.0,40,9.0,0.1,1.7
+17,3,Ginger-Garlic Paste,15,g,Condiment,2,0.4,15,3.0,0.1,0.4
+18,3,Red Chilli Powder,5,g,Spice,5,0.5,15,3.0,0.3,1.0
+19,3,Garam Masala,5,g,Spice,5,0.3,30,6.0,0.5,2.0
+20,4,Penne Pasta,200,g,Grain,50,7.0,300,60.0,1.5,3.0
+21,4,Bell Peppers,100,g,Vegetable,30,1.0,31,6.0,0.3,2.0
+22,4,Zucchini,80,g,Vegetable,25,1.5,17,3.0,0.2,1.0
+23,4,Olive Oil,20,ml,Condiment,15,0.0,180,0.0,20.0,0.0
+24,4,Garlic,10,g,Vegetable,2,0.4,15,3.0,0.1,0.2
+25,5,Chicken,300,g,Meat,150,62.0,330,0.0,15.0,0.0
+26,5,Yogurt,100,g,Dairy,10,3.5,59,4.0,3.0,0.0
+27,5,Onion,100,g,Vegetable,10,1.0,40,9.0,0.1,1.7
+28,5,Ginger-Garlic Paste,20,g,Condiment,2,0.5,20,4.0,0.1,0.5
+29,5,Turmeric Powder,5,g,Spice,5,0.2,16,3.0,0.5,0.5
+30,6,Cucumber,100,g,Vegetable,10,0.7,16,3.6,0.1,0.5
+31,6,Feta Cheese,50,g,Dairy,60,4.0,130,1.0,10.0,0.0
+32,6,Olives,30,g,Fruit,40,0.3,45,3.0,4.0,1.0
+33,6,Olive Oil,15,ml,Condiment,20,0.0,120,0.0,14.0,0.0
+34,6,Lemon Juice,10,ml,Condiment,2,0.0,5,1.0,0.0,0.0
+35,7,Maida,150,g,Grain,15,5.0,535,115.0,1.5,3.5
+36,7,Cocoa Powder,50,g,Spice,40,3.0,100,15.0,5.0,5.0
+37,7,Eggs,2,pc,Protein,12,12.0,140,1.0,10.0,0.0
+38,7,Sugar,100,g,Sweetener,10,0.0,400,100.0,0.0,0.0
+39,7,Butter,50,g,Dairy,25,0.4,358,0.1,40.5,0.0
+40,8,Pork,200,g,Meat,200,36.0,300,0.0,20.0,0.0
+41,8,Pineapple,50,g,Fruit,10,0.3,25,6.5,0.1,0.7
+42,8,Corn Tortillas,3,pc,Grain,30,3.0,150,30.0,1.5,3.0
+43,8,Chilli Powder,5,g,Spice,5,0.5,15,3.0,0.5,1.0
+44,8,Garlic,10,g,Vegetable,2,0.4,15,3.0,0.1,0.2
+45,9,Sushi Rice,100,g,Grain,30,2.5,130,28.0,0.3,0.4
+46,9,Nori,1,sheet,Seafood,15,1.0,5,1.0,0.1,0.5
+47,9,Salmon,100,g,Seafood,250,20.0,180,0.0,10.0,0.0
+48,9,Avocado,50,g,Fruit,40,1.0,80,4.0,7.0,3.0
+49,9,Rice Vinegar,15,ml,Condiment,20,0.0,5,1.0,0.0,0.0
+50,10,Bread,2,slices,Grain,20,4.0,160,30.0,2.0,2.0
+51,10,Avocado,1,pc,Fruit,80,2.0,240,12.0,22.0,10.0
+52,10,Lemon Juice,10,ml,Condiment,2,0.0,5,1.0,0.0,0.0
+53,10,Chilli Flakes,2,g,Spice,2,0.1,5,1.0,0.1,0.3
+54,10,Olive Oil,5,ml,Condiment,5,0.0,40,0.0,4.5,0.0
+55,11,Chicken,300,g,Meat,150,62.0,330,0.0,15.0,0.0
+56,11,Tomato Puree,100,g,Fruit,10,1.0,30,6.0,0.2,1.5
+57,11,Fresh Cream,100,ml,Dairy,40,2.1,340,3.0,35.0,0.0
+58,11,Garam Masala,5,g,Spice,5,0.3,30,6.0,0.5,2.0
+59,11,Ginger-Garlic Paste,20,g,Condiment,2,0.5,20,4.0,0.1,0.5
+60,12,Cabbage,100,g,Vegetable,10,1.3,25,5.8,0.1,2.5
+61,12,Carrots,100,g,Vegetable,10,0.9,41,10.0,0.2,2.8
+62,12,Bell Peppers,100,g,Vegetable,30,1.0,31,6.0,0.3,2.0
+63,12,Soy Sauce,20,ml,Condiment,10,0.6,20,2.0,0.0,0.1
+64,12,Sesame Oil,10,ml,Condiment,15,0.0,90,0.0,10.0,0.0
+65,13,Pizza Dough,150,g,Grain,30,5.0,400,80.0,2.0,3.0
+66,13,Mozzarella,100,g,Dairy,80,22.0,280,2.0,22.0,0.0
+67,13,Tomato Sauce,50,g,Condiment,10,0.5,25,5.0,0.2,1.0
+68,13,Basil Leaves,5,g,Herb,5,0.2,5,1.0,0.1,0.3
+69,13,Olive Oil,10,ml,Condiment,10,0.0,90,0.0,10.0,0.0
+70,14,Lasagna Sheets,100,g,Grain,40,5.0,350,75.0,1.0,3.0
+71,14,Ricotta Cheese,100,g,Dairy,60,11.0,170,3.0,10.0,0.0
+72,14,Minced Meat,200,g,Meat,180,40.0,250,0.0,15.0,0.0
+73,14,Tomato Puree,100,g,Fruit,10,1.0,30,6.0,0.2,1.5
+74,14,Parmesan,50,g,Dairy,50,5.0,200,2.0,15.0,0.0
+75,15,Basmati Rice,200,g,Grain,35,4.0,260,56.0,0.5,1.0
+76,15,Chicken,250,g,Meat,125,52.0,275,0.0,12.0,0.0
+77,15,Yogurt,100,g,Dairy,10,3.5,59,4.0,3.0,0.0
+78,15,Garam Masala,5,g,Spice,5,0.3,30,6.0,0.5,2.0
+79,15,Saffron,0.5,g,Spice,20,0.1,5,1.0,0.1,0.1
+80,16,Tomatoes,100,g,Fruit,5,0.9,18,3.9,0.2,1.2
+81,16,Mozzarella,100,g,Dairy,80,22.0,280,2.0,22.0,0.0
+82,16,Basil Leaves,10,g,Herb,10,0.3,5,1.0,0.1,0.5
+83,16,Olive Oil,10,ml,Condiment,10,0.0,90,0.0,10.0,0.0
+84,16,Balsamic Vinegar,5,ml,Condiment,10,0.0,5,1.0,0.0,0.0
+85,17,Miso Paste,30,g,Condiment,25,3.0,60,9.0,1.0,1.0
+86,17,Tofu,100,g,Protein,40,8.0,70,2.0,4.0,0.5
+87,17,Wakame Seaweed,5,g,Seafood,15,0.5,10,2.0,0.1,0.5
+88,17,Spring Onions,10,g,Vegetable,2,0.2,5,1.0,0.1,0.3
+89,17,Dashi Stock,200,ml,Beverage,20,0.5,10,1.0,0.1,0.1
+90,18,Flour,100,g,Grain,10,3.0,364,76.0,1.0,2.7
+91,18,Milk,100,ml,Dairy,8,3.4,60,4.8,3.3,0.0
+92,18,Eggs,1,pc,Protein,6,6.0,70,0.6,5.0,0.0
+93,18,Butter,20,g,Dairy,10,0.2,143,0.1,16.0,0.0
+94,18,Sugar,20,g,Sweetener,2,0.0,80,20.0,0.0,0.0
+95,19,Avocado,1,pc,Fruit,80,2.0,240,12.0,22.0,10.0
+96,19,Onion,50,g,Vegetable,5,0.5,20,4.5,0.1,0.9
+97,19,Tomato,50,g,Fruit,3,0.5,9,2.0,0.1,0.6
+98,19,Lime Juice,10,ml,Condiment,2,0.0,5,1.0,0.0,0.0
+99,19,Coriander Leaves,10,g,Herb,2,0.3,5,1.0,0.1,0.8
+100,20,Lemongrass,10,g,Herb,5,0.1,5,1.0,0.1,0.5
+101,20,Galangal,10,g,Herb,5,0.2,10,2.0,0.1,0.5
+102,20,Kaffir Lime Leaves,3,pc,Herb,5,0.1,5,1.0,0.1,0.3
+103,20,Shrimp,100,g,Seafood,120,24.0,100,0.0,1.5,0.0
+104,20,Coconut Milk,100,ml,Dairy,30,1.0,200,3.0,20.0,1.0
+105,21,Bread,2,slices,Grain,20,4.0,160,30.0,2.0,2.0
+106,21,Eggs,2,pc,Protein,12,12.0,140,1.0,10.0,0.0
+107,21,Milk,50,ml,Dairy,4,1.7,30,2.4,1.6,0.0
+108,21,Butter,10,g,Dairy,5,0.1,72,0.1,8.0,0.0
+109,21,Cinnamon Powder,2,g,Spice,2,0.1,5,1.0,0.1,0.3
+110,22,Clams,100,g,Seafood,150,25.0,145,4.0,2.0,0.0
+111,22,Potatoes,100,g,Vegetable,10,2.0,77,17.0,0.1,2.2
+112,22,Onion,50,g,Vegetable,5,0.5,20,4.5,0.1,0.9
+113,22,Celery,50,g,Vegetable,10,0.5,10,2.0,0.1,1.0
+114,22,Heavy Cream,50,ml,Dairy,25,1.0,170,1.5,18.0,0.0
+115,23,Eggplant,150,g,Vegetable,20,1.5,35,8.0,0.2,3.0
+116,23,Zucchini,100,g,Vegetable,25,1.5,17,3.0,0.2,1.0
+117,23,Bell Peppers,100,g,Vegetable,30,1.0,31,6.0,0.3,2.0
+118,23,Tomatoes,100,g,Fruit,5,0.9,18,3.9,0.2,1.2
+119,23,Olive Oil,20,ml,Condiment,20,0.0,180,0.0,20.0,0.0
+120,24,Rice Batter,200,g,Grain,30,4.0,200,45.0,0.5,1.0
+121,24,Potatoes,150,g,Vegetable,15,3.0,115,26.0,0.2,3.3
+122,24,Onion,50,g,Vegetable,5,0.5,20,4.5,0.1,0.9
+123,24,Mustard Seeds,5,g,Spice,3,0.3,15,2.0,1.0,1.0
+124,24,Coconut Chutney,50,g,Condiment,15,1.0,100,5.0,8.0,1.0
+125,25,Maida,150,g,Grain,15,5.0,535,115.0,1.5,3.5
+126,25,Potatoes,150,g,Vegetable,15,3.0,115,26.0,0.2,3.3
+127,25,Peas,50,g,Vegetable,10,2.0,42,7.5,0.2,3.5
+128,25,Cumin Seeds,5,g,Spice,3,0.3,18,2.0,1.0,1.0
+129,25,Oil,200,ml,Condiment,40,0.0,1800,0.0,200.0,0.0
+130,26,Rajma,200,g,Legume,30,16.0,220,40.0,1.5,12.0
+131,26,Onion,100,g,Vegetable,10,1.0,40,9.0,0.1,1.7
+132,26,Tomatoes,100,g,Fruit,5,0.9,18,3.9,0.2,1.2
+133,26,Ginger-Garlic Paste,15,g,Condiment,2,0.4,15,3.0,0.1,0.4
+134,26,Garam Masala,5,g,Spice,5,0.3,30,6.0,0.5,2.0
+135,27,Pav Buns,4,pc,Grain,40,8.0,320,60.0,4.0,4.0
+136,27,Potatoes,200,g,Vegetable,20,4.0,154,34.0,0.2,4.4
+137,27,Peas,50,g,Vegetable,10,2.0,42,7.5,0.2,3.5
+138,27,Pav Bhaji Masala,10,g,Spice,10,0.5,30,5.0,1.0,2.0
+139,27,Butter,30,g,Dairy,15,0.2,215,0.1,24.0,0.0
+140,28,Basmati Rice,200,g,Grain,35,4.0,260,56.0,0.5,1.0
+141,28,Chicken,250,g,Meat,125,52.0,275,0.0,12.0,0.0
+142,28,Yogurt,100,g,Dairy,10,3.5,59,4.0,3.0,0.0
+143,28,Saffron,0.5,g,Spice,20,0.1,5,1.0,0.1,0.1
+144,28,Fried Onions,50,g,Vegetable,10,1.0,100,10.0,5.0,1.0
+145,29,Potatoes,200,g,Vegetable,20,4.0,154,34.0,0.2,4.4
+146,29,Cauliflower,200,g,Vegetable,30,4.0,50,10.0,0.5,5.0
+147,29,Onion,100,g,Vegetable,10,1.0,40,9.0,0.1,1.7
+148,29,Turmeric Powder,5,g,Spice,5,0.2,16,3.0,0.5,0.5
+149,29,Cumin Seeds,5,g,Spice,3,0.3,18,2.0,1.0,1.0
+150,30,Chickpeas,200,g,Legume,30,14.0,260,45.0,4.0,12.0
+151,30,Maida,150,g,Grain,15,5.0,535,115.0,1.5,3.5
+152,30,Yogurt,100,g,Dairy,10,3.5,59,4.0,3.0,0.0
+153,30,Oil,200,ml,Condiment,40,0.0,1800,0.0,200.0,0.0
+154,30,Chole Masala,10,g,Spice,10,0.5,30,5.0,1.0,2.0
+155,31,Khoya,200,g,Dairy,100,10.0,500,40.0,30.0,0.0
+156,31,Sugar,150,g,Sweetener,15,0.0,600,150.0,0.0,0.0
+157,31,Cardamom Powder,5,g,Spice,5,0.2,15,3.0,0.5,1.0
+158,31,Rose Water,10,ml,Condiment,10,0.0,5,1.0,0.0,0.0
+159,31,Ghee,20,g,Dairy,15,0.1,180,0.0,20.0,0.0
+160,32,Spinach,200,g,Vegetable,20,4.0,46,8.0,0.6,6.0
+161,32,Paneer,150,g,Dairy,60,10.5,200,3.0,15.0,0.0
+162,32,Onion,50,g,Vegetable,5,0.5,20,4.5,0.1,0.9
+163,32,Garlic,10,g,Vegetable,2,0.4,15,3.0,0.1,0.2
+164,32,Garam Masala,5,g,Spice,5,0.3,30,6.0,0.5,2.0
+165,33,Khoya,150,g,Dairy,75,7.5,375,30.0,22.5,0.0
+166,33,Paneer,100,g,Dairy,40,7.0,130,2.0,10.0,0.0
+167,33,Cashew Nuts,30,g,Dry Fruit,30,3.0,180,8.0,12.0,1.0
+168,33,Raisins,20,g,Dry Fruit,10,0.5,60,15.0,0.1,0.8
+169,33,Saffron,0.2,g,Spice,10,0.0,2,0.5,0.1,0.1
+170,34,Chicken,300,g,Meat,150,62.0,330,0.0,15.0,0.0
+171,34,Yogurt,100,g,Dairy,10,3.5,59,4.0,3.0,0.0
+172,34,Lemon Juice,20,ml,Condiment,4,0.0,10,2.0,0.0,0.0
+173,34,Garam Masala,5,g,Spice,5,0.3,30,6.0,0.5,2.0
+174,34,Red Chilli Powder,5,g,Spice,5,0.5,15,3.0,0.3,1.0
+175,35,Black Lentils,150,g,Legume,30,12.0,200,35.0,1.5,10.0
+176,35,Kidney Beans,50,g,Legume,10,4.0,55,10.0,0.5,3.0
+177,35,Butter,50,g,Dairy,25,0.4,358,0.1,40.5,0.0
+178,35,Fresh Cream,100,ml,Dairy,40,2.1,340,3.0,35.0,0.0
+179,35,Ginger-Garlic Paste,20,g,Condiment,2,0.5,20,4.0,0.1,0.5
+180,36,Maida,150,g,Grain,15,5.0,535,115.0,1.5,3.5
+181,36,Urad Dal,50,g,Legume,10,4.0,55,10.0,0.5,3.0
+182,36,Cumin Seeds,5,g,Spice,3,0.3,18,2.0,1.0,1.0
+183,36,Asafoetida,2,g,Spice,3,0.1,5,1.0,0.1,0.3
+184,36,Oil,200,ml,Condiment,40,0.0,1800,0.0,200.0,0.0
+185,37,Pav Buns,4,pc,Grain,40,8.0,320,60.0,4.0,4.0
+186,37,Potatoes,150,g,Vegetable,15,3.0,115,26.0,0.2,3.3
+187,37,Green Chilli,2,pc,Spice,2,0.2,10,2.0,0.1,0.5
+188,37,Garlic Chutney,20,g,Condiment,10,0.5,30,5.0,1.0,1.0
+189,37,Peanuts,20,g,Dry Fruit,10,2.0,120,4.0,10.0,2.0
+190,38,Whole Wheat Flour,200,g,Grain,20,8.0,680,140.0,4.0,12.0
+191,38,Yogurt,50,g,Dairy,5,1.7,30,2.0,1.5,0.0
+192,38,Oil,10,ml,Condiment,2,0.0,90,0.0,10.0,0.0
+193,38,Salt,5,g,Condiment,1,0.0,0,0.0,0.0,0.0
+194,38,Water,100,ml,Beverage,0,0.0,0,0.0,0.0,0.0
+195,39,Brinjal,300,g,Vegetable,30,3.0,75,18.0,0.6,9.0
+196,39,Onion,100,g,Vegetable,10,1.0,40,9.0,0.1,1.7
+197,39,Tomatoes,100,g,Fruit,5,0.9,18,3.9,0.2,1.2
+198,39,Ginger-Garlic Paste,15,g,Condiment,2,0.4,15,3.0,0.1,0.4
+199,39,Cumin Powder,5,g,Spice,3,0.3,15,2.0,1.0,1.0
+200,40,Peas,150,g,Vegetable,30,6.0,126,22.5,0.6,10.5
+201,40,Paneer,150,g,Dairy,60,10.5,200,3.0,15.0,0.0
+202,40,Onion,100,g,Vegetable,10,1.0,40,9.0,0.1,1.7
+203,40,Tomatoes,100,g,Fruit,5,0.9,18,3.9,0.2,1.2
+204,40,Garam Masala,5,g,Spice,5,0.3,30,6.0,0.5,2.0
+205,41,Bread,4,slices,Grain,40,8.0,320,60.0,4.0,4.0
+206,41,Milk,500,ml,Dairy,40,17.0,300,24.0,16.5,0.0
+207,41,Sugar,100,g,Sweetener,10,0.0,400,100.0,0.0,0.0
+208,41,Ghee,50,g,Dairy,25,0.4,358,0.1,40.5,0.0
+209,41,Saffron,0.2,g,Spice,10,0.0,2,0.5,0.1,0.1
+210,42,Whole Wheat Flour,200,g,Grain,20,8.0,680,140.0,4.0,12.0
+211,42,Potatoes,200,g,Vegetable,20,4.0,154,34.0,0.2,4.4
+212,42,Green Chilli,1,pc,Spice,1,0.1,5,1.0,0.1,0.3
+213,42,Cumin Seeds,5,g,Spice,3,0.3,18,2.0,1.0,1.0
+214,42,Ghee,30,g,Dairy,15,0.2,215,0.1,24.0,0.0
+215,43,Flour,150,g,Grain,15,5.0,535,115.0,1.5,3.5
+216,43,Eggs,2,pc,Protein,12,12.0,140,1.0,10.0,0.0
+217,43,Milk,200,ml,Dairy,16,6.8,120,9.6,6.6,0.0
+218,43,Butter,20,g,Dairy,10,0.2,143,0.1,16.0,0.0
+219,43,Sugar,20,g,Sweetener,2,0.0,80,20.0,0.0,0.0
+220,44,Chicken Breast,200,g,Meat,120,46.0,220,0.0,5.0,0.0
+221,44,Lettuce,100,g,Vegetable,15,1.5,15,3.0,0.2,1.5
+222,44,Cherry Tomatoes,100,g,Fruit,20,1.0,18,4.0,0.2,1.2
+223,44,Olive Oil,15,ml,Condiment,15,0.0,135,0.0,15.0,0.0
+224,44,Lemon Juice,10,ml,Condiment,2,0.0,5,1.0,0.0,0.0
+225,45,Apple,1,pc,Fruit,30,0.3,95,25.0,0.3,4.0
+226,45,Banana,1,pc,Fruit,10,1.0,105,27.0,0.4,3.0
+227,45,Orange,1,pc,Fruit,20,1.0,62,15.0,0.2,3.0
+228,45,Grapes,100,g,Fruit,40,0.6,69,18.0,0.2,0.9
+229,45,Yogurt,100,g,Dairy,10,3.5,59,4.0,3.0,0.0
+230,46,Penne Pasta,200,g,Grain,50,7.0,300,60.0,1.5,3.0
+231,46,Heavy Cream,100,ml,Dairy,80,2.0,340,3.0,36.0,0.0
+232,46,Parmesan Cheese,50,g,Dairy,50,5.0,200,2.0,15.0,0.0
+233,46,Garlic,10,g,Vegetable,2,0.4,15,3.0,0.1,0.2
+234,46,Black Pepper,3,g,Spice,5,0.2,10,2.0,0.1,0.5
+235,47,Eggs,3,pc,Protein,18,18.0,210,1.5,15.0,0.0
+236,47,Milk,30,ml,Dairy,3,1.0,18,1.4,1.0,0.0
+237,47,Butter,10,g,Dairy,5,0.1,72,0.1,8.0,0.0
+238,47,Onion,50,g,Vegetable,5,0.5,20,4.5,0.1,0.9
+239,47,Green Chilli,1,pc,Spice,1,0.1,5,1.0,0.1,0.3
+240,48,Whole Wheat Tortilla,1,pc,Grain,20,3.0,120,20.0,3.0,3.0
+241,48,Hummus,50,g,Legume,20,2.5,100,10.0,5.0,3.0
+242,48,Cucumber,50,g,Vegetable,5,0.4,8,1.8,0.1,0.3
+243,48,Carrots,50,g,Vegetable,5,0.5,21,5.0,0.1,1.4
+244,48,Spinach,30,g,Vegetable,5,0.9,7,1.0,0.1,1.4
+245,49,Rolled Oats,100,g,Grain,20,13.0,389,66.0,7.0,10.0
+246,49,Honey,30,g,Sweetener,15,0.1,90,24.0,0.0,0.1
+247,49,Almonds,30,g,Dry Fruit,30,6.0,170,6.0,15.0,3.0
+248,49,Dried Cranberries,20,g,Fruit,10,0.1,65,16.0,0.1,1.0
+249,49,Peanut Butter,20,g,Dry Fruit,10,5.0,120,4.0,10.0,2.0
+250,50,Beef Steak,300,g,Meat,450,63.0,330,0.0,15.0,0.0
+251,50,Potatoes,200,g,Vegetable,20,4.0,154,34.0,0.2,4.4
+252,50,Butter,30,g,Dairy,15,0.2,215,0.1,24.0,0.0
+253,50,Milk,50,ml,Dairy,4,1.7,30,2.4,1.6,0.0
+254,50,Garlic,10,g,Vegetable,2,0.4,15,3.0,0.1,0.2
+255,50,Black Pepper,3,g,Spice,5,0.2,10,2.0,0.1,0.5
+256,51,Bread,2,slices,Grain,20,4.0,160,30.0,2.0,2.0
+257,51,Avocado,1,pc,Fruit,80,2.0,240,12.0,22.0,10.0
+258,51,Lemon Juice,10,ml,Condiment,2,0.0,5,1.0,0.0,0.0
+259,51,Chilli Flakes,2,g,Spice,2,0.1,5,1.0,0.1,0.3
+260,51,Olive Oil,5,ml,Condiment,5,0.0,40,0.0,4.5,0.0
+261,52,Chicken,300,g,Meat,150,62.0,330,0.0,15.0,0.0
+262,52,Onion,100,g,Vegetable,10,1.0,40,9.0,0.1,1.7
+263,52,Tomatoes,100,g,Fruit,5,0.9,18,3.9,0.2,1.2
+264,52,Ginger-Garlic Paste,20,g,Condiment,2,0.5,20,4.0,0.1,0.5
+265,52,Garam Masala,5,g,Spice,5,0.3,30,6.0,0.5,2.0
+266,52,Yogurt,100,g,Dairy,10,3.5,59,4.0,3.0,0.0
+267,53,Banana,1,pc,Fruit,10,1.0,105,27.0,0.4,3.0
+268,53,Yogurt,150,g,Dairy,15,5.2,89,6.0,4.5,0.0
+269,53,Milk,100,ml,Dairy,8,3.4,60,4.8,3.3,0.0
+270,53,Honey,20,g,Sweetener,10,0.1,60,16.0,0.0,0.1
+271,53,Chia Seeds,10,g,Seed,10,1.6,50,4.0,3.0,4.0
+272,54,Cabbage,100,g,Vegetable,10,1.3,25,5.8,0.1,2.5
+273,54,Carrots,100,g,Vegetable,10,0.9,41,10.0,0.2,2.8
+274,54,Bell Peppers,100,g,Vegetable,30,1.0,31,6.0,0.3,2.0
+275,54,Soy Sauce,20,ml,Condiment,10,0.6,20,2.0,0.0,0.1
+276,54,Sesame Oil,10,ml,Condiment,15,0.0,90,0.0,10.0,0.0
+277,54,Garlic,10,g,Vegetable,2,0.4,15,3.0,0.1,0.2
+278,55,Fish Fillet,200,g,Seafood,300,44.0,200,0.0,5.0,0.0
+279,55,Basmati Rice,100,g,Grain,20,3.5,130,28.0,0.3,0.4
+280,55,Lemon,1,pc,Fruit,5,0.6,17,5.0,0.2,1.6
+281,55,Olive Oil,15,ml,Condiment,15,0.0,135,0.0,15.0,0.0
+282,55,Dill,5,g,Herb,5,0.3,5,1.0,0.1,0.5
+283,56,Potato Chips,50,g,Snack,20,2.0,250,25.0,15.0,2.0
+284,56,Tomatoes,100,g,Fruit,5,0.9,18,3.9,0.2,1.2
+285,56,Onion,50,g,Vegetable,5,0.5,20,4.5,0.1,0.9
+286,56,Coriander Leaves,10,g,Herb,2,0.3,5,1.0,0.1,0.8
+287,56,Lemon Juice,10,ml,Condiment,2,0.0,5,1.0,0.0,0.0
+288,57,Basmati Rice,200,g,Grain,35,4.0,260,56.0,0.5,1.0
+289,57,Chicken,250,g,Meat,125,52.0,275,0.0,12.0,0.0
+290,57,Yogurt,100,g,Dairy,10,3.5,59,4.0,3.0,0.0
+291,57,Garam Masala,5,g,Spice,5,0.3,30,6.0,0.5,2.0
+292,57,Saffron,0.5,g,Spice,20,0.1,5,1.0,0.1,0.1
+293,57,Fried Onions,50,g,Vegetable,10,1.0,100,10.0,5.0,1.0
+294,58,Flour,150,g,Grain,15,5.0,535,115.0,1.5,3.5
+295,58,Eggs,1,pc,Protein,6,6.0,70,0.6,5.0,0.0
+296,58,Milk,200,ml,Dairy,16,6.8,120,9.6,6.6,0.0
+297,58,Butter,20,g,Dairy,10,0.2,143,0.1,16.0,0.0
+298,58,Baking Powder,5,g,Condiment,5,0.0,5,1.0,0.0,0.0
+299,59,Yogurt,150,g,Dairy,15,5.2,89,6.0,4.5,0.0
+300,59,Granola,50,g,Grain,30,5.0,200,30.0,7.0,4.0
+301,59,Berries,100,g,Fruit,50,1.0,50,12.0,0.5,4.0
+302,59,Honey,15,g,Sweetener,8,0.1,45,12.0,0.0,0.1
+303,60,Lamb,300,g,Meat,450,54.0,330,0.0,20.0,0.0
+304,60,Onion,100,g,Vegetable,10,1.0,40,9.0,0.1,1.7
+305,60,Tomatoes,100,g,Fruit,5,0.9,18,3.9,0.2,1.2
+306,60,Ginger-Garlic Paste,20,g,Condiment,2,0.5,20,4.0,0.1,0.5
+307,60,Garam Masala,5,g,Spice,5,0.3,30,6.0,0.5,2.0
+308,60,Yogurt,100,g,Dairy,10,3.5,59,4.0,3.0,0.0
+309,61,Chicken Patty,1,pc,Meat,80,20.0,250,15.0,12.0,1.0
+310,61,Burger Bun,1,pc,Grain,20,4.0,120,22.0,2.0,1.0
+311,61,Lettuce,20,g,Vegetable,3,0.2,3,0.6,0.0,0.3
+312,61,Tomato,2,slices,Vegetable,5,0.2,10,2.0,0.1,0.6
+313,61,Potatoes,100,g,Vegetable,10,2.0,77,17.0,0.1,2.2
+314,62,Beef,300,g,Meat,450,63.0,330,0.0,15.0,0.0
+315,62,Potatoes,200,g,Vegetable,20,4.0,154,34.0,0.2,4.4
+316,62,Carrots,100,g,Vegetable,10,0.9,41,10.0,0.2,2.8
+317,62,Onion,100,g,Vegetable,10,1.0,40,9.0,0.1,1.7
+318,62,Beef Stock,200,ml,Beverage,30,2.0,10,1.0,0.5,0.0
+319,63,Eggs,2,pc,Protein,12,12.0,140,1.0,10.0,0.0
+320,63,Vinegar,15,ml,Condiment,5,0.0,3,0.5,0.0,0.0
+321,63,Whole Wheat Toast,1,slice,Grain,10,3.0,70,12.0,1.0,2.0
+322,63,Butter,5,g,Dairy,3,0.0,36,0.0,4.0,0.0
+323,64,Chicken Breast,150,g,Meat,90,35.0,165,0.0,3.0,0.0
+324,64,Whole Wheat Tortilla,1,pc,Grain,20,3.0,120,20.0,3.0,3.0
+325,64,Lettuce,30,g,Vegetable,5,0.3,5,1.0,0.1,0.5
+326,64,Tomato,2,slices,Vegetable,5,0.2,10,2.0,0.1,0.6
+327,64,Yogurt Dressing,30,ml,Dairy,10,1.0,30,2.0,2.0,0.0
+328,65,Sushi Rice,100,g,Grain,30,2.5,130,28.0,0.3,0.4
+329,65,Nori,1,sheet,Seafood,15,1.0,5,1.0,0.1,0.5
+330,65,Avocado,50,g,Fruit,40,1.0,80,4.0,7.0,3.0
+331,65,Cucumber,50,g,Vegetable,5,0.4,8,1.8,0.1,0.3
+332,65,Sesame Seeds,5,g,Seed,5,0.8,30,1.0,2.5,0.5
+333,66,Whole Wheat Bread,2,slices,Grain,20,6.0,160,30.0,2.0,4.0
+334,66,Bell Peppers,50,g,Vegetable,15,0.5,16,3.0,0.2,1.0
+335,66,Zucchini,50,g,Vegetable,15,0.8,9,1.5,0.1,0.5
+336,66,Cheese,30,g,Dairy,25,5.0,120,1.0,10.0,0.0
+337,66,Olive Oil,10,ml,Condiment,10,0.0,90,0.0,10.0,0.0
+338,67,Spaghetti,200,g,Grain,40,7.0,300,60.0,1.5,3.0
+339,67,Minced Beef,200,g,Meat,200,40.0,250,0.0,15.0,0.0
+340,67,Tomato Puree,100,g,Fruit,10,1.0,30,6.0,0.2,1.5
+341,67,Onion,50,g,Vegetable,5,0.5,20,4.5,0.1,0.9
+342,67,Parmesan Cheese,30,g,Dairy,30,3.0,120,1.0,10.0,0.0
+343,68,Flour,200,g,Grain,20,6.0,700,150.0,2.0,5.0
+344,68,Eggs,1,pc,Protein,6,6.0,70,0.6,5.0,0.0
+345,68,Milk,150,ml,Dairy,12,5.1,90,7.2,4.9,0.0
+346,68,Blueberries,100,g,Fruit,60,0.7,57,14.0,0.3,2.4
+347,68,Sugar,80,g,Sweetener,8,0.0,320,80.0,0.0,0.0
+348,69,Romaine Lettuce,100,g,Vegetable,15,1.2,15,3.0,0.2,2.0
+349,69,Croutons,30,g,Grain,15,1.5,120,20.0,4.0,1.0
+350,69,Parmesan Cheese,30,g,Dairy,30,3.0,120,1.0,10.0,0.0
+351,69,Caesar Dressing,30,ml,Condiment,20,0.3,150,2.0,16.0,0.0
+352,69,Chicken Breast,100,g,Meat,60,23.0,110,0.0,2.5,0.0
+353,70,Salmon Fillet,200,g,Seafood,500,40.0,280,0.0,18.0,0.0
+354,70,Lemon,1/2,pc,Fruit,3,0.3,9,3.0,0.1,0.8
+355,70,Dill,5,g,Herb,5,0.3,5,1.0,0.1,0.5
+356,70,Olive Oil,15,ml,Condiment,15,0.0,135,0.0,15.0,0.0
+357,70,Garlic,5,g,Vegetable,1,0.2,8,1.5,0.1,0.1
+358,71,Eggs,3,pc,Protein,18,18.0,210,1.5,15.0,0.0
+359,71,Milk,30,ml,Dairy,3,1.0,18,1.4,1.0,0.0
+360,71,Butter,10,g,Dairy,5,0.1,72,0.1,8.0,0.0
+361,71,Cheese,30,g,Dairy,25,5.0,120,1.0,10.0,0.0
+362,71,Black Pepper,2,g,Spice,3,0.1,7,1.0,0.1,0.3
+363,72,Chickpeas,200,g,Legume,30,14.0,260,45.0,4.0,12.0
+364,72,Onion,100,g,Vegetable,10,1.0,40,9.0,0.1,1.7
+365,72,Tomatoes,100,g,Fruit,5,0.9,18,3.9,0.2,1.2
+366,72,Ginger-Garlic Paste,15,g,Condiment,2,0.4,15,3.0,0.1,0.4
+367,72,Garam Masala,5,g,Spice,5,0.3,30,6.0,0.5,2.0
+368,72,Coriander Powder,5,g,Spice,5,0.5,15,3.0,0.5,1.0
+369,73,Bananas,2,pc,Fruit,20,2.0,210,54.0,0.8,6.0
+370,73,Flour,200,g,Grain,20,6.0,700,150.0,2.0,5.0
+371,73,Eggs,2,pc,Protein,12,12.0,140,1.0,10.0,0.0
+372,73,Walnuts,30,g,Dry Fruit,30,4.0,180,4.0,18.0,2.0
+373,73,Baking Soda,5,g,Condiment,5,0.0,0,0.0,0.0,0.0
+374,74,Whole Chicken,1,kg,Meat,300,190.0,1100,0.0,80.0,0.0
+375,74,Lemon,1,pc,Fruit,5,0.6,17,5.0,0.2,1.6
+376,74,Garlic,20,g,Vegetable,4,0.8,30,6.0,0.1,0.4
+377,74,Rosemary,5,g,Herb,5,0.1,5,1.0,0.1,0.5
+378,74,Olive Oil,30,ml,Condiment,30,0.0,270,0.0,30.0,0.0
+379,75,Flour Tortilla,1,pc,Grain,15,3.0,120,20.0,3.0,1.0
+380,75,Refried Beans,100,g,Legume,20,6.0,120,20.0,2.0,6.0
+381,75,Cheese,50,g,Dairy,40,8.0,200,2.0,16.0,0.0
+382,75,Chicken,100,g,Meat,50,21.0,110,0.0,2.5,0.0
+383,75,Salsa,50,g,Condiment,10,0.5,20,4.0,0.1,1.0
+384,76,Beef Mince,200,g,Meat,300,40.0,250,0.0,15.0,0.0
+385,76,Taco Shells,3,pc,Grain,30,3.0,150,20.0,7.0,2.0
+386,76,Lettuce,50,g,Vegetable,8,0.5,8,1.5,0.1,0.8
+387,76,Cheese,50,g,Dairy,40,8.0,200,2.0,16.0,0.0
+388,76,Salsa,50,g,Condiment,10,0.5,20,4.0,0.1,1.0
+389,77,Pizza Dough,150,g,Grain,30,5.0,400,80.0,2.0,3.0
+390,77,Tomato Sauce,50,g,Condiment,10,0.5,25,5.0,0.2,1.0
+391,77,Mozzarella,100,g,Dairy,80,22.0,280,2.0,22.0,0.0
+392,77,Pepperoni,50,g,Meat,75,10.0,250,1.0,22.0,0.0
+393,77,Bell Peppers,50,g,Vegetable,15,0.5,16,3.0,0.2,1.0
+394,78,Lasagna Sheets,100,g,Grain,40,5.0,350,75.0,1.0,3.0
+395,78,Ricotta Cheese,200,g,Dairy,120,22.0,340,6.0,20.0,0.0
+396,78,Spinach,200,g,Vegetable,20,4.0,46,8.0,0.6,6.0
+397,78,Tomato Sauce,100,g,Condiment,20,1.0,50,10.0,0.4,2.0
+398,78,Parmesan,50,g,Dairy,50,5.0,200,2.0,15.0,0.0
+399,79,Chicken,300,g,Meat,150,62.0,330,0.0,15.0,0.0
+400,79,Coconut Milk,200,ml,Dairy,60,2.0,400,6.0,40.0,2.0
+401,79,Green Curry Paste,30,g,Condiment,30,1.0,50,8.0,2.0,2.0
+402,79,Bamboo Shoots,100,g,Vegetable,20,2.0,20,4.0,0.5,2.0
+403,79,Basil Leaves,10,g,Herb,10,0.3,5,1.0,0.1,0.5
+404,80,Romaine Lettuce,100,g,Vegetable,15,1.2,15,3.0,0.2,2.0
+405,80,Chicken Breast,150,g,Meat,90,35.0,165,0.0,3.0,0.0
+406,80,Croutons,30,g,Grain,15,1.5,120,20.0,4.0,1.0
+407,80,Parmesan Cheese,30,g,Dairy,30,3.0,120,1.0,10.0,0.0
+408,80,Caesar Dressing,30,ml,Condiment,20,0.3,150,2.0,16.0,0.0
+409,81,Chicken Breast,200,g,Meat,120,46.0,220,0.0,5.0,0.0
+410,81,Lemon Juice,20,ml,Condiment,4,0.0,10,2.0,0.0,0.0
+411,81,Garlic,10,g,Vegetable,2,0.4,15,3.0,0.1,0.2
+412,81,Olive Oil,15,ml,Condiment,15,0.0,135,0.0,15.0,0.0
+413,81,Oregano,3,g,Herb,3,0.1,5,1.0,0.1,0.3
+414,82,Tuna,150,g,Seafood,225,40.0,150,0.0,3.0,0.0
+415,82,Bread,2,slices,Grain,20,4.0,160,30.0,2.0,2.0
+416,82,Mayonnaise,20,g,Condiment,10,0.2,140,0.5,15.0,0.0
+417,82,Lettuce,20,g,Vegetable,3,0.2,3,0.6,0.0,0.3
+418,82,Tomato,2,slices,Vegetable,5,0.2,10,2.0,0.1,0.6
+419,83,Lasagna Sheets,100,g,Grain,40,5.0,350,75.0,1.0,3.0
+420,83,Beef Mince,300,g,Meat,450,60.0,375,0.0,22.5,0.0
+421,83,Tomato Sauce,200,g,Condiment,40,2.0,100,20.0,0.8,4.0
+422,83,Cheese,150,g,Dairy,120,24.0,600,6.0,48.0,0.0
+423,83,Onion,100,g,Vegetable,10,1.0,40,9.0,0.1,1.7
+424,84,Cooked Rice,300,g,Grain,30,6.0,390,85.0,1.0,1.5
+425,84,Eggs,2,pc,Protein,12,12.0,140,1.0,10.0,0.0
+426,84,Carrots,50,g,Vegetable,5,0.5,21,5.0,0.1,1.4
+427,84,Peas,50,g,Vegetable,10,2.0,42,7.5,0.2,3.5
+428,84,Soy Sauce,20,ml,Condiment,10,0.6,20,2.0,0.0,0.1
+429,85,Rolled Oats,100,g,Grain,20,13.0,389,66.0,7.0,10.0
+430,85,Honey,30,g,Sweetener,15,0.1,90,24.0,0.0,0.1
+431,85,Almonds,30,g,Dry Fruit,30,6.0,170,6.0,15.0,3.0
+432,85,Dried Cranberries,20,g,Fruit,10,0.1,65,16.0,0.1,1.0
+433,85,Peanut Butter,20,g,Dry Fruit,10,5.0,120,4.0,10.0,2.0
+434,86,Apple,1,pc,Fruit,30,0.3,95,25.0,0.3,4.0
+435,86,Banana,1,pc,Fruit,10,1.0,105,27.0,0.4,3.0
+436,86,Orange,1,pc,Fruit,20,1.0,62,15.0,0.2,3.0
+437,86,Grapes,100,g,Fruit,40,0.6,69,18.0,0.2,0.9
+438,86,Yogurt,100,g,Dairy,10,3.5,59,4.0,3.0,0.0
+439,87,Spaghetti,200,g,Grain,40,7.0,300,60.0,1.5,3.0
+440,87,Eggs,2,pc,Protein,12,12.0,140,1.0,10.0,0.0
+441,87,Parmesan Cheese,50,g,Dairy,50,5.0,200,2.0,15.0,0.0
+442,87,Bacon,50,g,Meat,75,10.0,250,1.0,22.0,0.0
+443,87,Black Pepper,3,g,Spice,5,0.2,10,2.0,0.1,0.5
+444,88,Flour,150,g,Grain,15,5.0,535,115.0,1.5,3.5
+445,88,Cocoa Powder,50,g,Spice,40,3.0,100,15.0,5.0,5.0
+446,88,Eggs,2,pc,Protein,12,12.0,140,1.0,10.0,0.0
+447,88,Milk,200,ml,Dairy,16,6.8,120,9.6,6.6,0.0
+448,88,Chocolate Chips,50,g,Sweetener,50,1.5,250,30.0,15.0,2.0
+449,89,Bread,2,slices,Grain,20,4.0,160,30.0,2.0,2.0
+450,89,Peanut Butter,30,g,Dry Fruit,15,7.5,180,6.0,15.0,3.0
+451,89,Jam,20,g,Sweetener,5,0.1,50,13.0,0.0,0.2
+452,89,Butter,10,g,Dairy,5,0.1,72,0.1,8.0,0.0
+453,90,Pizza Dough,150,g,Grain,30,5.0,400,80.0,2.0,3.0
+454,90,BBQ Sauce,50,g,Condiment,20,0.5,70,15.0,0.5,0.5
+455,90,Chicken,150,g,Meat,75,31.0,165,0.0,3.5,0.0
+456,90,Mozzarella,100,g,Dairy,80,22.0,280,2.0,22.0,0.0
+457,90,Red Onion,50,g,Vegetable,5,0.5,20,4.5,0.1,0.9
+458,91,Beef Steak,300,g,Meat,450,63.0,330,0.0,15.0,0.0
+459,91,Butter,20,g,Dairy,10,0.1,143,0.1,16.0,0.0
+460,91,Garlic,10,g,Vegetable,2,0.4,15,3.0,0.1,0.2
+461,91,Rosemary,5,g,Herb,5,0.1,5,1.0,0.1,0.5
+462,91,Black Pepper,3,g,Spice,5,0.2,10,2.0,0.1,0.5
+463,92,Chickpeas,200,g,Legume,30,14.0,260,45.0,4.0,12.0
+464,92,Whole Wheat Tortilla,1,pc,Grain,20,3.0,120,20.0,3.0,3.0
+465,92,Tahini,20,g,Condiment,15,1.0,120,4.0,10.0,2.0
+466,92,Lettuce,30,g,Vegetable,5,0.3,5,1.0,0.1,0.5
+467,92,Tomato,50,g,Fruit,5,0.5,10,2.0,0.1,0.6
+468,93,Rice,200,g,Grain,30,4.0,260,56.0,0.5,1.0
+469,93,Shrimp,150,g,Seafood,300,30.0,150,0.0,2.0,0.0
+470,93,Mussels,100,g,Seafood,150,20.0,100,4.0,2.0,0.0
+471,93,Bell Peppers,50,g,Vegetable,15,0.5,16,3.0,0.2,1.0
+472,93,Saffron,0.2,g,Spice,10,0.0,2,0.5,0.1,0.1
+473,94,Chicken,500,g,Meat,250,104.0,550,0.0,25.0,0.0
+474,94,Yogurt,150,g,Dairy,15,5.2,89,6.0,4.5,0.0
+475,94,Garam Masala,10,g,Spice,10,0.5,60,12.0,1.0,4.0
+476,94,Lemon Juice,20,ml,Condiment,4,0.0,10,2.0,0.0,0.0
+477,94,Ginger-Garlic Paste,30,g,Condiment,3,0.8,30,6.0,0.1,0.8
+478,95,Miso Paste,30,g,Condiment,25,3.0,60,9.0,1.0,1.0
+479,95,Rice,100,g,Grain,15,2.5,130,28.0,0.3,0.4
+480,95,Tofu,100,g,Protein,40,8.0,70,2.0,4.0,0.5
+481,95,Spring Onions,10,g,Vegetable,2,0.2,5,1.0,0.1,0.3
+482,95,Wakame Seaweed,5,g,Seafood,15,0.5,10,2.0,0.1,0.5
+483,96,Lentils,150,g,Legume,20,12.0,180,30.0,1.0,8.0
+484,96,Carrots,50,g,Vegetable,5,0.5,21,5.0,0.1,1.4
+485,96,Onion,50,g,Vegetable,5,0.5,20,4.5,0.1,0.9
+486,96,Garlic,10,g,Vegetable,2,0.4,15,3.0,0.1,0.2
+487,96,Cumin Powder,5,g,Spice,5,0.5,15,3.0,0.5,1.0
+488,97,Shrimp,150,g,Seafood,180,18,85,0,1,0
+489,97,Corn Tortillas,4,piece,Grain,20,2,120,24,1,2
+490,97,Cabbage,50,g,Vegetable,10,1,25,5,0,2
+491,97,Avocado,1,piece,Fruit,50,2,160,8,15,7
+492,97,Lime,1,piece,Fruit,5,0.5,20,7,0,2
+493,97,Coriander,10,g,Herb,2,0.3,5,1,0,0.5
+494,98,Chickpeas,100,g,Legume,30,9,164,27,2.5,8
+495,98,Whole Wheat Bun,1,piece,Bread,15,4,140,25,2,3
+496,98,Lettuce,30,g,Vegetable,5,0.6,5,1,0.1,0.5
+497,98,Tomato,50,g,Vegetable,10,1,18,4,0.2,1
+498,98,Onion,30,g,Vegetable,5,0.4,12,3,0.1,0.8
+499,98,Cheese Slice,1,piece,Dairy,20,4,80,1,6,0
+500,99,Rice Noodles,100,g,Grain,40,3,110,24,0.5,1
+501,99,Beef,100,g,Meat,120,26,250,0,15,0
+502,99,Bean Sprouts,50,g,Vegetable,15,2,25,5,0,2
+503,99,Spring Onion,20,g,Herb,5,0.6,10,2,0.1,0.8
+504,99,Basil,5,g,Herb,2,0.3,5,1,0,0.5
+505,99,Lime,1,piece,Fruit,5,0.5,20,7,0,2
+506,100,Whole Wheat Bread,4,slice,Bread,30,8,280,50,4,6
+507,100,Chicken Breast,100,g,Meat,90,31,165,0,3.6,0
+508,100,Lettuce,30,g,Vegetable,5,0.6,5,1,0.1,0.5
+509,100,Tomato,50,g,Vegetable,10,1,18,4,0.2,1
+510,100,Mayonnaise,20,g,Condiment,15,0.3,140,1,15,0
+511,100,Bacon,50,g,Meat,60,10,270,0,20,0
+512,101,Almonds,30,g,Nut,45,6,170,6,15,3
+513,101,Raisins,30,g,Dried Fruit,20,1,90,22,0.2,1
+514,101,Walnuts,20,g,Nut,30,3,130,3,13,2
+515,102,Apple,1,piece,Fruit,30,0.5,95,25,0.3,4
+516,102,Peanut Butter,20,g,Nut Butter,15,5,120,4,10,2
+517,103,Cheddar Cheese,50,g,Dairy,40,12,200,2,16,0
+518,103,Whole Wheat Crackers,10,piece,Grain,20,2,120,20,4,2
+519,104,Whole Wheat Bread,2,slice,Bread,15,4,140,25,2,3
+520,104,Strawberry Jam,20,g,Preserve,10,0.1,50,13,0,0.5
+521,105,Granola,50,g,Cereal,40,5,240,36,8,5
+522,105,Milk,100,ml,Dairy,10,3.4,60,5,3,0
+523,106,Rolled Oats,50,g,Grain,15,5,190,32,3,5
+524,106,Honey,15,g,Sweetener,10,0.1,50,13,0,0.1
+525,106,Milk,100,ml,Dairy,10,3.4,60,5,3,0
+526,107,Almonds,20,g,Nut,30,4,120,4,10,2
+527,107,Dark Chocolate,20,g,Chocolate,25,2,120,10,8,2
+528,107,Dried Cranberries,20,g,Dried Fruit,15,0.2,70,18,0.1,1
+529,108,Rolled Oats,50,g,Grain,15,5,190,32,3,5
+530,108,Milk,100,ml,Dairy,10,3.4,60,5,3,0
+531,108,Cinnamon,2,g,Spice,1,0.1,5,2,0.1,1
+532,109,Banana,1,piece,Fruit,10,1.3,105,27,0.4,3.1
+533,109,Coconut Oil,5,g,Fat,5,0,45,0,5,0
+534,110,Oats,50,g,Grain,15,5,190,32,3,5
+535,110,Dates,30,g,Dried Fruit,20,1,85,22,0.2,2
+536,110,Peanut Butter,20,g,Nut Butter,15,5,120,4,10,2
+537,111,Cashews,30,g,Nut,60,5,160,9,13,1
+538,111,Almonds,30,g,Nut,45,6,170,6,15,3
+539,111,Pistachios,20,g,Nut,40,3,90,5,7,2
+540,112,Dark Chocolate,30,g,Chocolate,40,3,180,15,12,3
+541,113,Carrot,100,g,Vegetable,15,0.9,41,10,0.2,2.8
+542,113,Hummus,50,g,Dip,30,4,150,10,9,4
+543,114,Strawberries,100,g,Fruit,50,1,50,12,0.5,3
+544,114,Whipped Cream,30,g,Dairy,25,1,100,2,9,0
+545,115,Chia Seeds,20,g,Seed,30,4,100,10,6,8
+546,115,Almond Milk,100,ml,Plant Milk,20,1,30,2,2,1
+547,116,Celery,50,g,Vegetable,10,0.5,8,1.5,0.1,1
+548,116,Yogurt Dip,30,g,Dip,20,2,60,3,4,0
+549,117,Potato,150,g,Vegetable,15,3,135,30,0.2,3
+550,117,Cauliflower,150,g,Vegetable,20,3,40,8,0.5,3
+551,117,Onion,50,g,Vegetable,8,0.7,20,5,0.1,1
+552,117,Tomato,50,g,Vegetable,10,1,18,4,0.2,1
+553,117,Ginger Garlic Paste,10,g,Spice,5,0.3,10,2,0.1,0.5
+554,118,Brinjal,200,g,Vegetable,25,2,100,24,0.5,6
+555,118,Onion,50,g,Vegetable,8,0.7,20,5,0.1,1
+556,118,Tomato,100,g,Vegetable,20,2,36,8,0.4,2
+557,118,Ginger,10,g,Spice,3,0.2,5,1,0.1,0.5
+558,118,Garlic,5,g,Spice,2,0.3,10,2,0,0.3
+559,119,Toor Dal,100,g,Legume,30,11,340,60,1,15
+560,119,Tomato,50,g,Vegetable,10,1,18,4,0.2,1
+561,119,Onion,50,g,Vegetable,8,0.7,20,5,0.1,1
+562,119,Garlic,5,g,Spice,2,0.3,10,2,0,0.3
+563,119,Cumin Seeds,2,g,Spice,1,0.1,5,1,0.2,0.5
+564,120,Kidney Beans,100,g,Legume,40,9,330,60,1,16
+565,120,Onion,50,g,Vegetable,8,0.7,20,5,0.1,1
+566,120,Tomato,50,g,Vegetable,10,1,18,4,0.2,1
+567,120,Ginger Garlic Paste,10,g,Spice,5,0.3,10,2,0.1,0.5
+568,120,Garam Masala,2,g,Spice,1,0.1,5,1,0.1,0.5
+569,121,Basmati Rice,100,g,Grain,50,3,350,80,0.5,1
+570,121,Mixed Vegetables,150,g,Vegetable,40,5,100,20,1,6
+571,121,Onion,50,g,Vegetable,8,0.7,20,5,0.1,1
+572,121,Ginger Garlic Paste,10,g,Spice,5,0.3,10,2,0.1,0.5
+573,121,Yogurt,50,g,Dairy,15,3,50,4,2,0
+574,122,Potato,100,g,Vegetable,10,2,90,20,0.1,2
+575,122,Paneer,100,g,Dairy,40,7,132,2,10,0
+576,122,Onion,50,g,Vegetable,8,0.7,20,5,0.1,1
+577,122,Tomato,50,g,Vegetable,10,1,18,4,0.2,1
+578,122,Cashew Paste,20,g,Nut,40,3,120,6,9,1
+579,123,Whole Wheat Flour,100,g,Flour,20,12,340,72,2,10
+580,123,Fenugreek Leaves,50,g,Herb,15,3,25,5,0.5,3
+581,123,Yogurt,50,g,Dairy,15,3,50,4,2,0
+582,123,Oil,10,g,Fat,5,0,90,0,10,0
+583,124,Urad Dal,50,g,Legume,20,12,180,30,1,10
+584,124,Rice,50,g,Grain,15,3,180,40,0.5,1
+585,124,Fenugreek Seeds,2,g,Spice,1,0.2,5,1,0.2,0.5
+586,125,Paneer,150,g,Dairy,60,10.5,199,3,15,0
+587,125,Capsicum,50,g,Vegetable,10,1,20,5,0.2,2
+588,125,Onion,50,g,Vegetable,8,0.7,20,5,0.1,1
+589,125,Tomato,50,g,Vegetable,10,1,18,4,0.2,1
+590,125,Kasuri Methi,2,g,Herb,2,0.2,5,1,0.1,0.5
+591,126,Rice,100,g,Grain,30,3,350,80,0.5,1
+592,126,Urad Dal,50,g,Legume,20,12,180,30,1,10
+593,126,Potato,100,g,Vegetable,10,2,90,20,0.1,2
+594,126,Onion,50,g,Vegetable,8,0.7,20,5,0.1,1
+595,126,Coconut Chutney,50,g,Condiment,20,1,100,5,8,2
+596,127,Potato,150,g,Vegetable,15,3,135,30,0.2,3
+597,127,Peas,50,g,Vegetable,15,3,50,9,0.5,4
+598,127,Onion,50,g,Vegetable,8,0.7,20,5,0.1,1
+599,127,Tomato,50,g,Vegetable,10,1,18,4,0.2,1
+600,127,Pav Bun,4,piece,Bread,30,8,280,50,4,6
+601,128,Chickpeas,100,g,Legume,30,9,164,27,2.5,8
+602,128,Maida,100,g,Flour,20,10,360,75,1,3
+603,128,Onion,50,g,Vegetable,8,0.7,20,5,0.1,1
+604,128,Tomato,50,g,Vegetable,10,1,18,4,0.2,1
+605,128,Yogurt,50,g,Dairy,15,3,50,4,2,0
+606,129,Capsicum,50,g,Vegetable,10,1,20,5,0.2,2
+607,129,Carrot,50,g,Vegetable,8,0.5,20,5,0.1,1.5
+608,129,Onion,50,g,Vegetable,8,0.7,20,5,0.1,1
+609,129,Tomato,50,g,Vegetable,10,1,18,4,0.2,1
+610,129,Ginger Garlic Paste,10,g,Spice,5,0.3,10,2,0.1,0.5
+611,130,Mushroom,100,g,Vegetable,50,3,25,4,0.5,2
+612,130,Peas,50,g,Vegetable,15,3,50,9,0.5,4
+613,130,Onion,50,g,Vegetable,8,0.7,20,5,0.1,1
+614,130,Tomato,50,g,Vegetable,10,1,18,4,0.2,1
+615,130,Garam Masala,2,g,Spice,1,0.1,5,1,0.1,0.5
+616,131,Semolina,100,g,Grain,30,10,360,75,1,3
+617,131,Onion,50,g,Vegetable,8,0.7,20,5,0.1,1
+618,131,Carrot,50,g,Vegetable,8,0.5,20,5,0.1,1.5
+619,131,Green Chilli,5,g,Vegetable,1,0.2,5,1,0.1,0.5
+620,131,Mustard Seeds,2,g,Spice,1,0.2,5,1,0.3,0.5
+621,132,Flattened Rice,100,g,Grain,25,3,350,80,0.5,2
+622,132,Onion,50,g,Vegetable,8,0.7,20,5,0.1,1
+623,132,Peanuts,20,g,Nut,15,5,120,4,10,2
+624,132,Green Chilli,5,g,Vegetable,1,0.2,5,1,0.1,0.5
+625,133,Basmati Rice,100,g,Grain,50,3,350,80,0.5,1
+626,133,Mixed Vegetables,100,g,Vegetable,30,4,70,15,0.5,4
+627,133,Onion,50,g,Vegetable,8,0.7,20,5,0.1,1
+628,133,Ginger Garlic Paste,10,g,Spice,5,0.3,10,2,0.1,0.5
+629,133,Ghee,10,g,Fat,20,0,90,0,10,0
+630,134,Gram Flour,100,g,Flour,30,20,360,60,6,10
+631,134,Onion,50,g,Vegetable,8,0.7,20,5,0.1,1
+632,134,Green Chilli,5,g,Vegetable,1,0.2,5,1,0.1,0.5
+633,134,Cumin Seeds,2,g,Spice,1,0.1,5,1,0.2,0.5
+634,134,Oil,10,g,Fat,5,0,90,0,10,0
+635,135,Gram Flour,100,g,Flour,30,20,360,60,6,10
+636,135,Yogurt,100,g,Dairy,30,6,100,8,4,0
+637,135,Ginger Paste,5,g,Spice,2,0.1,5,1,0,0.3
+638,135,Mustard Seeds,2,g,Spice,1,0.2,5,1,0.3,0.5
+639,136,Carrot,200,g,Vegetable,30,1.8,82,20,0.4,5.6
+640,136,Milk,200,ml,Dairy,20,6.8,120,10,6,0
+641,136,Sugar,50,g,Sweetener,15,0,200,50,0,0
+642,136,Ghee,20,g,Fat,40,0,180,0,20,0
+643,137,Toor Dal,50,g,Legume,15,5.5,170,30,0.5,7.5
+644,137,Tamarind,20,g,Fruit,10,0.5,50,12,0.2,1
+645,137,Sambar Powder,10,g,Spice,10,1,30,5,1,2
+646,137,Vegetables,100,g,Vegetable,30,4,70,15,0.5,4
+647,138,Coconut,50,g,Fruit,25,1.5,150,6,15,4
+648,138,Chana Dal,20,g,Legume,10,4,70,12,0.5,5
+649,138,Green Chilli,5,g,Vegetable,1,0.2,5,1,0.1,0.5
+650,139,Tamarind,10,g,Fruit,5,0.3,25,6,0.1,0.5
+651,139,Tomato,50,g,Vegetable,10,1,18,4,0.2,1
+652,139,Rasam Powder,5,g,Spice,5,0.5,15,3,0.5,1
+653,140,Drumsticks,50,g,Vegetable,15,2,25,5,0.5,2
+654,140,Yam,50,g,Vegetable,20,2,60,15,0.2,2
+655,140,Coconut,50,g,Fruit,25,1.5,150,6,15,4
+656,140,Curry Leaves,5,g,Herb,1,0.1,5,1,0.1,0.5
+657,141,Rice,100,g,Grain,30,3,350,80,0.5,1
+658,141,Toor Dal,50,g,Legume,15,5.5,170,30,0.5,7.5
+659,141,Tamarind,10,g,Fruit,5,0.3,25,6,0.1,0.5
+660,141,Sambar Powder,10,g,Spice,10,1,30,5,1,2
+661,142,Rice,100,g,Grain,30,3,350,80,0.5,1
+662,142,Moong Dal,50,g,Legume,20,12,180,30,1,10
+663,142,Ghee,10,g,Fat,20,0,90,0,10,0
+664,142,Cumin Seeds,2,g,Spice,1,0.1,5,1,0.2,0.5
+665,143,Rice,100,g,Grain,30,3,350,80,0.5,1
+666,143,Urad Dal,50,g,Legume,20,12,180,30,1,10
+667,143,Fenugreek Seeds,2,g,Spice,1,0.2,5,1,0.2,0.5
+668,144,Urad Dal,100,g,Legume,40,24,350,60,1,20
+669,144,Rice,50,g,Grain,15,3,180,40,0.5,1
+670,144,Cumin Seeds,2,g,Spice,1,0.1,5,1,0.2,0.5
+671,145,Yardlong Beans,100,g,Vegetable,20,3,50,10,0.5,4
+672,145,Coconut,30,g,Fruit,15,1,100,4,9,2
+673,145,Moong Dal,20,g,Legume,10,5,70,12,0.5,5
+674,146,Rice Flour,100,g,Flour,30,3,350,80,0.5,1
+675,146,Coconut,50,g,Fruit,25,1.5,150,6,15,4
+676,146,Jaggery,50,g,Sweetener,20,0.2,190,45,0.1,0.5
+677,147,Rice,100,g,Grain,30,3,350,80,0.5,1
+678,147,Yogurt,100,g,Dairy,30,6,100,8,4,0
+679,147,Curry Leaves,5,g,Herb,1,0.1,5,1,0.1,0.5
+680,148,Basmati Rice,100,g,Grain,50,3,350,80,0.5,1
+681,148,Tomato,100,g,Vegetable,20,2,36,8,0.4,2
+682,148,Onion,50,g,Vegetable,8,0.7,20,5,0.1,1
+683,148,Ginger Garlic Paste,10,g,Spice,5,0.3,10,2,0.1,0.5
+684,149,Urad Dal,50,g,Legume,20,12,180,30,1,10
+685,149,Rice Flour,50,g,Flour,15,1.5,175,40,0.3,0.5
+686,149,Onion,50,g,Vegetable,8,0.7,20,5,0.1,1
+687,149,Green Chilli,5,g,Vegetable,1,0.2,5,1,0.1,0.5
+688,150,Tamarind,20,g,Fruit,10,0.5,50,12,0.2,1
+689,150,Rice,100,g,Grain,30,3,350,80,0.5,1
+690,150,Peanuts,20,g,Nut,15,5,120,4,10,2
+691,151,Ragi Flour,100,g,Flour,40,7,330,70,2,15
+692,151,Water,200,ml,Water,0,0,0,0,0,0
+693,152,Rice Flour,100,g,Flour,30,3,350,80,0.5,1
+694,152,Coconut,50,g,Fruit,25,1.5,150,6,15,4
+695,153,Ash Gourd,100,g,Vegetable,20,1,15,3,0.2,1
+696,153,Coconut Milk,100,ml,Plant Milk,40,1,150,3,15,1
+697,153,Green Chilli,5,g,Vegetable,1,0.2,5,1,0.1,0.5
+698,154,Moong Dal,100,g,Legume,40,24,350,60,1,20
+699,154,Coconut,30,g,Fruit,15,1,100,4,9,2
+700,154,Ghee,10,g,Fat,20,0,90,0,10,0
+701,155,Tender Coconut Water,100,ml,Beverage,30,0.5,20,5,0,0
+702,155,Sago,20,g,Grain,10,0.5,70,17,0,0.5
+703,155,Milk,100,ml,Dairy,10,3.4,60,5,3,0
+704,156,Rice Flour,100,g,Flour,30,3,350,80,0.5,1
+705,156,Coconut,50,g,Fruit,25,1.5,150,6,15,4
+706,156,Jaggery,30,g,Sweetener,12,0.1,115,27,0.1,0.3

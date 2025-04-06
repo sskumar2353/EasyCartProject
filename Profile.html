@@ -1,0 +1,227 @@
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+  <link rel="stylesheet" as="style" onload="this.rel='stylesheet'"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" />
+  <title>Profile</title>
+  <link rel="icon" type="image/x-icon"
+    href="https://is3-ssl.mzstatic.com/image/thumb/Purple111/v4/7d/05/17/7d0517b1-f45f-af98-bf8f-87d454ca57f6/source/512x512bb.jpg" />
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+
+<body>
+  <div class="relative flex size-full min-h-screen flex-col bg-[#FFFFFF] group/design-root overflow-x-hidden"
+    style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+    <div class="layout-container flex h-full grow flex-col">
+      <header
+        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#F4EFE6] px-10 py-3">
+        <div class="flex items-center gap-4 text-[#1C160C]">
+          <div class="size-4">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z"
+                fill="currentColor"></path>
+            </svg>
+          </div>
+          <h2 class="text-[#1C160C] text-lg font-bold leading-tight tracking-[-0.015em]">EasyCart</h2>
+        </div>
+        <div class="flex flex-1 justify-end gap-8">
+          <div class="flex gap-2">
+            <a href="AfterLogin.html">
+              <button
+                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 bg-[#F4EFE6] text-[#1C160C] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+                <div class="text-[#1C160C]" data-icon="House" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="none" viewBox="0 0 256 256"
+                    stroke="currentColor" stroke-width="16">
+                    <path
+                      d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z">
+                    </path>
+                  </svg>
+                </div>
+              </button> </a>
+            <button
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 bg-[#F4EFE6] text-[#1C160C] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+              <a href="Homepage.html">
+                <div class="text-[#1C160C]" data-icon="SignOut" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor"
+                    viewBox="0 0 256 256">
+                    <path
+                      d="M112,216a8,8,0,0,1-8,8H48a16,16,0,0,1-16-16V48A16,16,0,0,1,48,32h56a8,8,0,0,1,0,16H48V208h56A8,8,0,0,1,112,216Zm109.66-93.66-40-40a8,8,0,0,0-11.32,11.32L196.69,120H104a8,8,0,0,0,0,16h92.69l-26.35,26.34a8,8,0,0,0,11.32,11.32l40-40A8,8,0,0,0,221.66,122.34Z">
+                    </path>
+                  </svg>
+                </div>
+              </a>
+            </button>
+          </div>
+        </div>
+      </header>
+      <div class="gap-1 px-6 flex flex-1 justify-center py-5">
+        <div class="layout-content-container flex flex-col w-80">
+          <div class="flex p-4 @container">
+            <div class="flex w-full flex-col gap-4 items-center">
+              <div class="flex gap-4 flex-col items-center">
+                <div id="displayImage"
+                  class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32 relative">
+                  <img id="profile-image" src="default-profile.png" alt="Profile Image"
+                    class="w-full h-full rounded-full">
+                </div>
+
+                <div class="flex flex-col items-center justify-center justify-center">
+                  <p class="text-[#1C160C] text-[22px] font-bold leading-tight tracking-[-0.015em] text-center"><span
+                      id="profile-name"></span></p>
+                  <p class="text-[#A18249] text-base font-normal leading-normal text-center"><span
+                      id="profile-email"></span></p>
+                  <p class="text-[#A18249] text-base font-normal leading-normal text-center">+91 <span
+                      id="profile-mobile"></span></p>
+                </div>
+              </div>
+              <button
+                class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#F4EFE6] text-[#1C160C] text-sm font-bold leading-normal tracking-[0.015em] w-full max-w-[480px] @[480px]:w-auto">
+                <a href="EditProfile.html">
+                  <span class="truncate">Edit Profile</span></a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+          <h1 class="text-[#1C160C] tracking-light text-[32px] font-bold leading-tight px-4 text-left pb-3 pt-6">Dietary
+            Preferences</h1>
+          <div id="dietary-preferences-container" class="flex gap-3 p-3 flex-wrap pr-4"></div>
+          <h1 class="text-[#1C160C] tracking-light text-[32px] font-bold leading-tight px-4 text-left pb-3 pt-6">Saved
+            Meal Plans For Today.!</h1>
+          <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+            <div class="flex flex-col gap-3 pb-3">
+              <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                style='background-image: url("https://cdn.usegalileo.ai/sdxl10/ac7a0474-9241-4f3b-b01e-5801a76b6f26.png");'>
+              </div>
+              <div>
+                <p class="text-[#1C160C] text-base font-medium leading-normal">Vegan Meal</p>
+                <p class="text-[#A18249] text-sm font-normal leading-normal">Balanced vegan diet</p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3 pb-3">
+              <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                style='background-image: url("https://cdn.usegalileo.ai/sdxl10/76789e92-7e94-4f7b-93a6-de8be699ca5e.png");'>
+              </div>
+              <div>
+                <p class="text-[#1C160C] text-base font-medium leading-normal">Vegetarian Meal</p>
+                <p class="text-[#A18249] text-sm font-normal leading-normal">Healthy vegetarian options</p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3 pb-3">
+              <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                style='background-image: url("https://cdn.usegalileo.ai/sdxl10/66608daa-96f2-475f-bd95-e83df9e0121f.png");'>
+              </div>
+              <div>
+                <p class="text-[#1C160C] text-base font-medium leading-normal">Keto Meal</p>
+                <p class="text-[#A18249] text-sm font-normal leading-normal">Low-carb keto meals</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 bg-[#FFFFFF] px-4 min-h-[72px] py-2 justify-between">
+            <div class="flex items-center gap-4">
+              <div class="text-[#1C160C] flex items-center justify-center rounded-lg bg-[#F4EFE6] shrink-0 size-12"
+                data-icon="Password" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor"
+                  viewBox="0 0 256 256">
+                  <path
+                    d="M48,56V200a8,8,0,0,1-16,0V56a8,8,0,0,1,16,0Zm84,54.5L112,117V96a8,8,0,0,0-16,0v21L76,110.5a8,8,0,0,0-5,15.22l20,6.49-12.34,17a8,8,0,1,0,12.94,9.4l12.34-17,12.34,17a8,8,0,1,0,12.94-9.4l-12.34-17,20-6.49A8,8,0,0,0,132,110.5ZM238,115.64A8,8,0,0,0,228,110.5L208,117V96a8,8,0,0,0-16,0v21l-20-6.49a8,8,0,0,0-4.95,15.22l20,6.49-12.34,17a8,8,0,1,0,12.94,9.4l12.34-17,12.34,17a8,8,0,1,0,12.94-9.4l-12.34-17,20-6.49A8,8,0,0,0,238,115.64Z">
+                  </path>
+                </svg>
+              </div>
+              <div class="flex flex-col justify-center">
+                <p class="text-[#1C160C] text-base font-medium leading-normal line-clamp-1">Change Password</p>
+                <p class="text-[#A18249] text-sm font-normal leading-normal line-clamp-2">Please enter your new
+                  password.</p>
+              </div>
+            </div>
+            <div class="shrink-0">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#F4EFE6] text-[#1C160C] text-sm font-medium leading-normal w-fit">
+                <a href="UpdatePassword.html">
+                  <span class="truncate">Update</span></a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      const userData = localStorage.getItem("user"); // Get stored user data
+      console.log("Stored user data:", userData); // Debugging
+
+      if (!userData) {
+        console.error("No user data found in localStorage. Redirecting to login.");
+        window.location.href = "login.html";
+        return;
+      }
+
+      const user = JSON.parse(userData); // Convert JSON string to object
+      const userEmail = user.email; // Extract email
+      console.log("Extracted email:", userEmail); // Debugging
+      console.log('imagee', user.profile_image)
+
+      try {
+        const response = await fetch("http://localhost:5000/api/details", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email: userEmail }),
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+          console.log(data)
+          document.getElementById("profile-name").textContent = data.name;
+          document.getElementById("profile-email").textContent = data.email;
+          document.getElementById("profile-mobile").textContent = data.mobile || "Not Provided";
+          // document.getElementById("profile-diet").textContent = data.dietary_preferences || "Not Set";
+
+          const profileDiv = document.getElementById("displayImage");
+          const profileImg = document.getElementById("profile-image");
+
+          if (data.profile_image) {
+            profileDiv.style.backgroundImage = `url('${data.profile_image}')`;
+            profileImg.style.display = "none"; // Hide the img if background is set
+          } else {
+            profileImg.src = "default-profile.png"; // Use default if no profile image
+          }
+          // Select the container where dietary preferences will be added
+          const dietaryContainer = document.getElementById("dietary-preferences-container");
+
+          // Clear existing content (in case it's reloaded)
+          dietaryContainer.innerHTML = "";
+
+          // Split the dietary preferences string by commas and loop through them
+          data.dietary_preferences.split(", ").forEach(preference => {
+            // Create a new div for each preference
+            const div = document.createElement("div");
+            div.className = "flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#F4EFE6] pl-4 pr-4";
+
+            // Create the paragraph element
+            const p = document.createElement("p");
+            p.className = "text-[#1C160C] text-sm font-medium leading-normal";
+            p.textContent = preference; // Set the preference text
+
+            // Append the paragraph to the div
+            div.appendChild(p);
+
+            // Append the div to the container
+            dietaryContainer.appendChild(div);
+          });
+        } else {
+          console.error("Error fetching profile:", data.message);
+        }
+      } catch (error) {
+        console.error("Fetch error:", error);
+      }
+    });
+  </script>
+</body>
+
+</html>
