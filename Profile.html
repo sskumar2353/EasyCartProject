@@ -167,7 +167,7 @@
       console.log('imagee', user.profile_image)
 
       try {
-        const response = await fetch("http://localhost:5000/api/details", {
+        const response = await fetch("https://ec-backend-0lvq.onrender.com/api/details", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ email: userEmail }),
