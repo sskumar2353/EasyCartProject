@@ -315,7 +315,7 @@
 
     async function fetchWeeklyCalorieData() {
       try {
-        const response = await axios.get('http://localhost:5000/api/weekly-calories');
+        const response = await axios.get('https://ec-backend-0lvq.onrender.com/api/weekly-calories');
         console.log(response.data);
         // Ensure data structure is complete
         if (!response.data.averageCalories) {
@@ -344,7 +344,7 @@
 
     async function fetchDietaryConsistency() {
       try {
-        const response = await axios.get('http://localhost:5000/api/dietary-consistency');
+        const response = await axios.get('https://ec-backend-0lvq.onrender.com/api/dietary-consistency');
         console.log(response.data);
         return response.data;
       } catch (error) {
@@ -425,7 +425,7 @@
     // Function to render meal plan cards dynamically
     async function renderMealPlans() {
       try {
-        const response = await axios.get('http://localhost:5000/api/weekly-meal-plans');
+        const response = await axios.get('https://ec-backend-0lvq.onrender.com/api/weekly-meal-plans');
         const mealPlans = response.data;
         const container = document.querySelector('.flex.overflow-y-auto div.flex.items-stretch');
 
