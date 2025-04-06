@@ -106,7 +106,7 @@
     async function fetchGroceries() {
       try {
         // In a real environment, this would point to your actual API endpoint
-        const response = await fetch('http://localhost:5000/api/groceries');
+        const response = await fetch('https://ec-backend-0lvq.onrender.com/api/groceries');
         if (!response.ok) {
           throw new Error('Failed to fetch groceries');
         }
