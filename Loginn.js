@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
             
                 if (response.ok) {
                     localStorage.setItem("user", JSON.stringify(data.user));
-                    window.location.href = "afterlogin.html";
+                    window.location.href = "Afterlogin.html";
                 }else {
                     alert(data.message || "Invalid credentials. Try again."); // Show pop-up
                 }
