@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Send data to server
         try {
-            const response = await fetch("http://localhost:5000/api/SignUp", {
+            const response = await fetch("https://ec-backend-0lvq.onrender.com/api/SignUp", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ fullName, email, password, profile_image: null, 
