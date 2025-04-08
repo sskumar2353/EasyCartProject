@@ -182,11 +182,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             const userPreferences = data.dietary_preferences ? data.dietary_preferences.split(", ").map(p => p.trim()) : [];
 
             const allPreferences = [
-                "Ayurvedic", "Carnivore", "Dairy-Free", "Gluten-Free", "Halal",
-                "High-Fat", "High-Fiber", "High-Protein", "Jain", "Keto", "Kosher",
-                "Lactose-Free", "Low-Carb", "Mediterranean", "No Onion-Garlic",
-                "No Processed Foods", "No Sugar", "Nut-Free", "Omega-3-Rich", "Organic",
-                "Paleo", "Pescatarian", "Sugar-Free", "Vegan", "Vegetarian"
+                "Vegetarian","Halal","Mediterranean","High-Protein","Pescatarian","Vegan","Carnivore","High-Fat"
             ];
 
             allPreferences.forEach(preference => {
